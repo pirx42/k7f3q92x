@@ -1,0 +1,383 @@
+{
+  "name": {
+    "de_DE": "Brandkern II",
+    "en_US": "Ember Core II"
+  },
+  "bossDefeatGrantsWin": true,
+  "loopTimeMs": 15840,
+  "body": {
+    "zones": [
+      {
+        "zone": "head",
+        "label": {
+          "de_DE": "Zündkappe",
+          "en_US": "Igniter Cap"
+        },
+        "color": "#00bfff",
+        "x": -240,
+        "y": -620,
+        "w": 480,
+        "h": 360,
+        "maxHp": 1400,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "torso",
+        "label": {
+          "de_DE": "Brandkern",
+          "en_US": "Burn Core"
+        },
+        "color": "#00ff88",
+        "x": -300,
+        "y": -220,
+        "w": 600,
+        "h": 420,
+        "maxHp": 2800,
+        "neighbors": [
+          "head",
+          "legs"
+        ]
+      },
+      {
+        "zone": "legs",
+        "label": {
+          "de_DE": "Aschebett",
+          "en_US": "Ash Bed"
+        },
+        "color": "#ff6644",
+        "x": -240,
+        "y": 260,
+        "w": 480,
+        "h": 380,
+        "maxHp": 1400,
+        "neighbors": [
+          "torso"
+        ]
+      }
+    ],
+    "freeItems": [
+      {
+        "module": {
+          "id": "v4o-brand-gen-t2",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-brand-cap-t2",
+                "kind": "capacitor",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 509.35000000008375
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 766.4999999998423
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.0949,
+          "normY": 0.1905
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-brand-emitter-t2",
+          "kind": "emitter",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-brand-bolt-t2",
+                "kind": "bolt",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "v4o-brand-dup-dmg-t2",
+                      "kind": "duplicator",
+                      "subSlots": [
+                        {
+                          "module": {
+                            "id": "v4o-brand-swapdmg-t2",
+                            "kind": "swapOutputDamage",
+                            "subSlots": [
+                              {
+                                "module": {
+                                  "id": "v4o-brand-oc-t2",
+                                  "kind": "overclocker",
+                                  "subSlots": [],
+                                  "xp": 53.84999999999908
+                                },
+                                "spannedBy": null
+                              }
+                            ],
+                            "xp": 53.84999999999908
+                          },
+                          "spannedBy": null
+                        }
+                      ],
+                      "xp": 53.84999999999908
+                    },
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 77.54999999999774
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-brand-plasma-t2",
+                "kind": "plasma",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "v4o-brand-plasma-eff-t2",
+                      "kind": "efficiency",
+                      "subSlots": [],
+                      "xp": 39.19999999999991
+                    },
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 53.84999999999908
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-brand-dup-eff-t2",
+                "kind": "duplicator",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "v4o-brand-eff-t2",
+                      "kind": "efficiency",
+                      "subSlots": [],
+                      "xp": 53.84999999999908
+                    },
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 53.84999999999908
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 212.5500000000163
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.512,
+          "normY": 0.362
+        },
+        "firesAtPlayer": true
+      },
+      {
+        "module": {
+          "id": "v4o-brand-gen-b-t2",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-brand-cap-b-t2",
+                "kind": "capacitor",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 322.6500000000391
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 322.6500000000391
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.0933,
+          "normY": 0.5056
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-brand-fan-t2",
+          "kind": "ventilator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-brand-fan-port-t2",
+                "kind": "cablePort",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 225.400000000017
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-brand-fan-oc-t2",
+                "kind": "overclocker",
+                "subSlots": [],
+                "xp": 308.05000000003577
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 350.60000000004544
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.3002,
+          "normY": 0.3606
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-brand-sensor-t2",
+          "kind": "sensor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ]
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "legs",
+          "normX": 0.5,
+          "normY": 0.5
+        }
+      }
+    ],
+    "cableConnections": [
+      {
+        "id": "v4o-brand-cable-fan-gen-t2",
+        "endpointA": {
+          "moduleId": "v4o-brand-fan-t2"
+        },
+        "endpointB": {
+          "moduleId": "v4o-brand-gen-t2"
+        }
+      },
+      {
+        "id": "v4o-brand-cable-emi-fan-t2",
+        "endpointA": {
+          "moduleId": "v4o-brand-emitter-t2"
+        },
+        "endpointB": {
+          "moduleId": "v4o-brand-fan-t2"
+        }
+      },
+      {
+        "id": "v4o-brand-cable-fan-genb-t2",
+        "endpointA": {
+          "moduleId": "v4o-brand-fan-t2"
+        },
+        "endpointB": {
+          "moduleId": "v4o-brand-gen-b-t2"
+        }
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "v4o-brand-heat-t2",
+      "type": "heater",
+      "atMs": 4000,
+      "zones": [
+        "torso"
+      ],
+      "peakTemperature": 85,
+      "durationMs": 9000,
+      "warningMs": 2500,
+      "warnOnce": true,
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Ich heize mit. Halt dein Feuer kühl.",
+          "en_US": "I'll crank the heat. Keep your fire cool."
+        },
+        "durationMs": 2000
+      },
+      "targetMode": "hottestZone",
+      "loopEveryMs": 50000
+    }
+  ],
+  "lootPool": [
+    {
+      "$itemPool": "weapon-plasma"
+    },
+    {
+      "$itemPool": "cooling"
+    },
+    {
+      "$itemPool": "power-overdrive"
+    },
+    {
+      "$itemPool": "support-fan"
+    },
+    {
+      "$itemPool": "modifier-inverter"
+    },
+    {
+      "$itemPool": "cooling-extract"
+    },
+    {
+      "$itemPool": "combo-power"
+    }
+  ],
+  "eventPoolSize": 3,
+  "eventPool": [
+    {
+      "$eventPool": "heat"
+    },
+    {
+      "$eventPool": "standard"
+    }
+  ],
+  "upgradePool": [
+    {
+      "$upgradePool": "cooling"
+    }
+  ],
+  "vectorDrains": [
+    {
+      "kind": "thermoStress",
+      "threshold": 95,
+      "ratePerSec": 0.9
+    }
+  ]
+}

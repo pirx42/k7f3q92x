@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="robots" content="noindex, nofollow" />
+  <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39; &#39;wasm-unsafe-eval&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; connect-src &#39;self&#39; https://api.github.com; object-src &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Referrer-Policy per <meta> (Security-Plan P2): wirkt auch auf GitHub Pages,
+       wo keine HTTP-Header setzbar sind. Der Express-Server setzt sie zusätzlich
+       als Header für den selbst-gehosteten Pfad. -->
+  <meta name="referrer" content="no-referrer">
+  <title>Chim3ra</title>
+
+  <!-- PWA Manifest — /k7f3q92x/ wird von Vite je Build-Target ersetzt
+       (/chimera/ für local/test, / für die Demo auf chim3ra.com). -->
+  <link rel="manifest" href="/k7f3q92x/manifest.json">
+  <meta name="theme-color" content="#0a0e1a">
+
+  <!-- iOS PWA -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Chimera">
+  <link rel="apple-touch-icon" href="/k7f3q92x/icons/apple-touch-icon.png">
+
+  <!-- Fonts: selbst-gehostet via @fontsource (src/main.tsx) statt Google-Fonts-
+       CDN — siehe Security-Plan docs/security.md (P2). -->
+  <script type="module" crossorigin src="/k7f3q92x/assets/index-DHEPTtAE.js"></script>
+  <link rel="modulepreload" crossorigin href="/k7f3q92x/assets/rolldown-runtime-CbXtAM7H.js">
+  <link rel="modulepreload" crossorigin href="/k7f3q92x/assets/i18n-CYm1Fcqj.js">
+  <link rel="modulepreload" crossorigin href="/k7f3q92x/assets/localizedString-DKtfBdWe.js">
+  <link rel="modulepreload" crossorigin href="/k7f3q92x/assets/controllingSide-D62I9UiI.js">
+  <link rel="modulepreload" crossorigin href="/k7f3q92x/assets/hiDpiCanvas-DQCS9S75.js">
+  <link rel="modulepreload" crossorigin href="/k7f3q92x/assets/UpgradeMedalCanvas-CX9FSO8B.js">
+  <link rel="modulepreload" crossorigin href="/k7f3q92x/assets/buildTarget-Dz1Z9hxC.js">
+  <link rel="modulepreload" crossorigin href="/k7f3q92x/assets/eventCards-0RB4rgww.js">
+  <link rel="modulepreload" crossorigin href="/k7f3q92x/assets/chassisUnlocks-BNC1JOye.js">
+  <link rel="stylesheet" crossorigin href="/k7f3q92x/assets/index-430SS8nc.css">
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>

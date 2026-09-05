@@ -1,0 +1,588 @@
+{
+  "name": {
+    "de_DE": "Schmelzofen",
+    "en_US": "Smelting Furnace"
+  },
+  "bossDefeatGrantsWin": true,
+  "loopTimeMs": 16000,
+  "body": {
+    "freeItems": [
+      {
+        "module": {
+          "id": "id-49",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-50",
+                "kind": "overclocker",
+                "subSlots": [],
+                "xp": 57.89999999999885
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 57.89999999999885
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_left",
+          "normX": 0.3227,
+          "normY": 0.5756
+        }
+      },
+      {
+        "module": {
+          "id": "id-51",
+          "kind": "shield",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-77",
+                "kind": "reflector",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 53.09999999999912
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-145",
+                "kind": "efficiency",
+                "subSlots": [],
+                "xp": 53.09999999999912
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 57.89999999999885
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.0614,
+          "normY": 0.3936
+        }
+      },
+      {
+        "module": {
+          "id": "id-52",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 43.59999999999966
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.2912,
+          "normY": 0.6283
+        }
+      },
+      {
+        "module": {
+          "id": "id-53",
+          "kind": "capacitor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 18.75000000000013
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.7055,
+          "normY": 0.5805
+        }
+      },
+      {
+        "module": {
+          "id": "id-54",
+          "kind": "emitter",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-55",
+                "kind": "bolt",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 33.40000000000024
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-86",
+                "kind": "plasma",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 33.40000000000024
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-70",
+                "kind": "efficiency",
+                "subSlots": [],
+                "xp": 33.40000000000024
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 33.40000000000024
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.5482,
+          "normY": 0.1206
+        },
+        "firesAtPlayer": true
+      },
+      {
+        "module": {
+          "id": "id-59",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 53.09999999999912
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.2869,
+          "normY": 0.222
+        }
+      },
+      {
+        "module": {
+          "id": "id-116",
+          "kind": "cablePort",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 24.800000000000217
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.5358,
+          "normY": 0.6067
+        }
+      },
+      {
+        "module": {
+          "id": "id-65",
+          "kind": "shield",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-129",
+                "kind": "efficiency",
+                "subSlots": [],
+                "xp": 53.09999999999912
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 53.09999999999912
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_left",
+          "normX": 0.3189,
+          "normY": 0.1465
+        }
+      },
+      {
+        "module": {
+          "id": "id-127",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 53.09999999999912
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_right",
+          "normX": 0.5584,
+          "normY": 0.3767
+        }
+      },
+      {
+        "module": {
+          "id": "id-61",
+          "kind": "engine",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 53.09999999999912
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_right",
+          "normX": 0.2776,
+          "normY": 0.3654
+        }
+      }
+    ],
+    "cableConnections": [
+      {
+        "id": "ch-cable-id-56",
+        "endpointA": {
+          "moduleId": "id-49"
+        },
+        "endpointB": {
+          "moduleId": "id-51"
+        }
+      },
+      {
+        "id": "ch-cable-id-58",
+        "endpointA": {
+          "moduleId": "id-53"
+        },
+        "endpointB": {
+          "moduleId": "id-54"
+        }
+      },
+      {
+        "id": "id-132",
+        "endpointA": {
+          "moduleId": "id-116"
+        },
+        "endpointB": {
+          "moduleId": "id-53"
+        }
+      },
+      {
+        "id": "id-134",
+        "endpointA": {
+          "moduleId": "id-116"
+        },
+        "endpointB": {
+          "moduleId": "id-59"
+        }
+      },
+      {
+        "id": "id-136",
+        "endpointA": {
+          "moduleId": "id-49"
+        },
+        "endpointB": {
+          "moduleId": "id-65"
+        }
+      },
+      {
+        "id": "id-139",
+        "endpointA": {
+          "moduleId": "id-127"
+        },
+        "endpointB": {
+          "moduleId": "id-61"
+        }
+      },
+      {
+        "id": "id-148",
+        "endpointA": {
+          "moduleId": "id-116"
+        },
+        "endpointB": {
+          "moduleId": "id-52"
+        }
+      }
+    ],
+    "zones": [
+      {
+        "zone": "torso",
+        "label": {
+          "de_DE": "Schmelzkern",
+          "en_US": "Smelt Core"
+        },
+        "color": "#00ff88",
+        "x": -360,
+        "y": -260,
+        "w": 720,
+        "h": 560,
+        "maxHp": 1500,
+        "neighbors": [
+          "arm_left",
+          "arm_right"
+        ]
+      },
+      {
+        "zone": "arm_left",
+        "label": {
+          "de_DE": "Heizpod-West",
+          "en_US": "Heat Pod West"
+        },
+        "color": "#ff44cc",
+        "x": -1000,
+        "y": -160,
+        "w": 520,
+        "h": 340,
+        "maxHp": 600,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "arm_right",
+        "label": {
+          "de_DE": "Heizpod-Ost",
+          "en_US": "Heat Pod East"
+        },
+        "color": "#ff44cc",
+        "x": 480,
+        "y": -160,
+        "w": 520,
+        "h": 340,
+        "maxHp": 600,
+        "neighbors": [
+          "torso"
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "v4br2w-heat",
+      "type": "heater",
+      "atMs": 4000,
+      "zones": [
+        "torso"
+      ],
+      "peakTemperature": 80,
+      "durationMs": 9000,
+      "warningMs": 2500,
+      "warnOnce": true,
+      "targetMode": "hottestZone",
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Ich heize ein. Bleib kühl.",
+          "en_US": "I'm cranking the heat. Stay cool."
+        },
+        "durationMs": 2000
+      },
+      "loopEveryMs": 60000
+    },
+    {
+      "id": "v4br2w-form-arml",
+      "type": "zoneCompression",
+      "atMs": 8000,
+      "warningMs": 2500,
+      "scope": "run",
+      "zones": [
+        "arm_left"
+      ],
+      "shrinkPercent": 8,
+      "warnOnce": true,
+      "targetMode": "fixedZones",
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Der linke Arm. Dauerhaft gestaucht.",
+          "en_US": "The left arm. Permanently crushed."
+        },
+        "durationMs": 2000
+      },
+      "loopEveryMs": 120000
+    }
+  ],
+  "lootPool": [
+    {
+      "id": "v4br2w-l-plasma",
+      "lootDescription": {
+        "de_DE": "Feuert Plasma, das Schilde durchdringt und das Ziel aufheizt, statt es direkt zu beschädigen.",
+        "en_US": "Fires plasma that pierces shields and heats the target instead of damaging it directly."
+      },
+      "kind": "emitter",
+      "subSlots": [
+        {
+          "module": {
+            "id": "v4br2w-l-plasma-plasma",
+            "kind": "plasma",
+            "subSlots": []
+          },
+          "spannedBy": null
+        },
+        {
+          "module": {
+            "id": "v4br2w-l-plasma-bolt",
+            "kind": "bolt",
+            "subSlots": [
+              {
+                "module": null,
+                "spannedBy": null
+              }
+            ]
+          },
+          "spannedBy": null
+        }
+      ],
+      "label": {
+        "de_DE": "Plasma-Werfer (heiß)",
+        "en_US": "Plasma Caster (hot)"
+      },
+      "xp": 750
+    },
+    {
+      "id": "v4br2w-l-cool",
+      "lootDescription": {
+        "de_DE": "Zieht Hitze aus seinem Trägeritem.",
+        "en_US": "Pulls heat out of its host item."
+      },
+      "kind": "cooler",
+      "subSlots": [
+        {
+          "module": null,
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ],
+      "label": {
+        "de_DE": "Kühl-Aggregat",
+        "en_US": "Cooling Unit"
+      },
+      "xp": 750
+    },
+    {
+      "id": "v4br2w-l-gen",
+      "lootDescription": {
+        "de_DE": "Liefert die doppelte Energie einer gewöhnlichen Quelle.",
+        "en_US": "Delivers double the energy of an ordinary source."
+      },
+      "kind": "generator",
+      "subSlots": [
+        {
+          "module": {
+            "id": "v4br2w-l-gen-overclocker",
+            "kind": "overclocker",
+            "subSlots": []
+          },
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ],
+      "label": {
+        "de_DE": "Reaktor (übertaktet)",
+        "en_US": "Reactor (overclocked)"
+      },
+      "xp": 750
+    },
+    {
+      "$itemPool": "cooling-heatsink"
+    },
+    {
+      "$itemPool": "defense-reflect"
+    },
+    {
+      "$itemPool": "power-catalyst"
+    },
+    {
+      "$itemPool": "special-swap"
+    },
+    {
+      "$itemPool": "cooling-extract"
+    }
+  ],
+  "vectorDrains": [
+    {
+      "kind": "thermoStress",
+      "threshold": 95,
+      "ratePerSec": 0.8
+    }
+  ],
+  "chassisTemperature": 35,
+  "eventPool": [
+    {
+      "$eventPool": "support"
+    },
+    {
+      "$eventPool": "standard"
+    },
+    {
+      "$eventPool": "navigation"
+    }
+  ],
+  "upgradePool": [
+    {
+      "$upgradePool": "expansion"
+    },
+    {
+      "$upgradePool": "coupling"
+    },
+    {
+      "$upgradePool": "cooling"
+    }
+  ]
+}

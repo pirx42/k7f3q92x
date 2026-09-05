@@ -1,0 +1,305 @@
+{
+  "id": "induktor",
+  "name": {
+    "de_DE": "Induktor",
+    "en_US": "Inductor"
+  },
+  "chassisTemperature": null,
+  "description": {
+    "de_DE": "Feld-Energie-Rumpf: das Start-Setup verteilt Energie kabellos per Siphon-Nova-Feld — der Generator zuendet den Emitter, dessen Feld versorgt alle Items in Reichweite. Zonen mit Luftspalt: Positionierung entscheidet, wen das Feld erreicht. Zonen-Boni wie der Standard-Rumpf; beide Arme geben Waffen +50 % Schaden.",
+    "en_US": "Field-energy chassis: the starting setup distributes energy wirelessly via a siphon-nova field — the generator ignites the emitter, whose field supplies every item in range. Zones with air gaps: positioning decides who the field reaches. Zone bonuses like the standard chassis; both arms give weapons +50 % damage."
+  },
+  "zones": [
+    {
+      "zone": "head",
+      "label": "HEAD",
+      "color": "#00bfff",
+      "x": -200,
+      "y": -650,
+      "w": 400,
+      "h": 300,
+      "maxHp": 2000,
+      "neighbors": [
+        "torso"
+      ],
+      "rangeMultiplier": 1.5
+    },
+    {
+      "zone": "torso",
+      "label": "TORSO",
+      "color": "#00ff88",
+      "x": -380,
+      "y": -260,
+      "w": 760,
+      "h": 520,
+      "maxHp": 2000,
+      "neighbors": [
+        "head",
+        "legs",
+        "arm_left",
+        "arm_right"
+      ],
+      "productionMultiplier": 1.5
+    },
+    {
+      "zone": "legs",
+      "label": "LEGS",
+      "color": "#ff6644",
+      "x": -200,
+      "y": 350,
+      "w": 400,
+      "h": 300,
+      "maxHp": 2000,
+      "neighbors": [
+        "torso"
+      ],
+      "speedMultiplier": 1.5
+    },
+    {
+      "zone": "arm_left",
+      "label": "ARM LEFT",
+      "color": "#ff44cc",
+      "x": -870,
+      "y": -200,
+      "w": 380,
+      "h": 400,
+      "maxHp": 2000,
+      "neighbors": [
+        "torso"
+      ],
+      "damageMultiplier": 1.5
+    },
+    {
+      "zone": "arm_right",
+      "label": "ARM RIGHT",
+      "color": "#ff44cc",
+      "x": 490,
+      "y": -200,
+      "w": 380,
+      "h": 400,
+      "maxHp": 2000,
+      "neighbors": [
+        "torso"
+      ],
+      "damageMultiplier": 1.5
+    }
+  ],
+  "startFreeItems": [
+    {
+      "module": {
+        "id": "ch-induktor-emitter",
+        "kind": "emitter",
+        "subSlots": [
+          {
+            "module": {
+              "id": "ch-induktor-emitter-nova-2",
+              "kind": "nova",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "ch-induktor-emitter-nova-3",
+                    "kind": "nova",
+                    "subSlots": [
+                      {
+                        "module": {
+                          "id": "ch-induktor-emitter-nova-3",
+                          "kind": "nova",
+                          "subSlots": [
+                            {
+                              "module": null,
+                              "spannedBy": null
+                            }
+                          ]
+                        },
+                        "spannedBy": null
+                      }
+                    ]
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-induktor-emitter-siphon-4",
+              "kind": "siphon",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "ch-induktor-emitter-inverterMod-5",
+                    "kind": "inverterMod",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-induktor-emitter-efficiency-6",
+              "kind": "efficiency",
+              "subSlots": []
+            },
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "torso",
+        "normX": 0.3926400682238696,
+        "normY": 0.2630671298106094
+      }
+    },
+    {
+      "module": {
+        "id": "ch-induktor-shield",
+        "kind": "shield",
+        "subSlots": [
+          {
+            "module": null,
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "torso",
+        "normX": 0.7926692922488393,
+        "normY": 0.33855399626366517
+      }
+    },
+    {
+      "module": {
+        "id": "ch-induktor-gen",
+        "kind": "generator",
+        "subSlots": [
+          {
+            "module": {
+              "id": "ch-induktor-gen-capacitor-2",
+              "kind": "capacitor",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "torso",
+        "normX": 0.39590822407960763,
+        "normY": 0.5061636394201597
+      }
+    },
+    {
+      "module": {
+        "id": "ch-induktor-vent",
+        "kind": "ventilator",
+        "subSlots": [
+          {
+            "module": {
+              "id": "ch-induktor-vent-expander-2",
+              "kind": "expander",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "torso",
+        "normX": 0.04943597090905538,
+        "normY": 0.2684296236768187
+      }
+    },
+    {
+      "module": {
+        "id": "ch-induktor-head-emitter",
+        "kind": "emitter",
+        "subSlots": [
+          {
+            "module": {
+              "id": "ch-induktor-head-emitter-bolt",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-induktor-head-emitter-cap",
+              "kind": "capacitor",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "head",
+        "normX": 0.2,
+        "normY": 0.6
+      }
+    }
+  ],
+  "startCableConnections": [
+    {
+      "endpointA": {
+        "moduleId": "ch-induktor-gen"
+      },
+      "endpointB": {
+        "moduleId": "ch-induktor-emitter"
+      }
+    }
+  ]
+}

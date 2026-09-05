@@ -1,0 +1,282 @@
+{
+  "name": {
+    "de_DE": "A.V.A.S. — Rückkehr",
+    "en_US": "A.V.A.S. — Return"
+  },
+  "bossDefeatGrantsWin": false,
+  "lootPool": [],
+  "events": [],
+  "body": {
+    "zones": [
+      {
+        "zone": "head",
+        "label": {
+          "de_DE": "KOPF",
+          "en_US": "HEAD"
+        },
+        "color": "#00bfff",
+        "x": -350,
+        "y": -710,
+        "w": 700,
+        "h": 420,
+        "maxHp": 300,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "torso",
+        "label": {
+          "de_DE": "RUMPF",
+          "en_US": "TORSO"
+        },
+        "color": "#00ff88",
+        "x": -350,
+        "y": -210,
+        "w": 700,
+        "h": 420,
+        "maxHp": 500,
+        "neighbors": [
+          "head",
+          "legs",
+          "arm_left",
+          "arm_right"
+        ],
+        "productionMultiplier": 1.5
+      },
+      {
+        "zone": "legs",
+        "label": {
+          "de_DE": "BEINE",
+          "en_US": "LEGS"
+        },
+        "color": "#ff6644",
+        "x": -350,
+        "y": 290,
+        "w": 700,
+        "h": 420,
+        "maxHp": 300,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "arm_left",
+        "label": {
+          "de_DE": "ARM LINKS",
+          "en_US": "ARM LEFT"
+        },
+        "color": "#ff44cc",
+        "x": -1130,
+        "y": -210,
+        "w": 700,
+        "h": 420,
+        "maxHp": 250,
+        "neighbors": [
+          "torso"
+        ],
+        "damageMultiplier": 1.5
+      },
+      {
+        "zone": "arm_right",
+        "label": {
+          "de_DE": "ARM RECHTS",
+          "en_US": "ARM RIGHT"
+        },
+        "color": "#ff44cc",
+        "x": 430,
+        "y": -210,
+        "w": 700,
+        "h": 420,
+        "maxHp": 250,
+        "neighbors": [
+          "torso"
+        ],
+        "damageMultiplier": 1.5
+      }
+    ],
+    "freeItems": [
+      {
+        "module": {
+          "id": "id-122",
+          "kind": "shield",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-121",
+                "kind": "overclocker",
+                "subSlots": [],
+                "xp": 745.2999999998699,
+                "currentHP": 100
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-140",
+                "kind": "overclocker",
+                "subSlots": [],
+                "currentHP": 100,
+                "xp": 445.70000000006706
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 1730.8999999989735,
+          "currentHP": 10
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.623,
+          "normY": 0.183
+        }
+      },
+      {
+        "module": {
+          "id": "id-125",
+          "kind": "emitter",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-173",
+                "kind": "nova",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "id-156",
+                      "kind": "inverterMod",
+                      "subSlots": [],
+                      "xp": 1686.4999999990139
+                    },
+                    "spannedBy": null
+                  }
+                ],
+                "currentHP": 100,
+                "xp": 1686.4999999990139
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-158",
+                "kind": "siphon",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 1686.4999999990139
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-138",
+                "kind": "cooler",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 1653.6499999990438
+              },
+              "spannedBy": null
+            }
+          ],
+          "currentHP": 10,
+          "xp": 1686.4999999990139
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.534,
+          "normY": 0.55
+        },
+        "firesAtPlayer": true
+      },
+      {
+        "module": {
+          "id": "id-131",
+          "kind": "capacitor",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-201",
+                "kind": "overclocker",
+                "subSlots": [],
+                "xp": 226.00000000001714,
+                "currentHP": 100
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "currentHP": 10,
+          "xp": 300.85000000003413
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.294,
+          "normY": 0.365
+        }
+      },
+      {
+        "module": {
+          "id": "id-218",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "currentHP": 10,
+          "xp": 2365.3999999998396
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.075,
+          "normY": 0.368
+        }
+      }
+    ],
+    "cableConnections": [
+      {
+        "id": "id-221",
+        "endpointA": {
+          "moduleId": "id-131"
+        },
+        "endpointB": {
+          "moduleId": "id-125"
+        }
+      },
+      {
+        "id": "id-222",
+        "endpointA": {
+          "moduleId": "id-218"
+        },
+        "endpointB": {
+          "moduleId": "id-131"
+        }
+      }
+    ]
+  },
+  "eventPool": [],
+  "upgradePool": []
+}

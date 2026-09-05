@@ -1,0 +1,533 @@
+{
+  "name": {
+    "de_DE": "Gluthort",
+    "en_US": "Ember Hoard"
+  },
+  "bossDefeatGrantsWin": true,
+  "loopTimeMs": 22000,
+  "body": {
+    "zones": [
+      {
+        "zone": "torso",
+        "label": {
+          "de_DE": "Gluthort",
+          "en_US": "Ember Hoard"
+        },
+        "color": "#00ff88",
+        "x": -360,
+        "y": -280,
+        "w": 720,
+        "h": 480,
+        "maxHp": 1500,
+        "neighbors": [
+          "arm_left",
+          "arm_right",
+          "legs"
+        ]
+      },
+      {
+        "zone": "arm_left",
+        "label": {
+          "de_DE": "Glutpod-West",
+          "en_US": "Ember Pod West"
+        },
+        "color": "#ff44cc",
+        "x": -1000,
+        "y": -180,
+        "w": 520,
+        "h": 340,
+        "maxHp": 1100,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "arm_right",
+        "label": {
+          "de_DE": "Glutpod-Ost",
+          "en_US": "Ember Pod East"
+        },
+        "color": "#ff44cc",
+        "x": 480,
+        "y": -180,
+        "w": 520,
+        "h": 340,
+        "maxHp": 1100,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "legs",
+        "label": {
+          "de_DE": "Glutsockel",
+          "en_US": "Ember Base"
+        },
+        "color": "#ff6644",
+        "x": -300,
+        "y": 320,
+        "w": 600,
+        "h": 320,
+        "maxHp": 1300,
+        "neighbors": [
+          "torso"
+        ]
+      }
+    ],
+    "freeItems": [
+      {
+        "module": {
+          "id": "v4o-glut-gen",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-glut-cap",
+                "kind": "capacitor",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "v4o-glut-cap-oc",
+                      "kind": "overclocker",
+                      "subSlots": [],
+                      "xp": 1702.4499999989994
+                    },
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 1861.1499999988573
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-glut-cooler",
+                "kind": "cooler",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "v4o-glut-cooler-bypass",
+                      "kind": "bypassMod",
+                      "subSlots": [],
+                      "xp": 603.4999999999989
+                    },
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 973.2499999996626
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 2118.2999999989324
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.1709,
+          "normY": 0.3795
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-glut-emitter",
+          "kind": "emitter",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-glut-beam",
+                "kind": "beam",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "v4o-glut-dup-dmg",
+                      "kind": "duplicator",
+                      "subSlots": [
+                        {
+                          "module": {
+                            "id": "v4o-glut-swapdmg",
+                            "kind": "swapOutputDamage",
+                            "subSlots": [
+                              {
+                                "module": {
+                                  "id": "v4o-glut-oc",
+                                  "kind": "overclocker",
+                                  "subSlots": [],
+                                  "xp": 571.3500000000281
+                                },
+                                "spannedBy": null
+                              }
+                            ],
+                            "xp": 571.3500000000281
+                          },
+                          "spannedBy": null
+                        }
+                      ],
+                      "xp": 571.3500000000281
+                    },
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 485.20000000007605
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-glut-plasma",
+                "kind": "plasma",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "v4o-glut-plasma-eff",
+                      "kind": "efficiency",
+                      "subSlots": [],
+                      "xp": 557.6000000000406
+                    },
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 571.3500000000281
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-glut-dup-eff",
+                "kind": "duplicator",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "v4o-glut-eff",
+                      "kind": "efficiency",
+                      "subSlots": [],
+                      "xp": 571.3500000000281
+                    },
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 571.3500000000281
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 730.049999999886
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.5059,
+          "normY": 0.3684
+        },
+        "firesAtPlayer": true
+      },
+      {
+        "module": {
+          "id": "v4o-glut-gen-b",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-glut-cap-b",
+                "kind": "capacitor",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "v4o-glut-cap-b-oc",
+                      "kind": "overclocker",
+                      "subSlots": [],
+                      "xp": 1672.9999999990262
+                    },
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 1672.9999999990262
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-glut-cooler-b",
+                "kind": "cooler",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "v4o-glut-cooler-b-bypass",
+                      "kind": "bypassMod",
+                      "subSlots": [],
+                      "xp": 950.5499999996832
+                    },
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 625.1499999999792
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 1672.9999999990262
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.1738,
+          "normY": 0.631
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-glut-fan",
+          "kind": "ventilator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-glut-fan-port",
+                "kind": "cablePort",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 1612.4999999990812
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-glut-fan-oc",
+                "kind": "overclocker",
+                "subSlots": [],
+                "xp": 1684.6499999990156
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 1737.6999999989673
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.3393,
+          "normY": 0.3753
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-glut-gen-c",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-glut-cap-c",
+                "kind": "capacitor",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "v4o-glut-cap-c-oc",
+                      "kind": "overclocker",
+                      "subSlots": [],
+                      "xp": 64.59999999999847
+                    },
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 83.29999999999741
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-glut-cooler-c",
+                "kind": "cooler",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "v4o-glut-cooler-c-bypass",
+                      "kind": "bypassMod",
+                      "subSlots": [],
+                      "xp": 51.6999999999992
+                    },
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 84.94999999999732
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 104.94999999999618
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.1667,
+          "normY": 0.1167
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-glut-sl",
+          "kind": "sensor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ]
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_left",
+          "normX": 0.5,
+          "normY": 0.5
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-glut-sr",
+          "kind": "sensor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ]
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_right",
+          "normX": 0.5,
+          "normY": 0.5
+        }
+      }
+    ],
+    "cableConnections": [
+      {
+        "id": "v4o-glut-cable-fan-gen",
+        "endpointA": {
+          "moduleId": "v4o-glut-fan"
+        },
+        "endpointB": {
+          "moduleId": "v4o-glut-gen"
+        }
+      },
+      {
+        "id": "v4o-glut-cable-emi-fan",
+        "endpointA": {
+          "moduleId": "v4o-glut-emitter"
+        },
+        "endpointB": {
+          "moduleId": "v4o-glut-fan"
+        }
+      },
+      {
+        "id": "v4o-glut-cable-fan-genb",
+        "endpointA": {
+          "moduleId": "v4o-glut-fan"
+        },
+        "endpointB": {
+          "moduleId": "v4o-glut-gen-b"
+        }
+      },
+      {
+        "id": "v4o-glut-cable-fan-genc",
+        "endpointA": {
+          "moduleId": "v4o-glut-gen-c"
+        },
+        "endpointB": {
+          "moduleId": "v4o-glut-fan"
+        }
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "v4o-glut-thermo",
+      "type": "thermoInjection",
+      "atMs": 7000,
+      "location": {
+        "kind": "relative",
+        "zone": "torso",
+        "normX": 0.5,
+        "normY": 0.5
+      },
+      "targetMode": "mostItems",
+      "radius": 120,
+      "temperatureDelta": 40,
+      "durationMs": 4000,
+      "warningMs": 2000,
+      "warnOnce": true,
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Glut sucht sich den dichtesten Punkt.",
+          "en_US": "Embers find the densest spot."
+        },
+        "durationMs": 2000
+      }
+    }
+  ],
+  "lootPool": [
+    {
+      "$itemPool": "weapon-plasma"
+    },
+    {
+      "$itemPool": "cooling"
+    },
+    {
+      "$itemPool": "cooling-paste"
+    },
+    {
+      "$itemPool": "cooling-heatsink"
+    },
+    {
+      "$itemPool": "cooling-spanner"
+    }
+  ],
+  "eventPoolSize": 3,
+  "eventPool": [
+    {
+      "$eventPool": "standard"
+    },
+    {
+      "$eventPool": "heat"
+    }
+  ],
+  "upgradePool": [
+    {
+      "$upgradePool": "cooling"
+    }
+  ],
+  "vectorDrains": [
+    {
+      "kind": "thermoStress",
+      "threshold": 85,
+      "ratePerSec": 1
+    }
+  ]
+}

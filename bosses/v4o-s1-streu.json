@@ -1,0 +1,384 @@
+{
+  "name": {
+    "de_DE": "Streufeld",
+    "en_US": "Scatter Field"
+  },
+  "bossDefeatGrantsWin": true,
+  "loopTimeMs": 24000,
+  "body": {
+    "zones": [
+      {
+        "zone": "head",
+        "label": {
+          "de_DE": "Streukopf",
+          "en_US": "Scatter Head"
+        },
+        "color": "#00bfff",
+        "x": -700,
+        "y": -580,
+        "w": 520,
+        "h": 320,
+        "maxHp": 800,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "torso",
+        "label": {
+          "de_DE": "Heizquelle",
+          "en_US": "Heat Source"
+        },
+        "color": "#00ff88",
+        "x": -300,
+        "y": -220,
+        "w": 620,
+        "h": 360,
+        "maxHp": 1000,
+        "neighbors": [
+          "head",
+          "legs",
+          "arm_left",
+          "arm_right"
+        ]
+      },
+      {
+        "zone": "legs",
+        "label": {
+          "de_DE": "Pressquelle",
+          "en_US": "Press Source"
+        },
+        "color": "#ff6644",
+        "x": 60,
+        "y": 260,
+        "w": 520,
+        "h": 320,
+        "maxHp": 900,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "arm_left",
+        "label": {
+          "de_DE": "Streu-West",
+          "en_US": "Scatter West"
+        },
+        "color": "#ff44cc",
+        "x": -1060,
+        "y": -120,
+        "w": 420,
+        "h": 340,
+        "maxHp": 800,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "arm_right",
+        "label": {
+          "de_DE": "Streu-Ost",
+          "en_US": "Scatter East"
+        },
+        "color": "#ff44cc",
+        "x": 520,
+        "y": -460,
+        "w": 440,
+        "h": 340,
+        "maxHp": 800,
+        "neighbors": [
+          "torso"
+        ]
+      }
+    ],
+    "freeItems": [
+      {
+        "module": {
+          "id": "v4o-streu-emitter",
+          "kind": "emitter",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-streu-bolt",
+                "kind": "bolt",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 456.65000000006955
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-streu-plasma",
+                "kind": "plasma",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 4.799999999999991
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 456.65000000006955
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.5032,
+          "normY": 0
+        },
+        "firesAtPlayer": true
+      },
+      {
+        "module": {
+          "id": "v4o-streu-gen",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 670.399999999938
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0,
+          "normY": 0
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-streu-cap",
+          "kind": "capacitor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-streu-cap-oc",
+                "kind": "overclocker",
+                "subSlots": [],
+                "xp": 293.6500000000325
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 302.4000000000345
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0,
+          "normY": 0.3333
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-streu-src-comp",
+          "kind": "sensor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ]
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "legs",
+          "normX": 0.5,
+          "normY": 0.5
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-streu-h-d0",
+          "kind": "sensor",
+          "subSlots": []
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "head",
+          "normX": 0.3,
+          "normY": 0.3
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-streu-h-d1",
+          "kind": "sensor",
+          "subSlots": []
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "head",
+          "normX": 0.7,
+          "normY": 0.48
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-streu-t-d0",
+          "kind": "sensor",
+          "subSlots": []
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.3,
+          "normY": 0.3
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-streu-t-d1",
+          "kind": "sensor",
+          "subSlots": []
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.7,
+          "normY": 0.48
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-streu-al-d0",
+          "kind": "sensor",
+          "subSlots": []
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_left",
+          "normX": 0.3,
+          "normY": 0.3
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-streu-al-d1",
+          "kind": "sensor",
+          "subSlots": []
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_left",
+          "normX": 0.7,
+          "normY": 0.48
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-streu-ar-d0",
+          "kind": "sensor",
+          "subSlots": []
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_right",
+          "normX": 0.3,
+          "normY": 0.3
+        }
+      }
+    ],
+    "cableConnections": [
+      {
+        "id": "v4o-streu-cable-gen-cap",
+        "endpointA": {
+          "moduleId": "v4o-streu-gen"
+        },
+        "endpointB": {
+          "moduleId": "v4o-streu-cap"
+        }
+      },
+      {
+        "id": "v4o-streu-cable-cap-emi",
+        "endpointA": {
+          "moduleId": "v4o-streu-cap"
+        },
+        "endpointB": {
+          "moduleId": "v4o-streu-emitter"
+        }
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "v4o-streu-lock",
+      "type": "systemLock",
+      "atMs": 20000,
+      "warningMs": 2000,
+      "durationMs": 6000,
+      "lockedKinds": [
+        "sensor"
+      ],
+      "zones": [
+        "head"
+      ],
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Störimpuls erkannt — Sensorik-Sperre in 2 s.",
+          "en_US": "Jamming pulse detected — sensor lockdown in 2s."
+        },
+        "durationMs": 2000
+      },
+      "loopEveryMs": 50000
+    }
+  ],
+  "lootPool": [
+    {
+      "$itemPool": "weapon-targetselector"
+    },
+    {
+      "$itemPool": "mobility-drive"
+    },
+    {
+      "$itemPool": "power-sensor"
+    },
+    {
+      "$itemPool": "meta-learning"
+    }
+  ],
+  "eventPoolSize": 3,
+  "eventPool": [
+    {
+      "$eventPool": "standard"
+    },
+    {
+      "$eventPool": "buff-tempo"
+    }
+  ],
+  "upgradePool": [
+    {
+      "$upgradePool": "zone-tuning"
+    }
+  ],
+  "vectorDrains": [
+    {
+      "kind": "powerStarvation",
+      "threshold": 0.4,
+      "ratePerSec": 0.8
+    }
+  ]
+}

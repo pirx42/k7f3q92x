@@ -1,0 +1,408 @@
+{
+  "_doc": "Run-unabhaengige Bibliothek wiederverwendbarer Item-Combos. Aus Run-JSONs via {\"$lib\":\"<id>\"} referenziert (alter Alias {\"$preset\":\"<id>\"} auch noch akzeptiert). Sub-Modul-Baeume ohne IDs — beim Laden bekommt jeder Knoten eine frische ID. Aufbau pro combo: { kind, [label], [subSlots: [{module: ...}, ...]] }.",
+  "combos": {
+    "quadShoot": {
+      "kind": "multiplexer",
+      "label": {
+        "de_DE": "QuadShoot",
+        "en_US": "QuadShoot"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "kind": "duplicator",
+            "subSlots": [
+              {
+                "module": {
+                  "kind": "multiShoot"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "module": {
+            "kind": "efficiency"
+          }
+        }
+      ]
+    },
+    "megaBeam": {
+      "kind": "multiplexer",
+      "label": {
+        "de_DE": "MegaBeam",
+        "en_US": "MegaBeam"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "kind": "duplicator",
+            "subSlots": [
+              {
+                "module": {
+                  "kind": "beam"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "module": {
+            "kind": "overclocker"
+          }
+        }
+      ]
+    },
+    "weaponBoost": {
+      "kind": "multiplexer",
+      "label": {
+        "de_DE": "Waffen-Boost",
+        "en_US": "Weapon Boost"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "kind": "overclocker"
+          }
+        },
+        {
+          "module": {
+            "kind": "multiShoot"
+          }
+        }
+      ]
+    },
+    "efficientPower": {
+      "kind": "multiplexer",
+      "label": {
+        "de_DE": "Effizient-Power",
+        "en_US": "Efficient Power"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "kind": "overclocker"
+          }
+        },
+        {
+          "module": {
+            "kind": "efficiency"
+          }
+        }
+      ]
+    },
+    "overdriveCore": {
+      "kind": "duplicator",
+      "label": {
+        "de_DE": "Overdrive-Core",
+        "en_US": "Overdrive Core"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "kind": "overclocker"
+          }
+        }
+      ]
+    },
+    "veteranCore": {
+      "kind": "multiplexer",
+      "label": {
+        "de_DE": "Veteran-Core",
+        "en_US": "Veteran Core"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "kind": "tutor"
+          }
+        },
+        {
+          "module": {
+            "kind": "fortify"
+          }
+        }
+      ]
+    },
+    "twinTutor": {
+      "kind": "duplicator",
+      "label": {
+        "de_DE": "Twin-Tutor",
+        "en_US": "Twin Tutor"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "kind": "tutor"
+          }
+        }
+      ]
+    },
+    "phantomBuild": {
+      "kind": "multiplexer",
+      "label": {
+        "de_DE": "Phantom",
+        "en_US": "Phantom"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "kind": "stealthMod"
+          }
+        },
+        {
+          "module": null
+        }
+      ]
+    },
+    "thermalArmor": {
+      "kind": "multiplexer",
+      "label": {
+        "de_DE": "Thermo-Panzer",
+        "en_US": "Thermo Armor"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "kind": "thermoResistance"
+          }
+        },
+        {
+          "module": {
+            "kind": "thermoResistance"
+          }
+        }
+      ]
+    },
+    "bufferedGenerator": {
+      "kind": "generator",
+      "label": {
+        "de_DE": "Puffer-Generator",
+        "en_US": "Buffer Generator"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "kind": "capacitor"
+          }
+        },
+        {
+          "module": null
+        }
+      ]
+    },
+    "coolEfficientLaser": {
+      "kind": "emitter",
+      "label": {
+        "de_DE": "Praezisions-Laser",
+        "en_US": "Precision Laser"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "id": "bolt-undefined",
+            "kind": "bolt",
+            "xp": 0,
+            "subSlots": [
+              {
+                "module": null,
+                "spannedBy": null
+              }
+            ]
+          },
+          "spannedBy": null
+        },
+        {
+          "module": {
+            "kind": "cooler"
+          },
+          "spannedBy": null
+        },
+        {
+          "module": {
+            "kind": "efficiency"
+          },
+          "spannedBy": null
+        }
+      ]
+    },
+    "overclockBolt": {
+      "kind": "emitter",
+      "label": {
+        "de_DE": "Overclock-Bolt",
+        "en_US": "Overclock Bolt"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "kind": "bolt",
+            "subSlots": [
+              {
+                "module": {
+                  "kind": "swapOutputDamage",
+                  "subSlots": [
+                    {
+                      "module": {
+                        "kind": "duplicator",
+                        "subSlots": [
+                          {
+                            "module": {
+                              "kind": "multiplexer",
+                              "subSlots": [
+                                {
+                                  "module": {
+                                    "kind": "efficiency"
+                                  }
+                                },
+                                {
+                                  "module": {
+                                    "kind": "efficiency"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "module": {
+            "kind": "overclocker"
+          }
+        },
+        {
+          "module": {
+            "kind": "overclocker"
+          }
+        }
+      ]
+    },
+    "healthStealer": {
+      "kind": "repairPaste",
+      "label": {
+        "de_DE": "Lebensräuber",
+        "en_US": "Health Stealer"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "kind": "multiplexer",
+            "subSlots": [
+              {
+                "module": {
+                  "kind": "seal",
+                  "subSlots": [
+                    {
+                      "module": {
+                        "kind": "swapOutputHealth",
+                        "subSlots": [
+                          {
+                            "module": {
+                              "kind": "overclocker"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "module": {
+                  "kind": "inverterMod"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "burstBolt": {
+      "kind": "emitter",
+      "label": {
+        "de_DE": "Burst-Bolt",
+        "en_US": "Burst Bolt"
+      },
+      "subSlots": [
+        {
+          "module": {
+            "kind": "bolt",
+            "subSlots": [
+              {
+                "module": {
+                  "kind": "swapOutputDamage",
+                  "subSlots": [
+                    {
+                      "module": {
+                        "kind": "overclocker"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "module": {
+            "kind": "swapOutputCapacity",
+            "subSlots": [
+              {
+                "module": {
+                  "kind": "multiplexer",
+                  "subSlots": [
+                    {
+                      "module": {
+                        "kind": "multiplexer",
+                        "subSlots": [
+                          {
+                            "module": {
+                              "kind": "efficiency"
+                            }
+                          },
+                          {
+                            "module": {
+                              "kind": "efficiency"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "module": {
+                        "kind": "multiplexer",
+                        "subSlots": [
+                          {
+                            "module": {
+                              "kind": "efficiency"
+                            }
+                          },
+                          {
+                            "module": {
+                              "kind": "efficiency"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "module": {
+            "kind": "multiShoot"
+          }
+        }
+      ]
+    }
+  }
+}

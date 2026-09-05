@@ -1,0 +1,330 @@
+{
+  "name": {
+    "de_DE": "Schwarm II",
+    "en_US": "Swarm II"
+  },
+  "bossDefeatGrantsWin": true,
+  "loopTimeMs": 18720,
+  "body": {
+    "zones": [
+      {
+        "zone": "torso",
+        "label": {
+          "de_DE": "Schwarmkern",
+          "en_US": "Swarm Core"
+        },
+        "color": "#00ff88",
+        "x": -200,
+        "y": -160,
+        "w": 400,
+        "h": 320,
+        "maxHp": 1680,
+        "neighbors": [
+          "head",
+          "legs",
+          "arm_left",
+          "arm_right"
+        ]
+      },
+      {
+        "zone": "head",
+        "label": {
+          "de_DE": "Späher",
+          "en_US": "Scout"
+        },
+        "color": "#00bfff",
+        "x": -720,
+        "y": -580,
+        "w": 360,
+        "h": 300,
+        "maxHp": 1680,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "legs",
+        "label": {
+          "de_DE": "Drohne-Süd",
+          "en_US": "Drone South"
+        },
+        "color": "#ff6644",
+        "x": 300,
+        "y": 320,
+        "w": 380,
+        "h": 300,
+        "maxHp": 1680,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "arm_left",
+        "label": {
+          "de_DE": "Drohne-West",
+          "en_US": "Drone West"
+        },
+        "color": "#ff44cc",
+        "x": -1040,
+        "y": 80,
+        "w": 360,
+        "h": 300,
+        "maxHp": 1680,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "arm_right",
+        "label": {
+          "de_DE": "Drohne-Ost",
+          "en_US": "Drone East"
+        },
+        "color": "#ff44cc",
+        "x": 440,
+        "y": -520,
+        "w": 360,
+        "h": 300,
+        "maxHp": 1680,
+        "neighbors": [
+          "torso"
+        ]
+      }
+    ],
+    "freeItems": [
+      {
+        "module": {
+          "id": "v4o-schwarm-emitter-t2",
+          "kind": "emitter",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-schwarm-bolt-t2",
+                "kind": "bolt",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 189.65000000000887
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-schwarm-multishoot-t2",
+                "kind": "multiShoot",
+                "subSlots": [],
+                "xp": 180.90000000000688
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-schwarm-eff-t2",
+                "kind": "efficiency",
+                "subSlots": [],
+                "xp": 34.0500000000002
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 189.65000000000887
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0,
+          "normY": 0
+        },
+        "firesAtPlayer": true
+      },
+      {
+        "module": {
+          "id": "v4o-schwarm-gen-t2",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 374.5000000000509
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.6,
+          "normY": 0
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-schwarm-cap-t2",
+          "kind": "capacitor",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-schwarm-cap-oc-t2",
+                "kind": "overclocker",
+                "subSlots": [],
+                "xp": 34.30000000000019
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 43.04999999999969
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0,
+          "normY": 0.375
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-schwarm-sensor-t2",
+          "kind": "sensor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ]
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "head",
+          "normX": 0.5,
+          "normY": 0.5
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-schwarm-al-t2",
+          "kind": "sensor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ]
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_left",
+          "normX": 0.5,
+          "normY": 0.5
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-schwarm-ar-t2",
+          "kind": "sensor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ]
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_right",
+          "normX": 0.5,
+          "normY": 0.5
+        }
+      }
+    ],
+    "cableConnections": [
+      {
+        "id": "v4o-schwarm-cable-gen-cap-t2",
+        "endpointA": {
+          "moduleId": "v4o-schwarm-gen-t2"
+        },
+        "endpointB": {
+          "moduleId": "v4o-schwarm-cap-t2"
+        }
+      },
+      {
+        "id": "v4o-schwarm-cable-cap-emi-t2",
+        "endpointA": {
+          "moduleId": "v4o-schwarm-cap-t2"
+        },
+        "endpointB": {
+          "moduleId": "v4o-schwarm-emitter-t2"
+        }
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "v4o-schwarm-infect-t2",
+      "type": "infect",
+      "atMs": 14000,
+      "warningMs": 2000,
+      "seedZone": "legs",
+      "spreadRatePerSec": 0.3,
+      "damagePerSec": 7,
+      "infectionDurationS": 7,
+      "immunityDurationS": 10,
+      "chance": 0.1,
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Virus im Schwarm.",
+          "en_US": "Virus in the swarm."
+        },
+        "durationMs": 2000
+      }
+    }
+  ],
+  "lootPool": [
+    {
+      "$itemPool": "weapon-multishoot"
+    },
+    {
+      "$itemPool": "sense-array"
+    },
+    {
+      "$itemPool": "power-sensor"
+    },
+    {
+      "$itemPool": "power-harvest"
+    },
+    {
+      "$itemPool": "combo-weapon"
+    }
+  ],
+  "eventPoolSize": 3,
+  "eventPool": [
+    {
+      "$eventPool": "buff-tempo"
+    }
+  ],
+  "upgradePool": [
+    {
+      "$upgradePool": "expansion"
+    },
+    {
+      "$upgradePool": "zone-tuning"
+    }
+  ],
+  "vectorDrains": [
+    {
+      "kind": "weaponSilence",
+      "threshold": 40000,
+      "ratePerSec": 1
+    }
+  ]
+}

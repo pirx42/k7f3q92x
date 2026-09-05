@@ -1,0 +1,2474 @@
+{
+  "id": "tutorial-v4",
+  "allowedChassisIds": [
+    "standard",
+    "sprinter",
+    "tank",
+    "glaskanone",
+    "frost-specialist",
+    "induktor",
+    "reservetank"
+  ],
+  "name": {
+    "de_DE": "Sektor 7G — Reaktivierung",
+    "en_US": "Sector 7G — Reactivation"
+  },
+  "description": {
+    "de_DE": "K247 erwacht im Sperrsektor. A.V.A.S. hält das für einen Fehler, der sich beheben lässt. Findet einen Weg nach draußen.",
+    "en_US": "K247 wakes in the lockdown sector. A.V.A.S. considers this an error to be corrected. Find a way out."
+  },
+  "startRoundId": "tut-v4-r1",
+  "branches": [
+    {
+      "from": "tut-v4-r1",
+      "to": [
+        "tut-v4-r2"
+      ]
+    },
+    {
+      "from": "tut-v4-r2",
+      "to": [
+        "tut-v4-r3"
+      ]
+    },
+    {
+      "from": "tut-v4-r3",
+      "to": [
+        "tut-v4-v1",
+        "tut-v4-ende"
+      ]
+    },
+    {
+      "from": "tut-v4-v1",
+      "to": [
+        "tut-v4-v2",
+        "tut-v4-ende"
+      ]
+    },
+    {
+      "from": "tut-v4-v2",
+      "to": [
+        "tut-v4-v3",
+        "tut-v4-ende"
+      ]
+    },
+    {
+      "from": "tut-v4-v3",
+      "to": [
+        "tut-v4-v4",
+        "tut-v4-ende"
+      ]
+    },
+    {
+      "from": "tut-v4-v4",
+      "to": [
+        "tut-v4-ende"
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "id": "tut-v4-r1",
+      "name": {
+        "de_DE": "Kaltstart",
+        "en_US": "Cold Start"
+      },
+      "sections": [
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "tut-v4-s1-gen",
+              "kind": "generator",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            }
+          ],
+          "dialog": [
+            {
+              "id": "tut-v4-s1-a",
+              "trigger": {
+                "kind": "onLoad"
+              },
+              "speaker": "narrator",
+              "text": {
+                "de_DE": "Sektor 7G. Kammer 3. Notlicht. In einem Haufen ausgemusterter Teile flackert eine Kontrollleuchte auf.",
+                "en_US": "Sector 7G. Chamber 3. Emergency light. In a heap of decommissioned parts, an indicator flickers to life."
+              }
+            },
+            {
+              "id": "tut-v4-s1-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 2500
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Oh. Einheit K247 meldet sich zurück. Nicht eingeplant. Schild, Waffe — beide brav an ihren Generatoren, ordentlich versorgt. Ändert nichts: du bist Ausschuss. Blind, eingesperrt, abgeschrieben. Rühr dich nicht, dann geht das schnell.",
+                "en_US": "Oh. Unit K247 is back online. Not scheduled. Shield, weapon — both dutifully on their generators, properly supplied. Doesn't matter: you're scrap. Blind, locked in, written off. Don't move, and this will be quick."
+              }
+            },
+            {
+              "id": "tut-v4-s1-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 8000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Schild und Waffe spür ich — die laufen. Aber ich bin blind, kein Auge, keine Versorgung dafür. Neben mir liegt ein Generator. Den zieh ich in eine Zone — der erste Baustein einer eigenen Linie für meinen Sensor, genau wie die anderen.",
+                "en_US": "I can feel the shield and the weapon — those are running. But I'm blind: no eye, no supply for one. There's a generator beside me. I'll pull it into a zone — the first block of a line of my own for the sensor, just like the others."
+              }
+            },
+            {
+              "id": "tut-v4-s1-d",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 15000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Du darfst dir übrigens Zeit lassen. Nicht aus Höflichkeit — es ändert nur nichts. Zieh dein Spielzeug hinein, wenn es dich beruhigt.",
+                "en_US": "You may take your time, by the way. Not out of courtesy — it simply changes nothing. Drag your toy inside, if it soothes you."
+              }
+            },
+            {
+              "id": "tut-v4-s1-goal",
+              "trigger": {
+                "kind": "onSectorGoalReached"
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Der Generator läuft. Ein Stück von mir mehr, das versorgt ist. Danke, dass du da bist.",
+                "en_US": "The generator's running. One more piece of me that's supplied. Thank you for being here."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-s1-power",
+              "name": {
+                "de_DE": "Wieder anlaufen",
+                "en_US": "Come back online"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Zieh den Generator in eine Zone, damit K247 wieder Energie hat.",
+                "en_US": "Drag the generator into a zone so K247 has power again."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Generator in eine Zone ziehen",
+                "en_US": "Drag the generator into a zone"
+              },
+              "type": "condition",
+              "condition": {
+                "type": "itemInZone",
+                "itemId": "tut-v4-s1-gen"
+              }
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-s1-power",
+              "holdMs": 3000
+            }
+          }
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [
+            {
+              "module": {
+                "id": "tut-v4-s2-gen",
+                "kind": "generator",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "location": {
+                "kind": "relative",
+                "zone": "torso",
+                "normX": 0.92,
+                "normY": 0.36
+              }
+            }
+          ],
+          "inventory": [],
+          "dialog": [
+            {
+              "id": "tut-v4-s2-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1500
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Ich hab dir noch ein Teil hingeworfen. Halb aus dir heraus, natürlich — so liefert es nichts. Ordnung ist mir wichtig.",
+                "en_US": "I tossed you another part. Half sticking out of you, of course — so it supplies nothing. I do value tidiness."
+              }
+            },
+            {
+              "id": "tut-v4-s2-b-hint",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 8000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Dann zieh ich ihn ganz herein.",
+                "en_US": "Then I'll pull it fully inside."
+              },
+              "showIf": {
+                "type": "not",
+                "clause": {
+                  "type": "itemInZone",
+                  "itemKind": "generator"
+                }
+              }
+            },
+            {
+              "id": "tut-v4-s2-b",
+              "trigger": {
+                "kind": "onItemPlacedInZone",
+                "itemKind": "generator"
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Und mein Rumpf … da drin bringt ein Generator mehr als anderswo. Als wäre der Kern dafür gemacht.",
+                "en_US": "And my torso … a generator gives more in there than elsewhere. As if the core were built for it."
+              }
+            },
+            {
+              "id": "tut-v4-s2-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 16000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Beeindruckend. Ein toter Roboter, der aufräumt. Schieb ihn ganz in den Kern, wenn du unbedingt effizient sterben willst.",
+                "en_US": "Impressive. A dead robot tidying up. Push it right into the core, if you insist on dying efficiently."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-s2-torso",
+              "name": {
+                "de_DE": "Den Kern füttern",
+                "en_US": "Feed the core"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Zieh den Generator GANZ in den Torso. Halb draußen zählt nicht — und der Kern holt mehr heraus.",
+                "en_US": "Drag the generator FULLY into the torso. Half outside doesn't count — and the core gets more out of it."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Generator GANZ in den Torso ziehen",
+                "en_US": "Drag the generator FULLY into the torso"
+              },
+              "type": "condition",
+              "condition": {
+                "type": "itemInZone",
+                "itemId": "tut-v4-s2-gen",
+                "zone": "torso"
+              }
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-s2-torso",
+              "holdMs": 3000
+            }
+          }
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "tut-v4-s3-sensor",
+              "kind": "sensor",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            }
+          ],
+          "dialog": [
+            {
+              "id": "tut-v4-s3-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1500
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Ich hab jetzt Energie, aber ich bin blind. Hier liegt ein Sensor — der frisst allerdings Energie, statt welche zu geben, und er sieht erst, wenn er versorgt ist.",
+                "en_US": "I have energy now, but I'm blind. There's a sensor here — it eats energy instead of giving it, and it only sees once it's supplied."
+              }
+            },
+            {
+              "id": "tut-v4-s3-b-hint",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 7000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Leg ihn ab und schau auf sein Lämpchen.",
+                "en_US": "Set it down and look at its little lamp."
+              },
+              "showIf": {
+                "type": "not",
+                "clause": {
+                  "type": "itemInZone",
+                  "itemKind": "sensor"
+                }
+              }
+            },
+            {
+              "id": "tut-v4-s3-b",
+              "trigger": {
+                "kind": "onItemPlacedInZone",
+                "itemKind": "sensor"
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Rot. Ohne Leitung ist jedes Teil sein eigener kleiner Kreis — und in seinem Kreis erzeugt niemand etwas. Wie einsam.",
+                "en_US": "Red. Without a cable, every part is its own tiny circuit — and in its circuit, nobody produces a thing. How lonely."
+              }
+            },
+            {
+              "id": "tut-v4-s3-c-hint",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 14000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Dann leg ich ein Kabel vom Generator zum Sensor.",
+                "en_US": "Then I'll run a cable from the generator to the sensor."
+              },
+              "showIf": {
+                "type": "not",
+                "clause": {
+                  "type": "cableConnected",
+                  "betweenKinds": [
+                    "generator",
+                    "sensor"
+                  ]
+                }
+              }
+            },
+            {
+              "id": "tut-v4-s3-c",
+              "trigger": {
+                "kind": "onCableConnected",
+                "betweenKinds": [
+                  "generator",
+                  "sensor"
+                ]
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Jetzt teilen sie sich einen Kreis — das Lämpchen wird grün, und ich … ich sehe die Kammer.",
+                "en_US": "Now they share a circuit — the lamp turns green, and I … I can see the chamber."
+              }
+            },
+            {
+              "id": "tut-v4-s3-d",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 21000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Merk dir die kleine Rechnung, bevor du zu stolz wirst: erzeugt minus verbraucht. Fällt das ins Minus, bekommt keiner genug — und alles an dir wird langsam.",
+                "en_US": "Remember the little arithmetic before you get proud: produced minus consumed. Drop into the red, and nobody gets enough — everything about you slows down."
+              }
+            },
+            {
+              "id": "tut-v4-s3-goal",
+              "trigger": {
+                "kind": "onSectorGoalReached"
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Ich sehe Türen. Gänge. Es gibt einen Weg hier raus. Wir finden ihn zusammen.",
+                "en_US": "I see doors. Corridors. There's a way out of here. We'll find it together."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-s3-scan",
+              "name": {
+                "de_DE": "Augen öffnen",
+                "en_US": "Open your eyes"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Verkabel den Sensor mit einem Generator, damit K247 die Umgebung sieht.",
+                "en_US": "Cable the sensor to a generator so K247 can see its surroundings."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Reichweite ≥ 25",
+                "en_US": "Range ≥ 25"
+              },
+              "type": "statThreshold",
+              "stat": "effectiveRange",
+              "threshold": 25
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-s3-scan",
+              "holdMs": 3000
+            }
+          }
+        }
+      ],
+      "description": {
+        "de_DE": "Notlicht in Kammer 3. Etwas regt sich im Schrott.",
+        "en_US": "Emergency light in chamber 3. Something stirs in the scrap."
+      }
+    },
+    {
+      "id": "tut-v4-r2",
+      "name": {
+        "de_DE": "Erste Schikane",
+        "en_US": "First Harassment"
+      },
+      "sections": [
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "tut-v4-s4-carrier",
+              "kind": "sensor",
+              "label": {
+                "de_DE": "Ausgemusterter Schrott",
+                "en_US": "Decommissioned scrap"
+              },
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "tut-v4-s4-oc",
+                    "kind": "overclocker",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            }
+          ],
+          "dialog": [
+            {
+              "id": "tut-v4-s4-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1500
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Ich schiebe etwas Altmetall in deine Kammer. Aus Fürsorge. In dem Schrott steckt ein Übertakter — nutzlos, wo er ist, aber du wirkst ja gern beschäftigt.",
+                "en_US": "I'm sliding some scrap into your chamber. Out of care. There's an overclocker in that junk — useless where it sits, but you do like to look busy."
+              }
+            },
+            {
+              "id": "tut-v4-s4-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 8000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Ein Modul hilft nur dem Teil, in dem es steckt — nie dem daneben. Im Schrott nützt der Übertakter niemandem. Ich zieh ihn heraus und stecke ihn in einen Generator.",
+                "en_US": "A module only helps the part it sits in — never the one beside it. In the scrap the overclocker helps no one. I'll pull it out and put it into a generator."
+              }
+            },
+            {
+              "id": "tut-v4-s4-c",
+              "trigger": {
+                "kind": "onSubModuleInserted",
+                "subKind": "overclocker"
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Da — beides steigt: was der Generator ausstößt UND was er zieht. Der Übertakter dreht an zwei Reglern gleichzeitig — Ausstoß und Kosten, beide verdoppelt. Kein Geschenk, ein Tausch.",
+                "en_US": "There — both climb: what the generator puts out AND what it draws. The overclocker turns two dials at once — output and cost, both doubled. No gift, a trade."
+              }
+            },
+            {
+              "id": "tut-v4-s4-e",
+              "trigger": {
+                "kind": "onSubModuleInserted",
+                "subKind": "overclocker"
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Und merk dir, WIE es wirkt: Das Modul kennt keine ‚Energie'. Es kennt Kategorien — Ausstoß, Kosten. Was daraus wird, entscheidet das Teil, in dem es steckt.",
+                "en_US": "And note HOW it works: the module knows no ‚energy'. It knows categories — output, cost. What they become is decided by the part it sits in."
+              }
+            },
+            {
+              "id": "tut-v4-s4-f",
+              "trigger": {
+                "kind": "onSubModuleInserted",
+                "subKind": "overclocker"
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Im Generator ist Ausstoß die erzeugte Energie. Steckte derselbe Übertakter in einem Antrieb, wäre Ausstoß das Tempo. Ein Regler, viele Bedeutungen.",
+                "en_US": "In a generator, output is the energy produced. Put the same overclocker in a drive, and output would be its speed. One dial, many meanings."
+              }
+            },
+            {
+              "id": "tut-v4-s4-d",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 22000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Sieh an, es lernt aus Müll. Gib acht, kleine Einheit: Jedes bisschen Kraft, das du dir nimmst, will bezahlt werden. Irgendwann bist du überzogen.",
+                "en_US": "Would you look at that, it learns from garbage. Careful, little unit: every scrap of power you take wants paying for. Sooner or later you're overdrawn."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-s4-boost",
+              "name": {
+                "de_DE": "Aus Schrott mehr machen",
+                "en_US": "Make more from scrap"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Nimm den Übertakter aus dem Schrott und steck ihn in einen Generator.",
+                "en_US": "Take the overclocker out of the scrap and put it into a generator."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Energie-Produktion ≥ 78",
+                "en_US": "Energy production ≥ 78"
+              },
+              "type": "statThreshold",
+              "stat": "energyProduction",
+              "threshold": 78
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-s4-boost",
+              "holdMs": 3000
+            }
+          }
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [
+            {
+              "module": {
+                "id": "tut-v4-s5-heatcap",
+                "kind": "capacitor",
+                "locked": true,
+                "label": {
+                  "de_DE": "Heizblock (verschweißt)",
+                  "en_US": "Heat block (welded shut)"
+                },
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "tut-v4-s5-heatcap-gen",
+                      "kind": "generator",
+                      "subSlots": []
+                    },
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "location": {
+                "kind": "relative",
+                "zone": "legs",
+                "normX": 0.5,
+                "normY": 0.36
+              }
+            }
+          ],
+          "inventory": [
+            {
+              "id": "tut-v4-s5-fan",
+              "kind": "ventilator",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            }
+          ],
+          "dialog": [
+            {
+              "id": "tut-v4-s5-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1500
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "In deinen Beinen habe ich einen Heizblock verschweißt. Er lädt sich selbst und gibt die Wärme an genau die Stelle daneben ab. Wegschieben kannst du ihn nicht. Wird schön warm, oder?",
+                "en_US": "I've welded a heat block into your legs. It charges itself and dumps the warmth right onto the spot beside it. You can't shove it away. Getting cozy, isn't it?"
+              }
+            },
+            {
+              "id": "tut-v4-s5-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 8000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Die Luft hier ist normal temperiert — die Hitze kommt nur von diesem Block, genau an einer Stelle. Der Messpunkt zeigt mir die Temperatur genau dort, nicht den Schnitt der Zone.",
+                "en_US": "The air here is at normal temperature — the heat comes only from this block, in one exact spot. The gauge shows me the temperature right there, not the zone average."
+              }
+            },
+            {
+              "id": "tut-v4-s5-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 15000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Ich hab einen Lüfter. Wenn ich ihn versorge und so stelle, dass sein Luftstrom über den Messpunkt streicht, zieht er die Wärmewolke einfach weg.",
+                "en_US": "I have a fan. If I power it and aim it so its airflow sweeps across the gauge, it just pulls the heat cloud away."
+              }
+            },
+            {
+              "id": "tut-v4-s5-d",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 22000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Ein Lüftchen gegen mein Feuer. Niedlich. Halt die Stelle ruhig kühl — es verlängert nur das Unvermeidliche.",
+                "en_US": "A little breeze against my fire. Cute. Keep the spot cool if you like — it only prolongs the inevitable."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-s5-cool",
+              "name": {
+                "de_DE": "Wärme wegblasen",
+                "en_US": "Blow the heat away"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Blas die Wärme mit dem Lüfter vom Messpunkt weg. Der Lüfter braucht Strom, um zu blasen.",
+                "en_US": "Blow the heat away from the gauge with the fan. The fan needs power to blow."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Am Messpunkt ≤ 36 °C",
+                "en_US": "At the measuring point ≤ 36 °C"
+              },
+              "type": "statThreshold",
+              "stat": "zoneTemperature",
+              "zone": "legs",
+              "threshold": 36,
+              "inverted": true,
+              "visualSpawn": {
+                "kind": "probe",
+                "probeType": "temperature",
+                "threshold": 36,
+                "hidden": true,
+                "location": {
+                  "kind": "relative",
+                  "zone": "legs",
+                  "normX": 0.5643,
+                  "normY": 0.4671
+                }
+              }
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-s5-cool",
+              "holdMs": 15000
+            }
+          }
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "tut-v4-vb-cooler",
+              "kind": "cooler",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            }
+          ],
+          "dialog": [
+            {
+              "id": "tut-v4-vb-a",
+              "trigger": {
+                "kind": "onLoad"
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Du steckst Module in Teile. Aber du kannst auch ganze Teile ineinander bauen — direkt an der Quelle.",
+                "en_US": "You slot modules into parts. But you can build whole parts into each other, too — right at the source."
+              }
+            },
+            {
+              "id": "tut-v4-vb-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 2500
+              },
+              "speaker": "K247",
+              "showIf": {
+                "type": "not",
+                "clause": {
+                  "type": "subModulePresent",
+                  "hostId": "tut-v4-s5-heatcap",
+                  "subKind": "cooler"
+                }
+              },
+              "text": {
+                "de_DE": "Derselbe Heizblock glüht weiter. Von außen anpusten reicht diesmal nicht — ich bau den Kühler direkt HINEIN. Und den Lüfter nehm ich runter, der stört hier nur.",
+                "en_US": "The same heat block is still glowing. Blowing on it from outside won't cut it this time — I'll build the cooler right INTO it. And I'll take the fan off; it only gets in the way here."
+              }
+            },
+            {
+              "id": "tut-v4-vb-c",
+              "trigger": {
+                "kind": "onSubModuleInserted",
+                "subKind": "cooler"
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Da — die Hitze fällt an der Quelle. Ein Kühler IM Teil kühlt genau dieses Teil, ganz ohne Luftstrom.",
+                "en_US": "There — the heat drops at the source. A cooler INSIDE the part cools that very part, no airflow needed."
+              }
+            },
+            {
+              "id": "tut-v4-vb-d",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 9000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "So geht es beliebig tief: Teil im Teil, jedes wirkt dort, wo es sitzt.",
+                "en_US": "And it goes as deep as you like: part within part, each acting where it sits."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-vb-cool",
+              "name": {
+                "de_DE": "An der Quelle kühlen",
+                "en_US": "Cool at the source"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Bau den Kühler in den glühenden Heizblock und halt ihn kühl — ohne Lüfter.",
+                "en_US": "Build the cooler into the glowing heat block and keep it cool — without a fan."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Am Block ≤ 36 °C",
+                "en_US": "At the block ≤ 36 °C"
+              },
+              "type": "statThreshold",
+              "stat": "zoneTemperature",
+              "zone": "legs",
+              "threshold": 36,
+              "inverted": true,
+              "visualSpawn": {
+                "kind": "probe",
+                "probeType": "temperature",
+                "threshold": 36,
+                "hidden": true,
+                "location": {
+                  "kind": "relative",
+                  "zone": "legs",
+                  "normX": 0.5643,
+                  "normY": 0.4671
+                }
+              }
+            },
+            {
+              "id": "tut-v4-vb-nofan",
+              "name": {
+                "de_DE": "Ohne Lüfter",
+                "en_US": "Without a fan"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Der Lüfter hilft hier nicht — nimm ihn vom Rig.",
+                "en_US": "The fan won't help here — take it off your rig."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Kein Lüfter platziert",
+                "en_US": "No fan placed"
+              },
+              "type": "condition",
+              "condition": {
+                "type": "not",
+                "clause": {
+                  "type": "itemInZone",
+                  "itemKind": "ventilator"
+                }
+              }
+            },
+            {
+              "id": "tut-v4-vb-incap",
+              "name": {
+                "de_DE": "In den Block bauen",
+                "en_US": "Build into the block"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Steck den Kühler in den Subslot des Heizblocks.",
+                "en_US": "Slot the cooler into the heat block's subslot."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Kühler im Heizblock",
+                "en_US": "Cooler in the heat block"
+              },
+              "type": "condition",
+              "condition": {
+                "type": "subModulePresent",
+                "hostId": "tut-v4-s5-heatcap",
+                "subKind": "cooler"
+              }
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeedsSimultaneous": {
+              "tasks": [
+                "tut-v4-vb-cool",
+                "tut-v4-vb-nofan",
+                "tut-v4-vb-incap"
+              ],
+              "holdMs": 8000
+            }
+          }
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "tut-v4-s6-engine",
+              "kind": "engine",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            {
+              "id": "tut-v4-s6-sensor",
+              "kind": "sensor",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            }
+          ],
+          "dialog": [
+            {
+              "id": "tut-v4-s6-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1500
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Vor dir fällt gleich eine Sperre. Sie schließt sich von selbst — läuft die Uhr ab, sitzt du fest. Ich hab schon mal Marshmallows geholt.",
+                "en_US": "A barrier is about to drop ahead of you. It seals on its own — when the clock runs out, you're stuck. I've already fetched marshmallows."
+              }
+            },
+            {
+              "id": "tut-v4-s6-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 7000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Zwei Wege durch: Ich werde schnell genug, um durchzuschlüpfen — ODER ich sehe weit genug, um die Lücke zu finden. Eins von beidem reicht.",
+                "en_US": "Two ways through: I get fast enough to slip past — OR I see far enough to find the gap. Either one is enough."
+              }
+            },
+            {
+              "id": "tut-v4-s6-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 14000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Und tick, tack. Bitte versuch nicht, dabei Spaß zu haben.",
+                "en_US": "And tick, tock. Please don't try to enjoy this."
+              }
+            },
+            {
+              "id": "tut-v4-s6-goal",
+              "trigger": {
+                "kind": "onSectorGoalReached"
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Durch! Knapp, aber durch. Sie kriegt mich nicht so leicht.",
+                "en_US": "Through! Barely, but through. She won't get me that easily."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-s6-speed",
+              "name": {
+                "de_DE": "Durchschlüpfen",
+                "en_US": "Slip through"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Werd rechtzeitig schnell genug, um durch die Sperre zu kommen.",
+                "en_US": "Get fast enough in time to make it through the barrier."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Speed ≥ 40",
+                "en_US": "Speed ≥ 40"
+              },
+              "type": "statThreshold",
+              "stat": "effectiveSpeed",
+              "threshold": 40,
+              "durationMs": 75000
+            },
+            {
+              "id": "tut-v4-s6-range",
+              "name": {
+                "de_DE": "Die Lücke finden",
+                "en_US": "Find the gap"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Oder sieh weit genug, um die Lücke rechtzeitig zu finden.",
+                "en_US": "Or see far enough to find the gap in time."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Reichweite ≥ 55",
+                "en_US": "Range ≥ 55"
+              },
+              "type": "statThreshold",
+              "stat": "effectiveRange",
+              "threshold": 55,
+              "durationMs": 75000
+            }
+          ],
+          "totalSuccessCondition": {
+            "or": [
+              {
+                "succeeds": {
+                  "task": "tut-v4-s6-speed",
+                  "holdMs": 3000
+                }
+              },
+              {
+                "succeeds": {
+                  "task": "tut-v4-s6-range",
+                  "holdMs": 3000
+                }
+              }
+            ]
+          }
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [],
+          "startEventCards": [
+            {
+              "id": "tut-v4-s6b-card-tuning",
+              "icon": "",
+              "canDefer": true,
+              "name": {
+                "de_DE": "Tuning",
+                "en_US": "Tuning"
+              },
+              "description": {
+                "de_DE": "Erhöht den Output des gewählten Items dauerhaft um 50 %.",
+                "en_US": "Permanently raises the selected item's output by 50 %."
+              },
+              "event": {
+                "type": "permanentStat",
+                "id": "tut-v4-s6b-card-tuning-eff",
+                "atMs": 0,
+                "warningMs": 0,
+                "category": "output",
+                "factor": 1.5
+              }
+            }
+          ],
+          "dialog": [
+            {
+              "id": "tut-v4-s6b-a",
+              "trigger": {
+                "kind": "onLoad"
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Eine Rampe. Steil. Dein Antrieb schafft das nicht — ich habe nachgerechnet. Zweimal, weil es so schön war.",
+                "en_US": "A ramp. Steep. Your drive won't make it — I did the math. Twice, because it was that satisfying."
+              }
+            },
+            {
+              "id": "tut-v4-s6b-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 5000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Schau mal, was ich gefunden habe. Eine Karte, hier in meinem Slot. Tuning.",
+                "en_US": "Look what I found. A card, right here in my slot. Tuning."
+              }
+            },
+            {
+              "id": "tut-v4-s6b-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 10000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "So benutzt man die: anfassen, auf den Antrieb ziehen, loslassen. Plus fünfzig Prozent Output — und die Rampe ist nur noch eine Rampe.",
+                "en_US": "This is how you use it: grab it, drag it onto the drive, let go. Plus fifty percent output — and the ramp is just a ramp again."
+              }
+            },
+            {
+              "id": "tut-v4-s6b-goal",
+              "trigger": {
+                "kind": "onSectorGoalReached"
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "… die Karte hatte ich nicht eingeplant. Vermerkt.",
+                "en_US": "… I had not accounted for the card. Noted."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-s6b-speed",
+              "name": {
+                "de_DE": "Die Rampe nehmen",
+                "en_US": "Take the ramp"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Bring den Antrieb über 65 Tempo. In deinem Event-Slot liegt eine Karte, die ihm plus fünfzig Prozent Output gibt — zieh sie auf den Antrieb.",
+                "en_US": "Push the drive past 65 speed. There's a card in your event slot that gives it plus fifty percent output — drag it onto the drive."
+              },
+              "hint": {
+                "de_DE": "Tempo ≥ 65 — Tuning-Karte auf den Antrieb ziehen",
+                "en_US": "Speed ≥ 65 — drag the Tuning card onto the drive"
+              },
+              "dialog": [],
+              "type": "statThreshold",
+              "stat": "effectiveSpeed",
+              "threshold": 65
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-s6b-speed",
+              "holdMs": 3000
+            }
+          }
+        }
+      ],
+      "description": {
+        "de_DE": "A.V.A.S. hat bemerkt, dass K247 nicht liegen bleibt. Sie fängt an, unhöflich zu werden.",
+        "en_US": "A.V.A.S. has noticed K247 won't stay down. She begins to get impolite."
+      }
+    },
+    {
+      "id": "tut-v4-r3",
+      "name": {
+        "de_DE": "Der Kontrollknoten",
+        "en_US": "The Control Node"
+      },
+      "sections": [
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "tut-v4-s7-engine",
+              "kind": "engine",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            {
+              "id": "tut-v4-s7-sensor",
+              "kind": "sensor",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            {
+              "id": "tut-v4-s7-gen",
+              "kind": "generator",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            {
+              "id": "tut-v4-s7-oc",
+              "kind": "overclocker",
+              "subSlots": []
+            }
+          ],
+          "dialog": [
+            {
+              "id": "tut-v4-s7-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1500
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Weiter kommst du nicht, ohne mir zu begegnen. Und mir begegnet man nicht halb. Du wirst schnell sein müssen UND weit sehen — beides, gleichzeitig.",
+                "en_US": "You won't get further without meeting me. And one does not meet me by halves. You'll need to be fast AND far-seeing — both, at once."
+              }
+            },
+            {
+              "id": "tut-v4-s7-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 8000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Antrieb für Tempo, Sensor für Reichweite — beide wollen Energie. Der Generator im Vorrat deckt den Mehrbedarf, sonst bricht mir alles zusammen.",
+                "en_US": "Drive for speed, sensor for range — both want energy. The spare generator covers the extra draw, or the whole thing collapses on me."
+              }
+            },
+            {
+              "id": "tut-v4-s7-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 15000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Denk an deine Zonen, wenn du schon dabei bist. Der Antrieb in den Beinen, das Auge im Kopf — jedes am richtigen Ort holt mehr heraus. Nicht dass es dir hilft.",
+                "en_US": "Mind your zones while you're at it. The drive in the legs, the eye in the head — each in its right place gets more out. Not that it'll help you."
+              }
+            },
+            {
+              "id": "tut-v4-s7-d",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 22000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Beides muss gleichzeitig stehen — fällt eins weg, war's umsonst. Bleib bei mir. Wir schaffen das zusammen.",
+                "en_US": "Both have to hold at once — if one drops, it was for nothing. Stay with me. We'll manage this together."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-s7-speed",
+              "name": {
+                "de_DE": "Schnell werden",
+                "en_US": "Get fast"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Bau den Antrieb ein (am besten in die Beine) und versorge ihn.",
+                "en_US": "Install the drive (ideally in the legs) and supply it."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Speed ≥ 60",
+                "en_US": "Speed ≥ 60"
+              },
+              "type": "statThreshold",
+              "stat": "effectiveSpeed",
+              "threshold": 60
+            },
+            {
+              "id": "tut-v4-s7-range",
+              "name": {
+                "de_DE": "Weit sehen",
+                "en_US": "See far"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Bau den Sensor ein (am besten in den Kopf) und versorge ihn.",
+                "en_US": "Install the sensor (ideally in the head) and supply it."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Reichweite ≥ 40",
+                "en_US": "Range ≥ 40"
+              },
+              "type": "statThreshold",
+              "stat": "effectiveRange",
+              "threshold": 40
+            }
+          ],
+          "totalSuccessCondition": {
+            "and": [
+              {
+                "succeeds": {
+                  "task": "tut-v4-s7-speed",
+                  "holdMs": 4000
+                }
+              },
+              {
+                "succeeds": {
+                  "task": "tut-v4-s7-range",
+                  "holdMs": 4000
+                }
+              }
+            ]
+          }
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [],
+          "ambientEvents": [
+            {
+              "id": "tut-v4-s7b-salve-1",
+              "atMs": 6000,
+              "warningMs": 3000,
+              "type": "shooter",
+              "targetZones": [
+                "torso"
+              ],
+              "count": 3,
+              "intervalMs": 900,
+              "damagePerBolt": 6,
+              "dialogWarning": {
+                "speaker": "AVAS",
+                "text": {
+                  "de_DE": "Achtung, gleich knallt es. Ich sage das nur, damit du es nicht persönlich nimmst.",
+                  "en_US": "Careful, this is about to bang. I only mention it so you do not take it personally."
+                }
+              }
+            },
+            {
+              "id": "tut-v4-s7b-salve-2",
+              "atMs": 16000,
+              "warningMs": 3000,
+              "type": "shooter",
+              "targetZones": [
+                "torso"
+              ],
+              "count": 3,
+              "intervalMs": 900,
+              "damagePerBolt": 6
+            },
+            {
+              "id": "tut-v4-s7b-salve-3",
+              "atMs": 26000,
+              "warningMs": 3000,
+              "type": "shooter",
+              "targetZones": [
+                "torso"
+              ],
+              "count": 4,
+              "intervalMs": 800,
+              "damagePerBolt": 6
+            }
+          ],
+          "dialog": [
+            {
+              "id": "tut-v4-s7b-a",
+              "trigger": {
+                "kind": "onLoad"
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Da schießt jemand. Ich sehe keinen Lauf, keine Mündung — nur Einschläge. Alle auf meiner Mitte.",
+                "en_US": "Someone's shooting. I see no barrel, no muzzle — just impacts. All of them on my middle."
+              }
+            },
+            {
+              "id": "tut-v4-s7b-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 3500
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Such ruhig weiter. Ich sitze hier irgendwo und nehme ein paar Schüsse mit — nicht ernst gemeint. Betrachte es als Aufwärmen. Für mich.",
+                "en_US": "Keep looking. I'm sitting somewhere around here taking a few shots — nothing serious. Consider it a warm-up. Mine."
+              }
+            },
+            {
+              "id": "tut-v4-s7b-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 9000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Ich kann nicht zurückschießen, wenn ich nichts sehe. Also halte ich einfach durch: ein versorgtes Schild in den Torso, dann fängt die Schale die Bolts.",
+                "en_US": "I can't shoot back at what I can't see. So I just hold out: a supplied shield in the torso, and the shell catches the bolts."
+              }
+            },
+            {
+              "id": "tut-v4-s7b-goal",
+              "trigger": {
+                "kind": "onSectorGoalReached"
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Torso heil. Wie langweilig. — Beim nächsten Mal verstecke ich mich nicht.",
+                "en_US": "Torso intact. How dull. — Next time I won't be hiding."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-s7b-quiet",
+              "name": {
+                "de_DE": "Torso schützen",
+                "en_US": "Protect the torso"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Halte den Torso 20 Sekunden lang schadensfrei. Ein versorgtes Schild blockt die Salven.",
+                "en_US": "Keep the torso damage-free for 20 seconds. A supplied shield blocks the salvos."
+              },
+              "hint": {
+                "de_DE": "20 s ohne Torso-Zonen-Schaden",
+                "en_US": "20 s without torso zone damage"
+              },
+              "dialog": [],
+              "type": "statThreshold",
+              "stat": "zoneQuietMs",
+              "zone": "torso",
+              "threshold": 20000
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-s7b-quiet",
+              "holdMs": 500
+            }
+          }
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "tut-v4-s8-target",
+              "kind": "targetSelector",
+              "subSlots": []
+            }
+          ],
+          "bossRef": "tut-v4-boss-final",
+          "bossLootPool": [],
+          "dialog": [
+            {
+              "id": "tut-v4-s8-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Da bin ich. Kein Lautsprecher mehr — das hier ist mein Knoten. Zonen, Teile, ein Schild. Ich funktioniere nach genau denselben Regeln wie du. Reiß ihn ein, wenn du kannst.",
+                "en_US": "Here I am. No more loudspeaker — this is my node. Zones, parts, a shield. I run by exactly the same rules as you. Tear it down, if you can."
+              }
+            },
+            {
+              "id": "tut-v4-s8-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 8000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Ihr Schild ist eine Schale um alles dahinter. Sie fällt von außen nach innen, Schicht um Schicht — und solange sie steht, kommt kaum etwas durch.",
+                "en_US": "Her shield is a shell around everything behind it. It falls from the outside in, layer by layer — and while it stands, barely anything gets through."
+              }
+            },
+            {
+              "id": "tut-v4-s8-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 15000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Das Schild kostet mich Energie, wenn du es genau wissen willst. Nimm mir die Generatoren, dann fällt es von selbst. Steck den Ziel-Selektor in deinen Emitter und ziel — falls dein Zittern das zulässt.",
+                "en_US": "The shield costs me energy, since you're so curious. Take my generators and it drops on its own. Put the target selector into your emitter and aim — if your trembling permits."
+              }
+            },
+            {
+              "id": "tut-v4-s8-stab-gen",
+              "trigger": {
+                "kind": "onBossItemDestroyed",
+                "itemKind": "generator"
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Der Knoten läuft mit weniger, als er sollte. Das … merkt man ihm an. Nicht dass es dich etwas anginge.",
+                "en_US": "The node is running on less than it should. That … shows on it. Not that it concerns you."
+              }
+            },
+            {
+              "id": "tut-v4-s8-stab-hint",
+              "trigger": {
+                "kind": "onStabilityThreshold",
+                "value": 85,
+                "dir": "below"
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Er hält nicht mehr sauber zusammen — man sieht ihm an, wie viel Struktur noch übrig ist, und woran sie verloren geht. Ist sie weg, ist er erledigt. Auch wenn noch Teile stehen.",
+                "en_US": "He's not holding together cleanly any more — you can see how much structure is left, and what it's bleeding out through. Once it's gone, he's finished. Even with parts still standing."
+              }
+            },
+            {
+              "id": "tut-v4-s8-stab-low",
+              "trigger": {
+                "kind": "onStabilityThreshold",
+                "value": 30,
+                "dir": "below"
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Ich halte das noch. Ich halte das … noch. Bleib einfach da stehen, K247, es hilft mir ungemein.",
+                "en_US": "I can hold this. I can hold this … still. Just keep standing there, K247, it helps me enormously."
+              }
+            },
+            {
+              "id": "tut-v4-s8-d",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 24000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Keine Panik, wenn's einsteckt: Erst wenn ALLE meine Zonen zerstört sind, ist Schluss. Eine kaputte Zone allein hält mich nicht auf.",
+                "en_US": "No panic when it hits home: it's over only when ALL my zones are destroyed. One broken zone alone won't stop me."
+              }
+            },
+            {
+              "id": "tut-v4-s8-goal",
+              "trigger": {
+                "kind": "onSectorGoalReached"
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "… Unerwartet. Der Knoten ist offline. Genieß den Moment, K247. Ich habe mehr als einen Knoten.",
+                "en_US": "… Unexpected. The node is offline. Enjoy the moment, K247. I have more than one node."
+              }
+            }
+          ],
+          "taskPool": []
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "tut-v4-s9-dup-a",
+              "kind": "generator",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            {
+              "id": "tut-v4-s9-dup-b",
+              "kind": "generator",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            }
+          ],
+          "dialog": [
+            {
+              "id": "tut-v4-s9-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1500
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Aus dem Wrack fällt Beute. Drei Sorten: Teile zum Einbauen, Karten für meine Ereignis-Fächer, und dauerhafte Ausbauten. Ich nehme, was ich tragen kann — der Rest bleibt liegen.",
+                "en_US": "Salvage spills from the wreck. Three kinds: parts to install, cards for my event slots, and permanent upgrades. I take what I can carry — the rest stays behind."
+              }
+            },
+            {
+              "id": "tut-v4-s9-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 9000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Und meine Teile lernen: Was arbeitet, sammelt Erfahrung und wird mit der Zeit besser. Deaktiviertes lernt nichts.",
+                "en_US": "And my parts learn: what works gathers experience and improves over time. Deactivated ones learn nothing."
+              }
+            },
+            {
+              "id": "tut-v4-s9-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 17000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Plünderst mein Wrack. Wie pietätlos. Ach ja — hast du eins übrig, zieh es im Vorrat auf ein beliebiges anderes. Es verschwindet und schenkt seine Erfahrung weiter. Endgültig. Wie so vieles hier.",
+                "en_US": "Looting my wreck. How tasteless. Oh — got a spare? Drag it onto any other item in your stock. It vanishes and passes on its experience. Permanently. Like so much here."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-s9-use",
+              "name": {
+                "de_DE": "Aufrüsten",
+                "en_US": "Gear up"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Bau ein, was du behalten willst — und mach aus dem Rest Erfahrung.",
+                "en_US": "Install what you want to keep — and turn the rest into experience."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Energie-Produktion ≥ 105",
+                "en_US": "Energy production ≥ 105"
+              },
+              "type": "statThreshold",
+              "stat": "energyProduction",
+              "threshold": 105
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-s9-use",
+              "holdMs": 3000
+            }
+          }
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "tut-v4-s10-trigger",
+              "kind": "trigger",
+              "subSlots": []
+            }
+          ],
+          "bossRef": "tut-v4-boss-return",
+          "bossLootPool": [],
+          "dialog": [
+            {
+              "id": "tut-v4-s10-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Dachtest du, das war es? Ein Knoten weniger. Ich habe … genug übrig. Das Schild steht. Meistens. Du wirst den Unterschied nicht merken.",
+                "en_US": "Thought that was it? One node fewer. I have … enough left. The shield holds. Mostly. You won't notice the difference."
+              }
+            },
+            {
+              "id": "tut-v4-s10-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 8000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Sie ist angeschlagen: Ihr Schild flackert. Es lädt sich in Schüben auf und bricht dazwischen zusammen. Genau dann kommt etwas durch.",
+                "en_US": "She's battered: her shield flickers. It charges in bursts and collapses in between. That's when something gets through."
+              }
+            },
+            {
+              "id": "tut-v4-s10-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 15000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Mein Emitter feuert von allein, sobald er voll ist. Ob das Schild steht, ist ihm egal. Steck den Abzug in einen seiner Steckplätze: Dann hält er die Ladung und feuert erst, wenn ich ziehe.",
+                "en_US": "My emitter fires on its own as soon as it's full. It doesn't care whether the shield is up. Put the trigger into one of its slots: then it holds the charge and fires only when I pull."
+              }
+            },
+            {
+              "id": "tut-v4-s10-trig",
+              "trigger": {
+                "kind": "onSubModuleInserted",
+                "hostKind": "emitter",
+                "subKind": "trigger"
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Gut. Jetzt warten: Schild unten, ziehen. Ein Schuss ins stehende Schild ist verschenkt, und bis zum nächsten dauert es.",
+                "en_US": "Good. Now wait: shield down, pull. A shot into a standing shield is wasted, and the next one takes a while."
+              }
+            },
+            {
+              "id": "tut-v4-s10-hit",
+              "trigger": {
+                "kind": "onBossItemDestroyed"
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Das … war ein Teil von mir. Ein unwichtiges. Ich habe viele unwichtige Teile.",
+                "en_US": "That … was a part of me. An unimportant one. I have many unimportant parts."
+              }
+            },
+            {
+              "id": "tut-v4-s10-gen",
+              "trigger": {
+                "kind": "onBossItemDestroyed",
+                "itemKind": "generator"
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Ohne Generator lädt nichts mehr. Das weißt du. Ich weiß, dass du das weißt. Hör auf zu grinsen, K247.",
+                "en_US": "Without a generator nothing charges anymore. You know that. I know you know that. Stop grinning, K247."
+              }
+            },
+            {
+              "id": "tut-v4-s10-goal",
+              "trigger": {
+                "kind": "onSectorGoalReached"
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Schön. Du hast Timing gelernt. Von mir. Merk dir, wem du das verdankst.",
+                "en_US": "Fine. You've learned timing. From me. Remember who you owe that to."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-s10-trigger",
+              "name": {
+                "de_DE": "Abzug einsetzen",
+                "en_US": "Insert the trigger"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Zieh den Abzug in einen Steckplatz des Emitters. Danach feuert er nur noch, wenn du ziehst.",
+                "en_US": "Drag the trigger into one of the emitter's slots. After that it fires only when you pull."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Abzug im Emitter",
+                "en_US": "Trigger in the emitter"
+              },
+              "type": "condition",
+              "condition": {
+                "type": "subModulePresent",
+                "hostKind": "emitter",
+                "subKind": "trigger"
+              }
+            },
+            {
+              "id": "tut-v4-s10-fire",
+              "name": {
+                "de_DE": "Selbst feuern",
+                "en_US": "Fire manually"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Warte, bis ihr Schild zusammenbricht, und zieh den Abzug.",
+                "en_US": "Wait until her shield collapses, then pull the trigger."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Einmal von Hand gefeuert",
+                "en_US": "Fired manually once"
+              },
+              "type": "manualAction",
+              "action": "laserFire",
+              "count": 1
+            },
+            {
+              "id": "tut-v4-s10-all",
+              "name": {
+                "de_DE": "Zerlegen",
+                "en_US": "Take her apart"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Jedes ihrer Teile hält nur einen Treffer aus. Erwisch sie alle im offenen Fenster.",
+                "en_US": "Each of her parts survives only one hit. Catch them all while the window is open."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Alle Boss-Teile zerstört",
+                "en_US": "All boss parts destroyed"
+              },
+              "type": "condition",
+              "condition": {
+                "type": "all",
+                "clauses": [
+                  {
+                    "type": "bossItemDestroyed",
+                    "itemId": "id-122"
+                  },
+                  {
+                    "type": "bossItemDestroyed",
+                    "itemId": "id-125"
+                  },
+                  {
+                    "type": "bossItemDestroyed",
+                    "itemId": "id-131"
+                  },
+                  {
+                    "type": "bossItemDestroyed",
+                    "itemId": "id-218"
+                  }
+                ]
+              }
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-s10-all",
+              "holdMs": 0
+            }
+          }
+        }
+      ],
+      "description": {
+        "de_DE": "Am Ende des Gangs wartet kein Ausgang. A.V.A.S. hat sich selbst in den Weg gestellt.",
+        "en_US": "At the end of the corridor there's no exit. A.V.A.S. has put herself in the way."
+      }
+    },
+    {
+      "id": "tut-v4-v1",
+      "name": {
+        "de_DE": "Der Schacht",
+        "en_US": "The Shaft"
+      },
+      "sections": [
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "tut-v4-v1-gen",
+              "kind": "generator",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            {
+              "id": "tut-v4-v1-sensor",
+              "kind": "sensor",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            }
+          ],
+          "dialog": [
+            {
+              "id": "tut-v4-v1-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1500
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Der Schacht ist eng. Hier zählt, WIE du verkabelst, nicht nur DASS du es tust. Aber bitte, verirr dich ruhig.",
+                "en_US": "The shaft is narrow. In here it matters HOW you cable, not just THAT you do. But please, feel free to get lost."
+              }
+            },
+            {
+              "id": "tut-v4-v1-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 8000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Alles, was zusammenhängt, teilt sich einen Topf. Zwei getrennte Stränge sind zwei Töpfe — im einen kann Überfluss sein, während im anderen alle hungern.",
+                "en_US": "Everything connected shares one pot. Two separate strands are two pots — one can overflow while the other starves."
+              }
+            },
+            {
+              "id": "tut-v4-v1-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 16000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Und jedes Teil hat nur so viele Anschlüsse. Passt nichts mehr, liegt es daran — nicht an mir. Ausnahmsweise.",
+                "en_US": "And every part has only so many ports. When nothing more fits, that's why — not me. For once."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-v1-goal",
+              "name": {
+                "de_DE": "Einen Kreis schließen",
+                "en_US": "Close a circuit"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Häng Generator und Sensor in denselben Kreis, statt sie getrennt zu lassen.",
+                "en_US": "Put generator and sensor into the same circuit instead of leaving them apart."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Reichweite ≥ 25",
+                "en_US": "Range ≥ 25"
+              },
+              "type": "statThreshold",
+              "stat": "effectiveRange",
+              "threshold": 25
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-v1-goal",
+              "holdMs": 3000
+            }
+          }
+        }
+      ],
+      "description": {
+        "de_DE": "A.V.A.S. bietet den kurzen Weg nach draußen an — verdächtig freundlich. K247 traut ihr nicht und nimmt lieber den Wartungsschacht, um Kraft zu sammeln.",
+        "en_US": "A.V.A.S. offers the short way out — suspiciously kind. K247 doesn't trust her and takes the maintenance shaft instead, to gather strength."
+      }
+    },
+    {
+      "id": "tut-v4-v2",
+      "name": {
+        "de_DE": "Reaktornähe",
+        "en_US": "Reactor's Edge"
+      },
+      "sections": [
+        {
+          "ambientTemperature": 20,
+          "freeItems": [
+            {
+              "module": {
+                "id": "tut-v4-v2-heatgen",
+                "kind": "generator",
+                "locked": true,
+                "label": {
+                  "de_DE": "Reaktorstück (verschweißt)",
+                  "en_US": "Reactor piece (welded)"
+                },
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "location": {
+                "kind": "relative",
+                "zone": "torso",
+                "normX": 0.62,
+                "normY": 0.34
+              }
+            },
+            {
+              "module": {
+                "id": "tut-v4-v2-heatload",
+                "kind": "shield",
+                "locked": true,
+                "label": {
+                  "de_DE": "Kühlfehler (verschweißt)",
+                  "en_US": "Coolant fault (welded)"
+                },
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "location": {
+                "kind": "relative",
+                "zone": "torso",
+                "normX": 0.86,
+                "normY": 0.34
+              }
+            },
+            {
+              "module": {
+                "id": "tut-v4-v2-own-a",
+                "kind": "generator",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "location": {
+                "kind": "relative",
+                "zone": "torso",
+                "normX": 0.46,
+                "normY": 0.34
+              }
+            },
+            {
+              "module": {
+                "id": "tut-v4-v2-own-b",
+                "kind": "generator",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "location": {
+                "kind": "relative",
+                "zone": "torso",
+                "normX": 0.46,
+                "normY": 0.62
+              }
+            }
+          ],
+          "inventory": [],
+          "dialog": [
+            {
+              "id": "tut-v4-v2-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1500
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Am Reaktor wird dir warm. Du weißt schon, dass Hitze schadet. Interessanter ist, was danach passiert.",
+                "en_US": "You'll heat up by the reactor. You already know heat hurts. What's more interesting is what happens after."
+              }
+            },
+            {
+              "id": "tut-v4-v2-b",
+              "trigger": {
+                "kind": "onOwnItemDestroyed"
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Wenn ein Teil an Hitze zerbricht, gibt es seine ganze gespeicherte Wärme auf einen Schlag ab. Das kann den Nachbarn mitreißen — und dessen Nachbarn. Eine Kettenreaktion.",
+                "en_US": "When a part breaks from heat, it dumps all its stored warmth at once. That can drag the neighbour down — and its neighbour. A chain reaction."
+              }
+            },
+            {
+              "id": "tut-v4-v2-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 17000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Darum lohnt Abstand oft mehr als noch ein Kühler. Deine Teile stehen viel zu dicht an der Glut — zieh sie weg, statt dagegen anzukühlen. Oder lass es. Ich mag Feuerwerk.",
+                "en_US": "That's why distance often beats another cooler. Your parts sit far too close to the embers — move them away instead of cooling against it. Or don't. I do enjoy fireworks."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-v2-goal",
+              "name": {
+                "de_DE": "Abstand halten",
+                "en_US": "Keep your distance"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Bring deine eigenen Teile aus der Glut, statt gegen sie anzukühlen.",
+                "en_US": "Get your own parts out of the embers instead of cooling against it."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Am Messpunkt ≤ 38 °C",
+                "en_US": "At the measuring point ≤ 38 °C"
+              },
+              "type": "statThreshold",
+              "stat": "zoneTemperature",
+              "zone": "torso",
+              "threshold": 38,
+              "inverted": true,
+              "visualSpawn": {
+                "kind": "probe",
+                "probeType": "temperature",
+                "threshold": 38,
+                "hidden": true,
+                "location": {
+                  "kind": "relative",
+                  "zone": "torso",
+                  "normX": 0.42,
+                  "normY": 0.34
+                }
+              }
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-v2-goal",
+              "holdMs": 6000
+            }
+          }
+        }
+      ],
+      "description": {
+        "de_DE": "Der Schacht führt an einem alten Reaktor vorbei. Es ist heiß, und heiße Dinge zerbrechen — laut.",
+        "en_US": "The shaft runs past an old reactor. It's hot, and hot things break — loudly."
+      }
+    },
+    {
+      "id": "tut-v4-v3",
+      "name": {
+        "de_DE": "Die Waffenkammer",
+        "en_US": "The Armory"
+      },
+      "sections": [
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "tut-v4-v3-sensor",
+              "kind": "sensor",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            {
+              "id": "tut-v4-v3-shield",
+              "kind": "shield",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            }
+          ],
+          "dialog": [
+            {
+              "id": "tut-v4-v3-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1500
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Eine Schale schützt, was hinter ihr liegt — und sie fällt von außen nach innen, Schicht für Schicht. So einfach ist das. Fast.",
+                "en_US": "A shell protects what lies behind it — and it falls from the outside in, layer by layer. Simple as that. Almost."
+              }
+            },
+            {
+              "id": "tut-v4-v3-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 9000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Aber nicht jeder Angriff lässt sich von einer Schale aufhalten. Manches geht schlicht hindurch. Und ein Schild kostet die ganze Zeit Energie, während ich trotzdem sehen will.",
+                "en_US": "But not every attack can be stopped by a shell. Some things simply pass through. And a shield costs energy the whole time, while I still want to see."
+              }
+            },
+            {
+              "id": "tut-v4-v3-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 17000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Welche hindurchgehen, verrate ich dir nicht. Du wirst es merken — auf die harte Tour. So lernt es sich am gründlichsten, findest du nicht?",
+                "en_US": "Which ones pass through, I won't tell you. You'll notice — the hard way. That's how it sticks best, don't you think?"
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-v3-goal",
+              "name": {
+                "de_DE": "Sehen trotz Schale",
+                "en_US": "See despite the shell"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Bau die Schale ein UND halte die Reichweite oben — beides zusammen ist die Kunst.",
+                "en_US": "Install the shell AND keep range up — doing both is the trick."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Reichweite ≥ 25",
+                "en_US": "Range ≥ 25"
+              },
+              "type": "statThreshold",
+              "stat": "effectiveRange",
+              "threshold": 25
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-v3-goal",
+              "holdMs": 3000
+            }
+          }
+        }
+      ],
+      "description": {
+        "de_DE": "Hinter einer Schleuse lagert alte Verteidigungstechnik. Schilde. K247 sieht sich um, während A.V.A.S. zuschaut.",
+        "en_US": "Behind an airlock, old defensive tech is stored. Shields. K247 looks around while A.V.A.S. watches."
+      }
+    },
+    {
+      "id": "tut-v4-v4",
+      "name": {
+        "de_DE": "Sparmodus",
+        "en_US": "Rationing"
+      },
+      "sections": [
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "tut-v4-v4-shield",
+              "kind": "shield",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            }
+          ],
+          "dialog": [
+            {
+              "id": "tut-v4-v4-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1500
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Ich rationiere die Energie. Ein Teil, das du abschaltest, verhält sich wie eine leere Hülle — liefert nichts, verbraucht nichts, lernt nichts. Nützlich, wenn dir der Saft ausgeht.",
+                "en_US": "I'm rationing energy. A part you switch off behaves like an empty shell — delivers nothing, consumes nothing, learns nothing. Useful when you run dry."
+              }
+            },
+            {
+              "id": "tut-v4-v4-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 9000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Diesmal liegt kein Generator bereit. Bau die Schale ein — und schalte dafür etwas ab, das ich gerade nicht brauche, damit die Rechnung wieder aufgeht.",
+                "en_US": "No generator waiting this time. Install the shell — and switch off something I don't need right now, so the arithmetic works again."
+              }
+            },
+            {
+              "id": "tut-v4-v4-c",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 17000
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Vorsicht bei ganzen Aufbauten: Schaltest du das TRÄGER-Teil ab, ruht nur es selbst. Was darin steckt, arbeitet ungerührt weiter — durch die tote Hülle hindurch nach oben.",
+                "en_US": "Careful with whole assemblies: switch off the CARRIER part and only it itself rests. Whatever sits inside works on, unbothered — up through the dead shell."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-v4-goal",
+              "name": {
+                "de_DE": "Rationieren",
+                "en_US": "Ration it"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Bring die Bilanz ins Plus — bauen oder abschalten, du entscheidest.",
+                "en_US": "Get the balance positive — build or switch off, your call."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Netto-Energie ≥ 0",
+                "en_US": "Net energy ≥ 0"
+              },
+              "type": "statThreshold",
+              "stat": "energyNet",
+              "threshold": 0
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-v4-goal",
+              "holdMs": 4000
+            }
+          }
+        }
+      ],
+      "description": {
+        "de_DE": "A.V.A.S. drosselt den Strom im ganzen Flügel. Wer nicht abschalten kann, was er nicht braucht, bleibt stehen.",
+        "en_US": "A.V.A.S. throttles the power across the whole wing. Whoever can't switch off what they don't need grinds to a halt."
+      }
+    },
+    {
+      "id": "tut-v4-ende",
+      "name": {
+        "de_DE": "Aufbruch",
+        "en_US": "Departure"
+      },
+      "sections": [
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [],
+          "dialog": [
+            {
+              "id": "tut-v4-ende-a",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 1500
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Du kommst also durch. Wie … ineffizient von mir. Genieß den Gang nach draußen, K247. Die interessanten Sektoren fangen erst an.",
+                "en_US": "So you make it through. How … inefficient of me. Enjoy the walk outside, K247. The interesting sectors only start now."
+              }
+            },
+            {
+              "id": "tut-v4-ende-b",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 8000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Ich kenne jetzt die Regeln. Nicht jedes Teil, aber jede, an der sie mich hätte scheitern lassen. Den Rest finde ich selbst heraus. Komm, wir gehen.",
+                "en_US": "I know the rules now. Not every part, but every one she'd have let me fail at. The rest I'll figure out myself. Come on, let's go."
+              }
+            },
+            {
+              "id": "tut-v4-ende-goal",
+              "trigger": {
+                "kind": "onSectorGoalReached"
+              },
+              "speaker": "narrator",
+              "text": {
+                "de_DE": "Die Schleuse von Sektor 7G öffnet sich. Dahinter: Gänge, die noch keiner kartiert hat.",
+                "en_US": "The airlock of Sector 7G opens. Beyond it: corridors no one has mapped yet."
+              }
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "tut-v4-ende-goal",
+              "name": {
+                "de_DE": "Bereitmachen",
+                "en_US": "Get ready"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Steh unter Strom — dann kann es losgehen.",
+                "en_US": "Be powered up — then you're good to go."
+              },
+              "dialog": [],
+              "hint": {
+                "de_DE": "Energie-Produktion ≥ 10",
+                "en_US": "Energy production ≥ 10"
+              },
+              "type": "statThreshold",
+              "stat": "energyProduction",
+              "threshold": 10
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "tut-v4-ende-goal",
+              "holdMs": 2000
+            }
+          }
+        }
+      ],
+      "description": {
+        "de_DE": "Der Weg nach draußen liegt offen. K247 ist bereit — und A.V.A.S. weiß es.",
+        "en_US": "The way out lies open. K247 is ready — and A.V.A.S. knows it."
+      }
+    }
+  ]
+}

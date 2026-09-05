@@ -1,0 +1,2450 @@
+{
+  "pools": {
+    "cooling": [
+      {
+        "id": "pool-cooling-bypass",
+        "lootDescription": {
+          "de_DE": "Kühlt sein Trägeritem auch unter Normaltemperatur weiter.",
+          "en_US": "Keeps cooling its host item even below normal temperature."
+        },
+        "kind": "cooler",
+        "xp": 500,
+        "label": {
+          "de_DE": "Bypass-Kühler",
+          "en_US": "Bypass Cooler"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-cooling-bypass-mod",
+              "kind": "bypassMod",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "cooling-paste": [
+      {
+        "id": "pool-cooling-paste",
+        "lootDescription": {
+          "de_DE": "Zieht Hitze besonders effizient aus dem Trägeritem.",
+          "en_US": "Pulls heat out of its host item especially efficiently."
+        },
+        "kind": "cooler",
+        "xp": 450,
+        "label": {
+          "de_DE": "Hitze-Ableiter",
+          "en_US": "Heat Sink"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-cooling-paste-1",
+              "kind": "thermalPaste",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "power-capacitor": [
+      {
+        "id": "pool-power-capacitor",
+        "lootDescription": {
+          "de_DE": "Speichert Energie und gibt sie in Lastspitzen wieder ab.",
+          "en_US": "Stores energy and releases it during load spikes."
+        },
+        "kind": "capacitor",
+        "xp": 450,
+        "label": {
+          "de_DE": "Reserve-Akku",
+          "en_US": "Reserve Battery"
+        },
+        "subSlots": [
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "power-sensor": [
+      {
+        "id": "pool-power-sensor",
+        "lootDescription": {
+          "de_DE": "Erhöht die Sichtreichweite und erkennt Gefahren früher.",
+          "en_US": "Extends sight range and spots threats sooner."
+        },
+        "kind": "sensor",
+        "xp": 450,
+        "label": {
+          "de_DE": "Präzisions-Sensor",
+          "en_US": "Precision Sensor"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-power-sensor-1",
+              "kind": "overclocker",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "weapon-beam": [
+      {
+        "id": "pool-weapon-beam",
+        "lootDescription": {
+          "de_DE": "Feuert einen Dauerstrahl.",
+          "en_US": "Fires a continuous beam."
+        },
+        "kind": "emitter",
+        "xp": 650,
+        "label": {
+          "de_DE": "Dauerstrahler",
+          "en_US": "Steady Ray"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-weapon-beam-1",
+              "kind": "beam",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ],
+        "modifiable": false
+      }
+    ],
+    "weapon-bolt": [
+      {
+        "id": "pool-weapon-bolt",
+        "lootDescription": {
+          "de_DE": "Feuert Bolts.",
+          "en_US": "Fires bolts."
+        },
+        "kind": "emitter",
+        "xp": 550,
+        "label": {
+          "de_DE": "Impulswerfer",
+          "en_US": "Pulse Caster"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-weapon-bolt-1",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "weapon-multishoot": [
+      {
+        "id": "pool-weapon-multishoot",
+        "lootDescription": {
+          "de_DE": "Feuert pro Ladung mehrere schwächere Bolts.",
+          "en_US": "Fires several weaker bolts per charge."
+        },
+        "kind": "emitter",
+        "xp": 650,
+        "label": {
+          "de_DE": "Streuwerfer",
+          "en_US": "Scattergun"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-weapon-multishoot-1",
+              "kind": "multiShoot",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-weapon-multishoot-bolt",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ],
+        "modifiable": false
+      }
+    ],
+    "weapon-plasma": [
+      {
+        "id": "pool-weapon-plasma",
+        "lootDescription": {
+          "de_DE": "Feuert Plasma, das Schilde durchdringt und das Ziel aufheizt, statt es direkt zu beschädigen.",
+          "en_US": "Fires plasma that pierces shields and heats the target instead of damaging it directly."
+        },
+        "kind": "emitter",
+        "xp": 700,
+        "label": {
+          "de_DE": "Plasmalanze",
+          "en_US": "Plasma Lance"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-weapon-plasma-1",
+              "kind": "plasma",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-weapon-plasma-2",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ],
+        "modifiable": false
+      }
+    ],
+    "weapon-targethottest": [
+      {
+        "id": "pool-weapon-targethottest",
+        "lootDescription": {
+          "de_DE": "Feuert automatisch auf ein Item in der heißesten Boss-Zone.",
+          "en_US": "Automatically fires at an item in the boss's hottest zone."
+        },
+        "kind": "emitter",
+        "xp": 650,
+        "label": {
+          "de_DE": "Glutsucher",
+          "en_US": "Ember Seeker"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-weapon-targethottest-1",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-weapon-targethottest-2",
+              "kind": "targetHottest",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "weapon-targetlowhp": [
+      {
+        "id": "pool-weapon-targetlowhp",
+        "lootDescription": {
+          "de_DE": "Feuert automatisch auf das Boss-Item mit den wenigsten HP.",
+          "en_US": "Automatically fires at the boss item with the least HP."
+        },
+        "kind": "emitter",
+        "xp": 650,
+        "label": {
+          "de_DE": "Vollstrecker",
+          "en_US": "Executioner"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-weapon-targetlowhp-1",
+              "kind": "targetLowHp",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-weapon-targetlowhp-bolt",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ],
+        "modifiable": false
+      }
+    ],
+    "weapon-targetmostitems": [
+      {
+        "id": "pool-weapon-targetmostitems",
+        "lootDescription": {
+          "de_DE": "Feuert automatisch auf ein Item in der Zone mit den meisten Boss-Items.",
+          "en_US": "Automatically fires at an item in the zone with the most boss items."
+        },
+        "kind": "emitter",
+        "xp": 650,
+        "label": {
+          "de_DE": "Schwarmbrecher",
+          "en_US": "Swarm Breaker"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-weapon-targetmostitems-1",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-weapon-targetmostitems-2",
+              "kind": "targetMostItems",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "weapon-targetselector": [
+      {
+        "id": "pool-weapon-targetselector",
+        "lootDescription": {
+          "de_DE": "Du bestimmst selbst, wo der Treffer landen soll.",
+          "en_US": "You decide yourself where the shot lands."
+        },
+        "kind": "emitter",
+        "xp": 650,
+        "label": {
+          "de_DE": "Lenkwerfer",
+          "en_US": "Guided Caster"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-weapon-targetselector-1",
+              "kind": "targetSelector",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-weapon-targetselector-bolt",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ],
+        "modifiable": false
+      }
+    ],
+    "support-fan": [
+      {
+        "id": "pool-support-fan",
+        "lootDescription": {
+          "de_DE": "Bläst Hitze weg.",
+          "en_US": "Blows heat away."
+        },
+        "kind": "ventilator",
+        "xp": 450,
+        "label": {
+          "de_DE": "Ventilator",
+          "en_US": "Fan"
+        },
+        "subSlots": [
+          {
+            "module": null,
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "cooling-heatsink": [
+      {
+        "id": "pool-cooling-heatsink",
+        "lootDescription": {
+          "de_DE": "Nimmt Hitze auf und speichert sie.",
+          "en_US": "Absorbs heat and stores it."
+        },
+        "kind": "heatSink",
+        "xp": 400,
+        "label": {
+          "de_DE": "Wärmesenke",
+          "en_US": "Heat Sink"
+        },
+        "subSlots": [
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "support-repair": [
+      {
+        "id": "pool-support-recycler",
+        "lootDescription": {
+          "de_DE": "Fängt Beschuss ab und wandelt den absorbierten Schaden kurzzeitig in einen eigenen Energie-Produzenten um.",
+          "en_US": "Absorbs fire and briefly turns the absorbed damage into its own energy producer."
+        },
+        "kind": "shield",
+        "xp": 550,
+        "label": {
+          "de_DE": "Rückgewinner-Schild",
+          "en_US": "Recycler Shield"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-support-recycler-mod",
+              "kind": "recycler",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "modifier-inverter": [
+      {
+        "id": "pool-modifier-inverter",
+        "lootDescription": {
+          "de_DE": "Heizt seine Umgebung.",
+          "en_US": "Heats its surroundings."
+        },
+        "kind": "cooler",
+        "xp": 550,
+        "label": {
+          "de_DE": "Umkehr-Kühler",
+          "en_US": "Inversion Cooler"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-modifier-inverter-paste",
+              "kind": "thermalPaste",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-modifier-inverter-mod",
+                    "kind": "inverterMod",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "infiltration": [
+      {
+        "id": "pool-infiltration-unit",
+        "lootDescription": {
+          "de_DE": "Bei voller Ladung platzierst du eigene Items im Boss, die dort gegen ihn arbeiten.",
+          "en_US": "When fully charged, lets you place your own items inside the boss to work against it."
+        },
+        "kind": "infiltrator",
+        "xp": 500,
+        "label": {
+          "de_DE": "Infiltrator",
+          "en_US": "Infiltrator"
+        },
+        "subSlots": [
+          {
+            "module": null,
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-infiltration-cloak",
+        "lootDescription": {
+          "de_DE": "Tarnt dein Chassis vor den Boss-Sensoren — versorgt (5 E/s) zielen Boss-Waffen nur noch auf Zonen-Zentren.",
+          "en_US": "Cloaks your chassis from the boss sensors — powered (5 E/s), boss weapons only target zone centers."
+        },
+        "kind": "cloakGenerator",
+        "xp": 500,
+        "label": {
+          "de_DE": "Cloak-Generator",
+          "en_US": "Cloak Generator"
+        },
+        "subSlots": [
+          {
+            "module": null,
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "defense-reflect": [
+      {
+        "id": "pool-defense-reflect",
+        "lootDescription": {
+          "de_DE": "Fängt Beschuss ab und wirft einen Teil des Schadens auf die Quelle zurück.",
+          "en_US": "Absorbs fire and reflects part of the damage back at its source."
+        },
+        "kind": "shield",
+        "xp": 600,
+        "label": {
+          "de_DE": "Reflex-Schild",
+          "en_US": "Reflex Shield"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-defense-reflect-mod",
+              "kind": "reflector",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "special-duplicator": [
+      {
+        "id": "pool-special-duplicator",
+        "lootDescription": {
+          "de_DE": "Liefert deutlich mehr Energie als eine gewöhnliche Quelle.",
+          "en_US": "Delivers far more energy than an ordinary source."
+        },
+        "kind": "generator",
+        "xp": 900,
+        "modifiable": false,
+        "label": {
+          "de_DE": "Zwillingskern",
+          "en_US": "Twin Core"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-special-dup",
+              "kind": "duplicator",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-special-dup-oc",
+                    "kind": "overclocker",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "special-multiplexer": [
+      {
+        "id": "pool-special-multiplexer",
+        "lootDescription": {
+          "de_DE": "Kondensator mit Multiplexer — bündelt Takt und Sparschaltung in einem Slot, beide wirken zu 80 %.",
+          "en_US": "Capacitor with a multiplexer — bundles boost and economizer in one slot, both at 80 % effect."
+        },
+        "kind": "capacitor",
+        "xp": 900,
+        "label": {
+          "de_DE": "Matrix-Speicher",
+          "en_US": "Matrix Cell"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-special-multiplexer-mux",
+              "kind": "multiplexer",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-special-multiplexer-oc",
+                    "kind": "overclocker",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                },
+                {
+                  "module": {
+                    "id": "pool-special-multiplexer-eff",
+                    "kind": "efficiency",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "special-sealed-core": [
+      {
+        "id": "pool-special-sealed-core",
+        "lootDescription": {
+          "de_DE": "Hält deutlich mehr Beschuss aus als ein gewöhnlicher Schild.",
+          "en_US": "Withstands far more fire than an ordinary shield."
+        },
+        "kind": "shield",
+        "xp": 900,
+        "modifiable": false,
+        "label": {
+          "de_DE": "AVAS-Kern (versiegelt)",
+          "en_US": "AVAS Core (sealed)"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-special-sealed-super",
+              "kind": "superShield",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "special-thermal": [
+      {
+        "id": "pool-special-thermal",
+        "lootDescription": {
+          "de_DE": "Feuert schildbrechendes Plasma automatisch auf ein Item in der heißesten Boss-Zone.",
+          "en_US": "Automatically fires shield-piercing plasma at an item in the boss's hottest zone."
+        },
+        "kind": "emitter",
+        "xp": 900,
+        "modifiable": false,
+        "label": {
+          "de_DE": "Glut-Lanze (versiegelt)",
+          "en_US": "Ember Lance (sealed)"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-special-thermal-plasma",
+              "kind": "plasma",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-special-thermal-tgt",
+              "kind": "targetHottest",
+              "subSlots": []
+            },
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "weapon-nova": [
+      {
+        "id": "pool-weapon-nova",
+        "lootDescription": {
+          "de_DE": "Entlädt bei voller Ladung ein Nahfeld, das alles in Reichweite trifft.",
+          "en_US": "Releases a close-range burst that hits everything in range when fully charged."
+        },
+        "kind": "emitter",
+        "xp": 500,
+        "label": {
+          "de_DE": "Schockwelle",
+          "en_US": "Shockwave"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-weapon-nova-1",
+              "kind": "nova",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-weapon-nova-siphon",
+        "lootDescription": {
+          "de_DE": "Entlädt ein Nahfeld, das getroffenen Items Energie entzieht.",
+          "en_US": "Releases a close-range burst that drains energy from the items it hits."
+        },
+        "kind": "emitter",
+        "xp": 650,
+        "label": {
+          "de_DE": "Zehrwelle",
+          "en_US": "Drain Wave"
+        },
+        "modifiable": true,
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-weapon-nova-siphon-nova",
+              "kind": "nova",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-weapon-nova-siphon-siphon",
+              "kind": "siphon",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "defense-firewall": [
+      {
+        "id": "pool-defense-firewall",
+        "lootDescription": {
+          "de_DE": "Liefert Energie und wehrt zugleich Virus-Befall von deinen Systemen ab.",
+          "en_US": "Supplies energy while also warding virus infection off your systems."
+        },
+        "kind": "generator",
+        "xp": 450,
+        "label": {
+          "de_DE": "Gesicherter Generator",
+          "en_US": "Hardened Generator"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-defense-firewall-1",
+              "kind": "firewall",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "utility-cableport": [
+      {
+        "id": "pool-utility-cableport",
+        "lootDescription": {
+          "de_DE": "Ein Verteiler mit vielen Kabel-Ports, um Energie flexibel weiterzuleiten.",
+          "en_US": "A junction with many cable ports to route energy flexibly."
+        },
+        "kind": "cablePort",
+        "xp": 450,
+        "label": {
+          "de_DE": "Kabel-Knoten",
+          "en_US": "Cable Hub"
+        },
+        "subSlots": [
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "power-expander": [
+      {
+        "id": "pool-power-expander",
+        "lootDescription": {
+          "de_DE": "Liefert die doppelte Energie einer gewöhnlichen Quelle, braucht dafür deutlich mehr Platz.",
+          "en_US": "Delivers double the energy of an ordinary source, but takes up far more room."
+        },
+        "kind": "generator",
+        "xp": 800,
+        "modifiable": true,
+        "label": {
+          "de_DE": "Expansionskern",
+          "en_US": "Expansion Core"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-power-expander-mod",
+              "kind": "expander",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "weapon-steadfast": [
+      {
+        "id": "pool-weapon-steadfast",
+        "lootDescription": {
+          "de_DE": "Feuert Bolts, die immer stärker werden, je länger das Item an seinem Platz bleibt.",
+          "en_US": "Fires bolts that grow stronger the longer the item stays in place."
+        },
+        "kind": "emitter",
+        "xp": 700,
+        "modifiable": true,
+        "label": {
+          "de_DE": "Belagerer",
+          "en_US": "Siege Emitter"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-weapon-steadfast-bolt",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-weapon-steadfast-mod",
+              "kind": "steadfast",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "weapon-trigger": [
+      {
+        "id": "pool-weapon-trigger",
+        "lootDescription": {
+          "de_DE": "Feuert Bolts nicht automatisch, sondern erst auf deinen Auslöser.",
+          "en_US": "Fires bolts only when you trigger them, not automatically."
+        },
+        "kind": "emitter",
+        "xp": 600,
+        "modifiable": true,
+        "label": {
+          "de_DE": "Handkanone",
+          "en_US": "Hand Cannon"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-weapon-trigger-bolt",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-weapon-trigger-mod",
+              "kind": "trigger",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "power-catalyst": [
+      {
+        "id": "pool-pcat-reactor",
+        "lootDescription": {
+          "de_DE": "Übertakteter Reaktor, dessen Katalysator den Output-Bonus obendrauf legt.",
+          "en_US": "Overclocked reactor whose catalyst stacks a flat output bonus on top."
+        },
+        "kind": "generator",
+        "xp": 500,
+        "label": {
+          "de_DE": "Katalyse-Reaktor",
+          "en_US": "Catalyst Reactor"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-pcat-reactor-oc",
+              "kind": "overclocker",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-pcat-reactor-cat",
+              "kind": "catalyst",
+              "subSlots": []
+            },
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-pcat-pulse",
+        "lootDescription": {
+          "de_DE": "Pulsierender Reaktor — der Katalysator hält auch die Aus-Phase über Null.",
+          "en_US": "Pulsing reactor — the catalyst keeps even the off-phase above zero."
+        },
+        "kind": "generator",
+        "xp": 500,
+        "label": {
+          "de_DE": "Puls-Katalysator",
+          "en_US": "Pulse Catalyst"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-pcat-pulse-mod",
+              "kind": "pulseMod",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-pcat-pulse-cat",
+              "kind": "catalyst",
+              "subSlots": []
+            },
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "power-harvest": [
+      {
+        "id": "pool-pharv-cannon",
+        "lootDescription": {
+          "de_DE": "Generator mit Ernter — jedes miterlebte zerstörte Boss-Item steigert dauerhaft seine Leistung.",
+          "en_US": "Generator with a harvester — every witnessed destroyed boss item permanently raises its output."
+        },
+        "kind": "generator",
+        "xp": 250,
+        "label": {
+          "de_DE": "Ernte-Kern",
+          "en_US": "Harvest Core"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-pharv-cannon-harv",
+              "kind": "harvester",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-pharv-cannon-oc",
+              "kind": "overclocker",
+              "subSlots": []
+            },
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "power-resonance": [
+      {
+        "id": "pool-pres-swarm",
+        "lootDescription": {
+          "de_DE": "Belohnt Reaktor-Nester: je mehr Nachbarn, desto mehr Leistung — bei weniger Verbrauch.",
+          "en_US": "Rewards reactor clusters: more neighbours, more power — at lower cost."
+        },
+        "kind": "generator",
+        "xp": 250,
+        "label": {
+          "de_DE": "Schwarm-Reaktor",
+          "en_US": "Swarm Reactor"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-pres-swarm-res",
+              "kind": "resonator",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-pres-swarm-eff",
+              "kind": "efficiency",
+              "subSlots": []
+            },
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "support-endure": [
+      {
+        "id": "pool-send-engine",
+        "lootDescription": {
+          "de_DE": "Gepanzerter Antrieb, der sich selbst repariert.",
+          "en_US": "Armoured drive that keeps repairing itself."
+        },
+        "kind": "engine",
+        "xp": 250,
+        "label": {
+          "de_DE": "Zäher Antrieb",
+          "en_US": "Tenacious Drive"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-send-engine-paste",
+              "kind": "repairPaste",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-send-engine-fort",
+              "kind": "fortify",
+              "subSlots": []
+            },
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-send-lastcannon",
+        "lootDescription": {
+          "de_DE": "Kondensator mit Letztem Gefecht — je näher am Ausfall, desto stärker seine Leistung.",
+          "en_US": "Capacitor with last stand — the closer to failure, the stronger its output."
+        },
+        "kind": "capacitor",
+        "xp": 250,
+        "label": {
+          "de_DE": "Notreserve",
+          "en_US": "Last Reserve"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-send-lastcannon-ls",
+              "kind": "laststand",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-send-lastcannon-oc",
+              "kind": "overclocker",
+              "subSlots": []
+            },
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "defense-bulwark": [
+      {
+        "id": "pool-dbul-shield",
+        "lootDescription": {
+          "de_DE": "Schild mit massiv verstärkter Substanz — Verstärkung und umgeleiteter Takt stapeln sich.",
+          "en_US": "Shield with massively reinforced substance — fortification and diverted boost stack up."
+        },
+        "kind": "shield",
+        "xp": 250,
+        "label": {
+          "de_DE": "Bollwerk-Schild",
+          "en_US": "Bulwark Shield"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-dbul-shield-fort",
+              "kind": "fortify",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-dbul-shield-swap",
+              "kind": "swapOutputHealth",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-dbul-shield-swap-oc",
+                    "kind": "overclocker",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-dbul-heatwall",
+        "lootDescription": {
+          "de_DE": "Projiziert eine Schutzschale gegen Beschuss. Der Thermo-Schutz darin hält nur den Schild selbst vom Durchbrennen ab.",
+          "en_US": "Projects a protective shell against incoming fire. The thermal resistance inside only keeps the shield itself from burning through."
+        },
+        "kind": "shield",
+        "xp": 250,
+        "label": {
+          "de_DE": "Bollwerk",
+          "en_US": "Bulwark"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-dbul-heatwall-thermo",
+              "kind": "thermoResistance",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-dbul-heatwall-super",
+              "kind": "superShield",
+              "subSlots": []
+            },
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "meta-learning": [
+      {
+        "id": "pool-mlearn-sensor",
+        "lootDescription": {
+          "de_DE": "Sensor, der aus allem lernt: doppelt umgeleiteter Takt auf den XP-Gewinn.",
+          "en_US": "Sensor that learns from everything: diverted boost doubled onto XP gain."
+        },
+        "kind": "sensor",
+        "xp": 250,
+        "label": {
+          "de_DE": "Lern-Sensor",
+          "en_US": "Learning Sensor"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-mlearn-sensor-tutor",
+              "kind": "tutor",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-mlearn-sensor-swap",
+              "kind": "swapOutputXp",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-mlearn-sensor-swap-oc",
+                    "kind": "overclocker",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "special-swap": [
+      {
+        "id": "pool-sswap-cap",
+        "lootDescription": {
+          "de_DE": "Kondensator, dessen Takt-Bonus komplett in die Speicherkapazität fließt.",
+          "en_US": "Capacitor whose boost is diverted entirely into storage capacity."
+        },
+        "kind": "capacitor",
+        "xp": 500,
+        "label": {
+          "de_DE": "Groß-Kondensator",
+          "en_US": "Grand Capacitor"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-sswap-cap-swap",
+              "kind": "swapOutputCapacity",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-sswap-cap-swap-oc",
+                    "kind": "overclocker",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-sswap-dmg",
+        "lootDescription": {
+          "de_DE": "Kanone, deren Takt-Bonus komplett in den Schaden fließt.",
+          "en_US": "Cannon whose boost is diverted entirely into damage."
+        },
+        "kind": "emitter",
+        "xp": 500,
+        "label": {
+          "de_DE": "Wucht-Umleiter",
+          "en_US": "Impact Diverter"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-sswap-dmg-bolt",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-sswap-dmg-swap",
+              "kind": "swapOutputDamage",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-sswap-dmg-swap-oc",
+                    "kind": "overclocker",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-sswap-xp",
+        "lootDescription": {
+          "de_DE": "Triebwerk, dessen übertakteter Output in Erfahrung umgeleitet wird — es lernt, statt zu schieben.",
+          "en_US": "Engine whose overclocked output is rerouted into experience — it learns instead of pushing."
+        },
+        "kind": "engine",
+        "xp": 500,
+        "label": {
+          "de_DE": "Lern-Turbine",
+          "en_US": "Learning Turbine"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-sswap-xp-swap",
+              "kind": "swapOutputXp",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-sswap-xp-oc",
+                    "kind": "overclocker",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "cooling-extract": [
+      {
+        "id": "pool-cext-pyro",
+        "lootDescription": {
+          "de_DE": "Kühler mit Wärme-Extraktor — saugt Hitze aus der Umgebung und verwertet sie.",
+          "en_US": "Cooler with a heat extractor — pulls heat from its surroundings and puts it to use."
+        },
+        "kind": "cooler",
+        "xp": 250,
+        "label": {
+          "de_DE": "Glut-Verwerter",
+          "en_US": "Ember Reclaimer"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-cext-pyro-ext",
+              "kind": "heatExtractor",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "cooling-spanner": [
+      {
+        "id": "pool-cspan-h",
+        "lootDescription": {
+          "de_DE": "Zonen-Spanner mit eingebauter Hitzeschadens-Dämpfung.",
+          "en_US": "Zone spanner with built-in heat damage dampening."
+        },
+        "kind": "thermoH",
+        "xp": 250,
+        "label": {
+          "de_DE": "Quer-Spanner",
+          "en_US": "Cross Spanner"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-cspan-h-thermo",
+              "kind": "thermoResistance",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-cspan-v",
+        "lootDescription": {
+          "de_DE": "Zonen-Spanner, der zugleich als Wärme-Barriere isoliert.",
+          "en_US": "Zone spanner that doubles as an insulating heat barrier."
+        },
+        "kind": "thermoV",
+        "xp": 250,
+        "label": {
+          "de_DE": "Längs-Spanner",
+          "en_US": "Length Spanner"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-cspan-v-paste",
+              "kind": "insulationPaste",
+              "subSlots": []
+            },
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "special-seal": [
+      {
+        "id": "pool-sseal-stealer",
+        "lootDescription": {
+          "de_DE": "Versiegelter HP-Boost, den der Inverter nicht mehr kippen kann — dafür zehrt die invertierte Paste am Schild.",
+          "en_US": "Sealed HP boost the inverter can no longer flip — in return the inverted paste gnaws at the shield."
+        },
+        "kind": "shield",
+        "xp": 650,
+        "label": {
+          "de_DE": "Lebensdieb-Schild",
+          "en_US": "Health-Stealer Shield"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-sseal-stealer-paste",
+              "kind": "repairPaste",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-sseal-stealer-mux",
+                    "kind": "multiplexer",
+                    "subSlots": [
+                      {
+                        "module": {
+                          "id": "pool-sseal-stealer-seal",
+                          "kind": "seal",
+                          "subSlots": [
+                            {
+                              "module": {
+                                "id": "pool-sseal-stealer-swap",
+                                "kind": "swapOutputHealth",
+                                "subSlots": [
+                                  {
+                                    "module": {
+                                      "id": "pool-sseal-stealer-swap-oc",
+                                      "kind": "overclocker",
+                                      "subSlots": []
+                                    },
+                                    "spannedBy": null
+                                  }
+                                ]
+                              },
+                              "spannedBy": null
+                            }
+                          ]
+                        },
+                        "spannedBy": null
+                      },
+                      {
+                        "module": {
+                          "id": "pool-sseal-stealer-inv",
+                          "kind": "inverterMod",
+                          "subSlots": []
+                        },
+                        "spannedBy": null
+                      }
+                    ]
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "weapon-targetloudest": [
+      {
+        "id": "pool-weapon-targetloudest",
+        "lootDescription": {
+          "de_DE": "Feuert automatisch auf das lauteste Boss-Item — Schall dringt durch jede Tarnung (alle Sicht-Stufen).",
+          "en_US": "Automatically fires at the loudest boss item — sound pierces any cloak (every visibility tier)."
+        },
+        "kind": "emitter",
+        "xp": 650,
+        "label": {
+          "de_DE": "Schalljäger",
+          "en_US": "Sound Hunter"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-weapon-targetloudest-1",
+              "kind": "targetLoudest",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-weapon-targetloudest-bolt",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ],
+        "modifiable": false
+      }
+    ],
+    "defense-fortress": [
+      {
+        "id": "pool-fortress-core",
+        "lootDescription": {
+          "de_DE": "Schild mit verstärkter Substanz bei gesenktem Verbrauch — hält die Stellung, ohne das Netz zu leeren.",
+          "en_US": "Shield with reinforced substance at reduced draw — holds the line without draining the grid."
+        },
+        "kind": "shield",
+        "xp": 400,
+        "label": {
+          "de_DE": "Festungskern",
+          "en_US": "Fortress Core"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-fortress-core-fort",
+              "kind": "fortify",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-fortress-core-fort-eff",
+                    "kind": "efficiency",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-fortress-wall",
+        "lootDescription": {
+          "de_DE": "Schild, das Schaden gleichmäßig über die Zeit abfedert statt einzubrechen.",
+          "en_US": "Shield that absorbs damage steadily over time instead of collapsing."
+        },
+        "kind": "shield",
+        "xp": 350,
+        "label": {
+          "de_DE": "Standhafter Wall",
+          "en_US": "Steadfast Rampart"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-fortress-wall-stead",
+              "kind": "steadfast",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "sense-array": [
+      {
+        "id": "pool-sense-array-facet",
+        "lootDescription": {
+          "de_DE": "Sensor mit gespiegelter Optik — die Ortung wirkt doppelt.",
+          "en_US": "Sensor with mirrored optics — its detection counts twice."
+        },
+        "kind": "sensor",
+        "xp": 450,
+        "label": {
+          "de_DE": "Facettenauge",
+          "en_US": "Facet Eye"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-sense-array-facet-dup",
+              "kind": "duplicator",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-sense-array-wide",
+        "lootDescription": {
+          "de_DE": "Übertakteter Sensor mit gesenktem Verbrauch — mehr Sichtweite pro Watt.",
+          "en_US": "Overclocked sensor at reduced draw — more sight range per watt."
+        },
+        "kind": "sensor",
+        "xp": 500,
+        "label": {
+          "de_DE": "Weitfeld-Array",
+          "en_US": "Wide-Field Array"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-sense-array-wide-oc",
+              "kind": "overclocker",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-sense-array-wide-oc-eff",
+                    "kind": "efficiency",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "mobility-drive": [
+      {
+        "id": "pool-mobility-storm",
+        "lootDescription": {
+          "de_DE": "Übertaktetes Triebwerk — rohes Tempo für Ausweichmanöver.",
+          "en_US": "Overclocked engine — raw speed for evasive maneuvers."
+        },
+        "kind": "engine",
+        "xp": 450,
+        "label": {
+          "de_DE": "Sturmantrieb",
+          "en_US": "Storm Drive"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-mobility-storm-oc",
+              "kind": "overclocker",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-mobility-glide",
+        "lootDescription": {
+          "de_DE": "Effizientes Triebwerk — Tempo, das das Energienetz kaum belastet.",
+          "en_US": "Efficient engine — speed that barely taxes the energy grid."
+        },
+        "kind": "engine",
+        "xp": 350,
+        "label": {
+          "de_DE": "Gleitantrieb",
+          "en_US": "Glide Drive"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-mobility-glide-eff",
+              "kind": "efficiency",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "stealth-veil": [
+      {
+        "id": "pool-stealth-veil-core",
+        "lootDescription": {
+          "de_DE": "Tarnfeld-Generator mit gesenktem Verbrauch — verbirgt das Chassis vor Boss-Sensoren, solange er versorgt ist.",
+          "en_US": "Cloak generator at reduced draw — hides the chassis from boss sensors while supplied."
+        },
+        "kind": "cloakGenerator",
+        "xp": 500,
+        "label": {
+          "de_DE": "Schleierkern",
+          "en_US": "Veil Core"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-stealth-veil-core-eff",
+              "kind": "efficiency",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-stealth-veil-whisper",
+        "lootDescription": {
+          "de_DE": "Gedämpfter Sensor — ortet, ohne selbst Lärm zu machen.",
+          "en_US": "Muffled sensor — detects without making noise itself."
+        },
+        "kind": "sensor",
+        "xp": 450,
+        "label": {
+          "de_DE": "Flüsterortung",
+          "en_US": "Whisper Tracker"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-stealth-veil-whisper-st",
+              "kind": "stealthMod",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-stealth-phase-core",
+        "lootDescription": {
+          "de_DE": "Tarnfeld-Generator mit Phasenschieber: bei voller Versorgung alle 60 s automatisch 10 s vollstaendige Unsichtbarkeit (Sicht-Stufe 0) — nur Schallpeiler halten dann die Spur. Mit einem Trigger im Phasenschieber manuell ausloesbar.",
+          "en_US": "Cloak generator with a phase shifter: at full supply, 10 s of complete invisibility (visibility tier 0) every 60 s, automatically — only sound trackers keep the trail. Add a trigger inside the phase shifter to fire manually."
+        },
+        "kind": "cloakGenerator",
+        "xp": 500,
+        "label": {
+          "de_DE": "Phasenkern",
+          "en_US": "Phase Core"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-stealth-phase-core-ps",
+              "kind": "phaseShift",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "power-overdrive": [
+      {
+        "id": "pool-overdrive-ember",
+        "lootDescription": {
+          "de_DE": "Übertakteter Generator — liefert mehr Leistung und läuft dabei heiß.",
+          "en_US": "Overclocked generator — delivers more power and runs hot doing it."
+        },
+        "kind": "generator",
+        "xp": 450,
+        "label": {
+          "de_DE": "Glutkern",
+          "en_US": "Ember Core"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-overdrive-ember-oc",
+              "kind": "overclocker",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-overdrive-cell",
+        "lootDescription": {
+          "de_DE": "Übertakteter Speicher mit gesenktem Verbrauch — schnelle Ladung für Lastspitzen.",
+          "en_US": "Overclocked capacitor at reduced draw — fast charge for load peaks."
+        },
+        "kind": "capacitor",
+        "xp": 400,
+        "label": {
+          "de_DE": "Überdruckspeicher",
+          "en_US": "Overpressure Cell"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-overdrive-cell-oc",
+              "kind": "overclocker",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-overdrive-cell-oc-eff",
+                    "kind": "efficiency",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "support-ownside": [
+      {
+        "id": "pool-ownside-climate",
+        "lootDescription": {
+          "de_DE": "Ventilator mit Freundkennung — richtet sich von selbst auf die heißeste EIGENE Zone und lüftet sie.",
+          "en_US": "Fan with Friend Lock — automatically points at your hottest zone and ventilates it."
+        },
+        "kind": "ventilator",
+        "xp": 500,
+        "label": {
+          "de_DE": "Klima-Lenker",
+          "en_US": "Climate Steward"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-ownside-climate-th",
+              "kind": "targetHottest",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-ownside-climate-os",
+                    "kind": "ownSide",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-ownside-medic",
+        "lootDescription": {
+          "de_DE": "Heil-Waffe mit Freundkennung — feuert Heil-Bolts automatisch auf das schwächste EIGENE Item, wo immer es steht.",
+          "en_US": "Heal weapon with Friend Lock — auto-fires healing bolts at your weakest item, wherever it is."
+        },
+        "kind": "emitter",
+        "xp": 550,
+        "label": {
+          "de_DE": "Feldsanitäter",
+          "en_US": "Field Medic"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-ownside-medic-bolt",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-ownside-medic-inv",
+                    "kind": "inverterMod",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "pool-ownside-medic-tlh",
+              "kind": "targetLowHp",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "pool-ownside-medic-os",
+                    "kind": "ownSide",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "combo-weapon": [
+      {
+        "id": "pool-combo-weaponboost",
+        "lootDescription": {
+          "de_DE": "Bündelt Übertaktung und Mehrfach-Schuss in einem Baustein.",
+          "en_US": "Bundles overclocking and multi-shot into one building block."
+        },
+        "kind": "emitter",
+        "xp": 700,
+        "label": {
+          "de_DE": "Salvenkanone",
+          "en_US": "Salvo Cannon"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-combo-weaponboost-bolt",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "$lib": "weaponBoost"
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-combo-quadshoot",
+        "lootDescription": {
+          "de_DE": "Verdoppelter Mehrfach-Schuss, von Effizienz abgefedert.",
+          "en_US": "Doubled multi-shot, cushioned by efficiency."
+        },
+        "kind": "emitter",
+        "xp": 750,
+        "label": {
+          "de_DE": "Schwarmkanone",
+          "en_US": "Swarm Cannon"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-combo-quadshoot-bolt",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "$lib": "quadShoot"
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-combo-megabeam",
+        "lootDescription": {
+          "de_DE": "Verdoppelter Dauerstrahl unter Übertaktung.",
+          "en_US": "Doubled continuous beam under overclocking."
+        },
+        "kind": "emitter",
+        "xp": 750,
+        "label": {
+          "de_DE": "Doppelstrahler",
+          "en_US": "Twin Emitter"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "id": "pool-combo-megabeam-beam",
+              "kind": "beam",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "$lib": "megaBeam"
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "combo-power": [
+      {
+        "id": "pool-combo-efficientpower",
+        "lootDescription": {
+          "de_DE": "Übertaktung und Effizienz im selben Baustein.",
+          "en_US": "Overclocking and efficiency in the same building block."
+        },
+        "kind": "engine",
+        "xp": 700,
+        "label": {
+          "de_DE": "Pendelantrieb",
+          "en_US": "Pendulum Drive"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "$lib": "efficientPower"
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-combo-overdrivecore",
+        "lootDescription": {
+          "de_DE": "Doppelt angewandte Übertaktung.",
+          "en_US": "Overclocking applied twice."
+        },
+        "kind": "engine",
+        "xp": 750,
+        "label": {
+          "de_DE": "Brachial-Antrieb",
+          "en_US": "Brute Drive"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "$lib": "overdriveCore"
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "combo-defense": [
+      {
+        "id": "pool-combo-thermalarmor",
+        "lootDescription": {
+          "de_DE": "Zweifacher Thermo-Schutz in einem Baustein.",
+          "en_US": "Twofold thermal protection in one building block."
+        },
+        "kind": "shield",
+        "xp": 700,
+        "label": {
+          "de_DE": "Ofen-Schild",
+          "en_US": "Furnace Shield"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "$lib": "thermalArmor"
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-combo-phantombuild",
+        "lootDescription": {
+          "de_DE": "Gebündelte Tarnung.",
+          "en_US": "Bundled cloaking."
+        },
+        "kind": "sensor",
+        "xp": 700,
+        "label": {
+          "de_DE": "Tarn-Sonde",
+          "en_US": "Stealth Probe"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "$lib": "phantomBuild"
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ],
+    "combo-meta": [
+      {
+        "id": "pool-combo-veterancore",
+        "lootDescription": {
+          "de_DE": "Lernrate und Panzerung im selben Baustein.",
+          "en_US": "Learning rate and armour in the same building block."
+        },
+        "kind": "engine",
+        "xp": 700,
+        "label": {
+          "de_DE": "Veteranen-Antrieb",
+          "en_US": "Veteran Drive"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "$lib": "veteranCore"
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      {
+        "id": "pool-combo-twintutor",
+        "lootDescription": {
+          "de_DE": "Doppelt angewandte Lernrate.",
+          "en_US": "Learning rate applied twice."
+        },
+        "kind": "sensor",
+        "xp": 750,
+        "label": {
+          "de_DE": "Studienspaeher",
+          "en_US": "Study Scout"
+        },
+        "subSlots": [
+          {
+            "module": {
+              "$lib": "twinTutor"
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      }
+    ]
+  }
+}

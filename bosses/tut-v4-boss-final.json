@@ -1,0 +1,337 @@
+{
+  "name": {
+    "de_DE": "A.V.A.S. — Kontrollknoten",
+    "en_US": "A.V.A.S. — Control Node"
+  },
+  "bossDefeatGrantsWin": true,
+  "loopTimeMs": 600000,
+  "lootPool": [
+    {
+      "id": "tv3f-loot-emitter",
+      "lootDescription": {
+        "de_DE": "Feuert Bolts.",
+        "en_US": "Fires bolts."
+      },
+      "kind": "emitter",
+      "subSlots": [
+        {
+          "module": {
+            "id": "tv3f-loot-bolt",
+            "kind": "bolt",
+            "subSlots": [
+              {
+                "module": null,
+                "spannedBy": null
+              }
+            ]
+          },
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ]
+    }
+  ],
+  "events": [],
+  "body": {
+    "zones": [
+      {
+        "zone": "head",
+        "label": {
+          "de_DE": "KOPF",
+          "en_US": "HEAD"
+        },
+        "color": "#00bfff",
+        "x": -350,
+        "y": -710,
+        "w": 700,
+        "h": 420,
+        "maxHp": 300,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "torso",
+        "label": {
+          "de_DE": "RUMPF",
+          "en_US": "TORSO"
+        },
+        "color": "#00ff88",
+        "x": -350,
+        "y": -210,
+        "w": 700,
+        "h": 420,
+        "maxHp": 500,
+        "neighbors": [
+          "head",
+          "legs",
+          "arm_left",
+          "arm_right"
+        ]
+      },
+      {
+        "zone": "legs",
+        "label": {
+          "de_DE": "BEINE",
+          "en_US": "LEGS"
+        },
+        "color": "#ff6644",
+        "x": -350,
+        "y": 290,
+        "w": 700,
+        "h": 420,
+        "maxHp": 300,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "arm_left",
+        "label": {
+          "de_DE": "ARM LINKS",
+          "en_US": "ARM LEFT"
+        },
+        "color": "#ff44cc",
+        "x": -1130,
+        "y": -210,
+        "w": 700,
+        "h": 420,
+        "maxHp": 250,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "arm_right",
+        "label": {
+          "de_DE": "ARM RECHTS",
+          "en_US": "ARM RIGHT"
+        },
+        "color": "#ff44cc",
+        "x": 430,
+        "y": -210,
+        "w": 700,
+        "h": 420,
+        "maxHp": 250,
+        "neighbors": [
+          "torso"
+        ]
+      }
+    ],
+    "freeItems": [
+      {
+        "module": {
+          "id": "tv3f-emp",
+          "kind": "emitter",
+          "subSlots": [
+            {
+              "module": {
+                "id": "tv3f-bolt",
+                "kind": "bolt",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "tv3f-eff",
+                "kind": "efficiency",
+                "subSlots": []
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "tv3f-cool",
+                "kind": "cooler",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "spannedBy": null
+            }
+          ],
+          "currentHP": 100
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.5,
+          "normY": 0.45
+        },
+        "firesAtPlayer": true
+      },
+      {
+        "module": {
+          "id": "tv3f-shield",
+          "kind": "shield",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "currentHP": 100
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.5,
+          "normY": 0.12
+        }
+      },
+      {
+        "module": {
+          "id": "tv3f-gen-a",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "tv3f-cap",
+                "kind": "capacitor",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "currentHP": 100
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "legs",
+          "normX": 0.4,
+          "normY": 0.45
+        }
+      },
+      {
+        "module": {
+          "id": "tv3f-gen-b",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "tv3f-oc",
+                "kind": "overclocker",
+                "subSlots": []
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "currentHP": 100
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_left",
+          "normX": 0.5,
+          "normY": 0.45
+        }
+      }
+    ],
+    "cableConnections": [
+      {
+        "id": "tv3f-pool-a",
+        "endpointA": {
+          "moduleId": "tv3f-gen-a"
+        },
+        "endpointB": {
+          "moduleId": "tv3f-emp"
+        }
+      },
+      {
+        "id": "tv3f-pool-b",
+        "endpointA": {
+          "moduleId": "tv3f-gen-b"
+        },
+        "endpointB": {
+          "moduleId": "tv3f-shield"
+        }
+      }
+    ]
+  },
+  "eventPool": [
+    {
+      "id": "tut-v4-card-repair",
+      "name": {
+        "de_DE": "Reparatur-Impuls",
+        "en_US": "Repair Pulse"
+      },
+      "description": {
+        "de_DE": "Heilt alle Items 20 HP/s fuer 15 s",
+        "en_US": "Heals all items 20 HP/s for 15s"
+      },
+      "icon": "",
+      "canDefer": true,
+      "event": {
+        "id": "tut-v4-card-repair-e",
+        "type": "repairPulse",
+        "atMs": 0,
+        "warningMs": 0,
+        "durationMs": 15000,
+        "hpPerSec": 20
+      }
+    }
+  ],
+  "upgradePool": [
+    {
+      "id": "tut-v4-up-torso",
+      "type": "zoneBonus",
+      "name": {
+        "de_DE": "Torso-Ausbau",
+        "en_US": "Torso Expansion"
+      },
+      "description": {
+        "de_DE": "torso ×Energie 1.25",
+        "en_US": "torso ×Energy 1.25"
+      },
+      "zone": "torso",
+      "productionMultiplier": 1.25
+    }
+  ],
+  "vectorDrains": [
+    {
+      "kind": "powerStarvation",
+      "threshold": 0.5,
+      "ratePerSec": 0.5
+    }
+  ]
+}

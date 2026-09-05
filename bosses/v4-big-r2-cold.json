@@ -1,0 +1,573 @@
+{
+  "name": {
+    "de_DE": "Drosselfrost",
+    "en_US": "Throttle Frost"
+  },
+  "bossDefeatGrantsWin": true,
+  "loopTimeMs": 16000,
+  "body": {
+    "freeItems": [
+      {
+        "module": {
+          "id": "id-49",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-50",
+                "kind": "overclocker",
+                "subSlots": [],
+                "xp": 149.64999999999978
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 151.9000000000003
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "head",
+          "normX": 0.5335,
+          "normY": 0.4128
+        }
+      },
+      {
+        "module": {
+          "id": "id-52",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 135.29999999999652
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.3425,
+          "normY": 0.6357
+        }
+      },
+      {
+        "module": {
+          "id": "id-53",
+          "kind": "capacitor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 49.39999999999933
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.7055,
+          "normY": 0.5805
+        }
+      },
+      {
+        "module": {
+          "id": "id-54",
+          "kind": "emitter",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-55",
+                "kind": "bolt",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "id-93",
+                      "kind": "swapOutputDamage",
+                      "subSlots": [
+                        {
+                          "module": {
+                            "id": "id-69",
+                            "kind": "overclocker",
+                            "subSlots": [],
+                            "xp": 21.55000000000017
+                          },
+                          "spannedBy": null
+                        }
+                      ],
+                      "xp": 2.3499999999999996
+                    },
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 77.74999999999773
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-86",
+                "kind": "plasma",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "id-85",
+                      "kind": "inverterMod",
+                      "subSlots": [],
+                      "xp": 2.3499999999999996
+                    },
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 77.74999999999773
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-98",
+                "kind": "duplicator",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "id-70",
+                      "kind": "efficiency",
+                      "subSlots": [],
+                      "xp": 77.74999999999773
+                    },
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 2.3499999999999996
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 77.74999999999773
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.5482,
+          "normY": 0.1206
+        },
+        "firesAtPlayer": true
+      },
+      {
+        "module": {
+          "id": "id-59",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 143.1999999999983
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.3448,
+          "normY": 0.2815
+        }
+      },
+      {
+        "module": {
+          "id": "id-65",
+          "kind": "shield",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 143.89999999999847
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.0779,
+          "normY": 0.3814
+        }
+      },
+      {
+        "module": {
+          "id": "id-62",
+          "kind": "sensor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 93.44999999999683
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "head",
+          "normX": 0.2575,
+          "normY": 0.4125
+        }
+      },
+      {
+        "module": {
+          "id": "id-61",
+          "kind": "engine",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-127",
+                "kind": "generator",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 152.0000000000003
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 152.0000000000003
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "legs",
+          "normX": 0.1908,
+          "normY": 0.2676
+        }
+      }
+    ],
+    "cableConnections": [
+      {
+        "id": "ch-cable-id-58",
+        "endpointA": {
+          "moduleId": "id-53"
+        },
+        "endpointB": {
+          "moduleId": "id-54"
+        }
+      },
+      {
+        "id": "id-136",
+        "endpointA": {
+          "moduleId": "id-49"
+        },
+        "endpointB": {
+          "moduleId": "id-65"
+        }
+      },
+      {
+        "id": "id-150",
+        "endpointA": {
+          "moduleId": "id-49"
+        },
+        "endpointB": {
+          "moduleId": "id-62"
+        }
+      },
+      {
+        "id": "id-151",
+        "endpointA": {
+          "moduleId": "id-59"
+        },
+        "endpointB": {
+          "moduleId": "id-53"
+        }
+      },
+      {
+        "id": "id-152",
+        "endpointA": {
+          "moduleId": "id-52"
+        },
+        "endpointB": {
+          "moduleId": "id-53"
+        }
+      }
+    ],
+    "zones": [
+      {
+        "zone": "head",
+        "label": {
+          "de_DE": "Drosselkopf",
+          "en_US": "Throttle Head"
+        },
+        "color": "#00bfff",
+        "x": -280,
+        "y": -600,
+        "w": 560,
+        "h": 320,
+        "maxHp": 700,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "torso",
+        "label": {
+          "de_DE": "Frostkern",
+          "en_US": "Frost Core"
+        },
+        "color": "#00ff88",
+        "x": -320,
+        "y": -240,
+        "w": 640,
+        "h": 420,
+        "maxHp": 1300,
+        "neighbors": [
+          "head",
+          "legs"
+        ]
+      },
+      {
+        "zone": "legs",
+        "label": {
+          "de_DE": "Reaktorsockel",
+          "en_US": "Reactor Base"
+        },
+        "color": "#ff6644",
+        "x": -280,
+        "y": 220,
+        "w": 560,
+        "h": 400,
+        "maxHp": 700,
+        "neighbors": [
+          "torso"
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "v4br2c-eat",
+      "type": "energyEater",
+      "atMs": 4500,
+      "zone": "torso",
+      "count": 2,
+      "radius": 200,
+      "durationMs": 10000,
+      "warningMs": 2500,
+      "warnOnce": true,
+      "targetMode": "mostItems",
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Ich drossle deinen Strom.",
+          "en_US": "I'll throttle your power."
+        },
+        "durationMs": 2000
+      },
+      "loopEveryMs": 60000
+    },
+    {
+      "id": "v4br2c-virus",
+      "type": "infect",
+      "atMs": 14000,
+      "warningMs": 1500,
+      "seedZone": "torso",
+      "spreadRatePerSec": 0.3,
+      "damagePerSec": 5,
+      "infectionDurationS": 7,
+      "chance": 0.1,
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Ein kalter Wurm in deinem System.",
+          "en_US": "A cold worm in your system."
+        },
+        "durationMs": 2000
+      }
+    },
+    {
+      "id": "v4br2c-form-head",
+      "type": "zoneCompression",
+      "atMs": 8000,
+      "warningMs": 2500,
+      "scope": "run",
+      "zones": [
+        "head"
+      ],
+      "shrinkPercent": 8,
+      "warnOnce": true,
+      "targetMode": "fixedZones",
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Ich press dir den Kopf zusammen. Für immer.",
+          "en_US": "I'm crushing your head. For good."
+        },
+        "durationMs": 2000
+      },
+      "loopEveryMs": 120000
+    }
+  ],
+  "lootPool": [
+    {
+      "id": "v4br2c-l-plasma",
+      "lootDescription": {
+        "de_DE": "Feuert Plasma, das Schilde durchdringt und das Ziel aufheizt, statt es direkt zu beschädigen.",
+        "en_US": "Fires plasma that pierces shields and heats the target instead of damaging it directly."
+      },
+      "kind": "emitter",
+      "subSlots": [
+        {
+          "module": {
+            "id": "v4br2c-l-plasma-plasma",
+            "kind": "plasma",
+            "subSlots": []
+          },
+          "spannedBy": null
+        },
+        {
+          "module": {
+            "id": "v4br2c-l-plasma-bolt",
+            "kind": "bolt",
+            "subSlots": [
+              {
+                "module": null,
+                "spannedBy": null
+              }
+            ]
+          },
+          "spannedBy": null
+        }
+      ],
+      "label": {
+        "de_DE": "Plasma-Werfer (kalt)",
+        "en_US": "Plasma Caster (cold)"
+      },
+      "xp": 750
+    },
+    {
+      "id": "v4br2c-l-cap",
+      "lootDescription": {
+        "de_DE": "Speichert Energie und gibt sie in Lastspitzen wieder ab.",
+        "en_US": "Stores energy and releases it during load spikes."
+      },
+      "kind": "capacitor",
+      "subSlots": [
+        {
+          "module": null,
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ],
+      "label": {
+        "de_DE": "Reserve-Zelle",
+        "en_US": "Reserve Cell"
+      },
+      "xp": 750
+    },
+    {
+      "id": "v4br2c-l-gen",
+      "lootDescription": {
+        "de_DE": "Eine Energiequelle, von der mehr Strom nutzbar bleibt.",
+        "en_US": "An energy source that leaves more of its power usable."
+      },
+      "kind": "generator",
+      "subSlots": [
+        {
+          "module": {
+            "id": "v4br2c-l-gen-efficiency",
+            "kind": "efficiency",
+            "subSlots": []
+          },
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ],
+      "label": {
+        "de_DE": "Reaktor (effizient)",
+        "en_US": "Reactor (efficient)"
+      },
+      "xp": 750
+    },
+    {
+      "$itemPool": "modifier-inverter"
+    },
+    {
+      "$itemPool": "defense-reflect"
+    },
+    {
+      "$itemPool": "power-catalyst"
+    },
+    {
+      "$itemPool": "defense-bulwark"
+    }
+  ],
+  "chassisTemperature": -5,
+  "eventPool": [
+    {
+      "$eventPool": "support"
+    },
+    {
+      "$eventPool": "standard"
+    },
+    {
+      "$eventPool": "navigation"
+    },
+    {
+      "$eventPool": "heat"
+    }
+  ],
+  "upgradePool": [
+    {
+      "$upgradePool": "expansion"
+    },
+    {
+      "$upgradePool": "coupling"
+    },
+    {
+      "$upgradePool": "climate-shift"
+    },
+    {
+      "$upgradePool": "boost-flat"
+    }
+  ],
+  "vectorDrains": [
+    {
+      "kind": "powerStarvation",
+      "threshold": 0.45,
+      "ratePerSec": 0.9
+    }
+  ]
+}

@@ -1,0 +1,710 @@
+{
+  "name": {
+    "de_DE": "Wagenburg",
+    "en_US": "Laager"
+  },
+  "bossDefeatGrantsWin": true,
+  "loopTimeMs": 14000,
+  "body": {
+    "freeItems": [
+      {
+        "module": {
+          "id": "id-68",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-79",
+                "kind": "overclocker",
+                "subSlots": []
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 1490.8589999999247
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.5174,
+          "normY": 0.5441
+        }
+      },
+      {
+        "module": {
+          "id": "id-73",
+          "kind": "emitter",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-153",
+                "kind": "multiplexer",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "id-106",
+                      "kind": "beam",
+                      "subSlots": [
+                        {
+                          "module": null,
+                          "spannedBy": null
+                        }
+                      ]
+                    },
+                    "spannedBy": null
+                  },
+                  {
+                    "module": {
+                      "id": "id-134",
+                      "kind": "efficiency",
+                      "subSlots": []
+                    },
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-74",
+                "kind": "cooler",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "id-149",
+                      "kind": "overclocker",
+                      "subSlots": []
+                    },
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-164",
+                "kind": "expander",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "id-162",
+                      "kind": "inverterMod",
+                      "subSlots": []
+                    },
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 1167.2219999998438
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.3585,
+          "normY": 0.3317
+        },
+        "firesAtPlayer": true
+      },
+      {
+        "module": {
+          "id": "id-72",
+          "kind": "shield",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 1417.3672999999226
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.1027,
+          "normY": 0.5449
+        }
+      },
+      {
+        "module": {
+          "id": "id-69",
+          "kind": "capacitor",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-169",
+                "kind": "expander",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "id-168",
+                      "kind": "inverterMod",
+                      "subSlots": []
+                    },
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-200",
+                "kind": "overclocker",
+                "subSlots": []
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 903.0058999998573
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.5614,
+          "normY": 0.33
+        }
+      },
+      {
+        "module": {
+          "id": "id-142",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-152",
+                "kind": "overclocker",
+                "subSlots": []
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-115",
+                "kind": "expander",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "id-92",
+                      "kind": "inverterMod",
+                      "subSlots": []
+                    },
+                    "spannedBy": null
+                  }
+                ]
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 1201.8873999998734
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.2495,
+          "normY": 0.3353
+        },
+        "reactor": true
+      },
+      {
+        "module": {
+          "id": "id-132",
+          "kind": "shield",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 690.729399999894
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.6888,
+          "normY": 0.5444
+        }
+      },
+      {
+        "module": {
+          "id": "id-141",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-148",
+                "kind": "overclocker",
+                "subSlots": []
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 643.9958999999309
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.2742,
+          "normY": 0.5392
+        }
+      },
+      {
+        "module": {
+          "id": "id-123",
+          "kind": "thermoH",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "label": {
+            "de_DE": "Pipe H",
+            "en_US": "Pipe H"
+          }
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": -0.0134,
+          "normY": 0.8595
+        }
+      },
+      {
+        "module": {
+          "id": "id-165",
+          "kind": "thermoH",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "label": {
+            "de_DE": "Pipe H",
+            "en_US": "Pipe H"
+          }
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.3321,
+          "normY": 0.8577
+        }
+      },
+      {
+        "module": {
+          "id": "id-175",
+          "kind": "thermoH",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "label": {
+            "de_DE": "Pipe H",
+            "en_US": "Pipe H"
+          }
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.6749,
+          "normY": 0.8555
+        }
+      },
+      {
+        "module": {
+          "id": "id-125",
+          "kind": "thermoV",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "label": {
+            "de_DE": "Pipe V",
+            "en_US": "Pipe V"
+          }
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.0252,
+          "normY": 0.2859
+        }
+      },
+      {
+        "module": {
+          "id": "id-181",
+          "kind": "thermoV",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "label": {
+            "de_DE": "Pipe V",
+            "en_US": "Pipe V"
+          }
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.9072,
+          "normY": 0.2841
+        }
+      },
+      {
+        "module": {
+          "id": "id-179",
+          "kind": "thermoH",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "label": {
+            "de_DE": "Pipe H",
+            "en_US": "Pipe H"
+          }
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": -0.0162,
+          "normY": 0.1906
+        }
+      },
+      {
+        "module": {
+          "id": "id-185",
+          "kind": "thermoH",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "label": {
+            "de_DE": "Pipe H",
+            "en_US": "Pipe H"
+          }
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.3267,
+          "normY": 0.1919
+        }
+      },
+      {
+        "module": {
+          "id": "id-190",
+          "kind": "thermoH",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "label": {
+            "de_DE": "Pipe H",
+            "en_US": "Pipe H"
+          }
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.6707,
+          "normY": 0.1867
+        }
+      }
+    ],
+    "cableConnections": [
+      {
+        "id": "id-145",
+        "endpointA": {
+          "moduleId": "id-142"
+        },
+        "endpointB": {
+          "moduleId": "id-69"
+        }
+      },
+      {
+        "id": "id-146",
+        "endpointA": {
+          "moduleId": "id-73"
+        },
+        "endpointB": {
+          "moduleId": "id-69"
+        }
+      },
+      {
+        "id": "id-155",
+        "endpointA": {
+          "moduleId": "id-68"
+        },
+        "endpointB": {
+          "moduleId": "id-132"
+        }
+      },
+      {
+        "id": "id-157",
+        "endpointA": {
+          "moduleId": "id-141"
+        },
+        "endpointB": {
+          "moduleId": "id-72"
+        }
+      }
+    ],
+    "zones": [
+      {
+        "zone": "torso",
+        "label": {
+          "de_DE": "Festungskern",
+          "en_US": "Fortress Core"
+        },
+        "color": "#00ff88",
+        "x": -350,
+        "y": -210,
+        "w": 700,
+        "h": 420,
+        "maxHp": 1300,
+        "neighbors": [
+          "arm_left",
+          "arm_right",
+          "legs"
+        ]
+      },
+      {
+        "zone": "arm_left",
+        "label": {
+          "de_DE": "Schildwall-West",
+          "en_US": "Shield Wall West"
+        },
+        "color": "#ff44cc",
+        "x": -1000,
+        "y": -200,
+        "w": 540,
+        "h": 360,
+        "maxHp": 700,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "arm_right",
+        "label": {
+          "de_DE": "Schildwall-Ost",
+          "en_US": "Shield Wall East"
+        },
+        "color": "#ff44cc",
+        "x": 460,
+        "y": -200,
+        "w": 540,
+        "h": 360,
+        "maxHp": 700,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "legs",
+        "label": {
+          "de_DE": "Reaktorbunker",
+          "en_US": "Reactor Bunker"
+        },
+        "color": "#ff6644",
+        "x": -320,
+        "y": 300,
+        "w": 640,
+        "h": 340,
+        "maxHp": 600,
+        "neighbors": [
+          "torso"
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "v4br3-field",
+      "type": "fieldLock",
+      "atMs": 4000,
+      "durationMs": 6000,
+      "zone": "torso",
+      "count": 2,
+      "fieldW": 140,
+      "fieldH": 140,
+      "warningMs": 2500,
+      "warnOnce": true,
+      "targetMode": "mostItems",
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Du kommst hier nicht rein.",
+          "en_US": "You're not getting in here."
+        },
+        "durationMs": 2000
+      },
+      "loopEveryMs": 55000
+    },
+    {
+      "id": "v4br3i-form-armr",
+      "type": "zoneCompression",
+      "atMs": 8000,
+      "warningMs": 2500,
+      "scope": "run",
+      "zones": [
+        "arm_right"
+      ],
+      "shrinkPercent": 8,
+      "warnOnce": true,
+      "targetMode": "fixedZones",
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Rechter Arm, dauerhaft eingedrückt.",
+          "en_US": "Right arm, permanently dented."
+        },
+        "durationMs": 2000
+      },
+      "loopEveryMs": 120000
+    }
+  ],
+  "lootPool": [
+    {
+      "id": "v4br3-l-beam",
+      "lootDescription": {
+        "de_DE": "Feuert einen Dauerstrahl.",
+        "en_US": "Fires a continuous beam."
+      },
+      "kind": "emitter",
+      "subSlots": [
+        {
+          "module": {
+            "id": "v4br3-l-beam-beam",
+            "kind": "beam",
+            "subSlots": []
+          },
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ],
+      "label": {
+        "de_DE": "Beam-Lanze (effizient)",
+        "en_US": "Beam Lance (efficient)"
+      },
+      "xp": 850
+    },
+    {
+      "id": "v4br3-l-shield",
+      "lootDescription": {
+        "de_DE": "Fängt eingehenden Beschuss ab, bis seine Ladung erschöpft ist.",
+        "en_US": "Absorbs incoming fire until its charge runs out."
+      },
+      "kind": "shield",
+      "subSlots": [
+        {
+          "module": null,
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ],
+      "label": {
+        "de_DE": "Festungs-Schild",
+        "en_US": "Fortress Shield"
+      },
+      "xp": 850
+    },
+    {
+      "id": "v4br3-l-gen",
+      "lootDescription": {
+        "de_DE": "Liefert die doppelte Energie einer gewöhnlichen Quelle.",
+        "en_US": "Delivers double the energy of an ordinary source."
+      },
+      "kind": "generator",
+      "subSlots": [
+        {
+          "module": {
+            "id": "v4br3-l-gen-overclocker",
+            "kind": "overclocker",
+            "subSlots": []
+          },
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ],
+      "label": {
+        "de_DE": "Bunker-Reaktor",
+        "en_US": "Bunker Reactor"
+      },
+      "xp": 850
+    },
+    {
+      "$itemPool": "infiltration"
+    },
+    {
+      "$itemPool": "special-duplicator"
+    }
+  ],
+  "vectorDrains": [
+    {
+      "kind": "thermoStress",
+      "threshold": 110,
+      "ratePerSec": 0.6
+    },
+    {
+      "kind": "infiltrationLoad",
+      "threshold": 3,
+      "ratePerSec": 0.5
+    }
+  ],
+  "eventPool": [
+    {
+      "$eventPool": "support"
+    },
+    {
+      "$eventPool": "standard"
+    }
+  ]
+}

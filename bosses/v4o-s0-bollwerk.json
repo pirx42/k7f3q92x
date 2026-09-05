@@ -1,0 +1,230 @@
+{
+  "name": {
+    "de_DE": "Bollwerk",
+    "en_US": "Bulwark"
+  },
+  "bossDefeatGrantsWin": true,
+  "loopTimeMs": 28000,
+  "body": {
+    "zones": [
+      {
+        "zone": "torso",
+        "label": {
+          "de_DE": "Kernblock",
+          "en_US": "Core Block"
+        },
+        "color": "#00ff88",
+        "x": -520,
+        "y": -180,
+        "w": 1040,
+        "h": 560,
+        "maxHp": 3500,
+        "neighbors": [
+          "head",
+          "legs"
+        ]
+      },
+      {
+        "zone": "head",
+        "label": {
+          "de_DE": "Geschützturm",
+          "en_US": "Gun Turret"
+        },
+        "color": "#00bfff",
+        "x": -240,
+        "y": -560,
+        "w": 480,
+        "h": 320,
+        "maxHp": 700,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "legs",
+        "label": {
+          "de_DE": "Sockel",
+          "en_US": "Base"
+        },
+        "color": "#ff6644",
+        "x": -300,
+        "y": 400,
+        "w": 600,
+        "h": 240,
+        "maxHp": 700,
+        "neighbors": [
+          "torso"
+        ]
+      }
+    ],
+    "freeItems": [
+      {
+        "module": {
+          "id": "v4o-bollwerk-gen",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 111.09999999999583
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.2692,
+          "normY": 0.3862
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-bollwerk-cap",
+          "kind": "capacitor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 6.999999999999983
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.3876,
+          "normY": 0.3857
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-bollwerk-emitter",
+          "kind": "emitter",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-bollwerk-bolt",
+                "kind": "bolt",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 6.999999999999983
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 6.999999999999983
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.5052,
+          "normY": 0.3907
+        },
+        "firesAtPlayer": true
+      }
+    ],
+    "cableConnections": [
+      {
+        "id": "v4o-bollwerk-cable-gen-cap",
+        "endpointA": {
+          "moduleId": "v4o-bollwerk-gen"
+        },
+        "endpointB": {
+          "moduleId": "v4o-bollwerk-cap"
+        }
+      },
+      {
+        "id": "v4o-bollwerk-cable-cap-emi",
+        "endpointA": {
+          "moduleId": "v4o-bollwerk-cap"
+        },
+        "endpointB": {
+          "moduleId": "v4o-bollwerk-emitter"
+        }
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "v4o-bollwerk-eat",
+      "type": "energyEater",
+      "atMs": 6000,
+      "zone": "torso",
+      "count": 1,
+      "radius": 180,
+      "durationMs": 8000,
+      "loopEveryMs": 45000,
+      "warningMs": 2500,
+      "warnOnce": true,
+      "targetMode": "mostItems",
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Das Bollwerk trinkt deinen Strom.",
+          "en_US": "The bulwark drinks your power."
+        },
+        "durationMs": 2000
+      }
+    }
+  ],
+  "lootPool": [
+    {
+      "$itemPool": "weapon-beam"
+    },
+    {
+      "$itemPool": "defense-fortress"
+    },
+    {
+      "$itemPool": "power-capacitor"
+    },
+    {
+      "$itemPool": "support-repair"
+    },
+    {
+      "$itemPool": "power-resonance"
+    },
+    {
+      "$itemPool": "defense-bulwark"
+    }
+  ],
+  "eventPoolSize": 3,
+  "eventPool": [
+    {
+      "$eventPool": "standard"
+    },
+    {
+      "$eventPool": "cables"
+    },
+    {
+      "$eventPool": "support"
+    },
+    {
+      "$eventPool": "repair"
+    }
+  ],
+  "upgradePool": [
+    {
+      "$upgradePool": "repair"
+    }
+  ]
+}

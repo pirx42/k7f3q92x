@@ -1,0 +1,506 @@
+{
+  "name": {
+    "de_DE": "Bruchkern",
+    "en_US": "Rift Core"
+  },
+  "bossDefeatGrantsWin": true,
+  "loopTimeMs": 16000,
+  "body": {
+    "freeItems": [
+      {
+        "module": {
+          "id": "id-49",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-50",
+                "kind": "overclocker",
+                "subSlots": [],
+                "xp": 185.10000000000784
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 187.35000000000835
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "head",
+          "normX": 0.5335,
+          "normY": 0.4128
+        }
+      },
+      {
+        "module": {
+          "id": "id-52",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 170.75000000000458
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.0965,
+          "normY": 0.6204
+        }
+      },
+      {
+        "module": {
+          "id": "id-53",
+          "kind": "capacitor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 54.249999999999055
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.3675,
+          "normY": 0.0824
+        }
+      },
+      {
+        "module": {
+          "id": "id-54",
+          "kind": "emitter",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-55",
+                "kind": "bolt",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 82.59999999999745
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-103",
+                "kind": "multiShoot",
+                "subSlots": [],
+                "xp": 7.199999999999982
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-70",
+                "kind": "efficiency",
+                "subSlots": [],
+                "xp": 82.59999999999745
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 82.59999999999745
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.5965,
+          "normY": 0.0708
+        },
+        "firesAtPlayer": true
+      },
+      {
+        "module": {
+          "id": "id-59",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 178.65000000000637
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.0989,
+          "normY": 0.0861
+        }
+      },
+      {
+        "module": {
+          "id": "id-65",
+          "kind": "shield",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 179.35000000000653
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "head",
+          "normX": 0.1584,
+          "normY": 0.4224
+        }
+      },
+      {
+        "module": {
+          "id": "id-61",
+          "kind": "engine",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-127",
+                "kind": "generator",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 187.45000000000837
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 187.45000000000837
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_left",
+          "normX": 0.4867,
+          "normY": 0.4427
+        }
+      },
+      {
+        "module": {
+          "id": "id-66",
+          "kind": "emitter",
+          "subSlots": [
+            {
+              "module": {
+                "id": "id-100",
+                "kind": "bolt",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 10.90000000000002
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "id-67",
+                "kind": "cooler",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 10.90000000000002
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 10.90000000000002
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.6026,
+          "normY": 0.6282
+        },
+        "firesAtPlayer": true
+      },
+      {
+        "module": {
+          "id": "id-60",
+          "kind": "capacitor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 1.800000000000001
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.3596,
+          "normY": 0.6243
+        }
+      }
+    ],
+    "cableConnections": [
+      {
+        "id": "ch-cable-id-58",
+        "endpointA": {
+          "moduleId": "id-53"
+        },
+        "endpointB": {
+          "moduleId": "id-54"
+        }
+      },
+      {
+        "id": "id-136",
+        "endpointA": {
+          "moduleId": "id-49"
+        },
+        "endpointB": {
+          "moduleId": "id-65"
+        }
+      },
+      {
+        "id": "id-151",
+        "endpointA": {
+          "moduleId": "id-59"
+        },
+        "endpointB": {
+          "moduleId": "id-53"
+        }
+      },
+      {
+        "id": "id-156",
+        "endpointA": {
+          "moduleId": "id-52"
+        },
+        "endpointB": {
+          "moduleId": "id-60"
+        }
+      },
+      {
+        "id": "id-157",
+        "endpointA": {
+          "moduleId": "id-66"
+        },
+        "endpointB": {
+          "moduleId": "id-60"
+        }
+      }
+    ],
+    "zones": [
+      {
+        "zone": "torso",
+        "label": {
+          "de_DE": "Bruchkern",
+          "en_US": "Rift Core"
+        },
+        "color": "#00ff88",
+        "x": -350,
+        "y": -240,
+        "w": 700,
+        "h": 460,
+        "maxHp": 1300,
+        "neighbors": [
+          "head",
+          "arm_left"
+        ]
+      },
+      {
+        "zone": "head",
+        "label": {
+          "de_DE": "Ankerturm",
+          "en_US": "Anchor Spire"
+        },
+        "color": "#00bfff",
+        "x": -350,
+        "y": -620,
+        "w": 700,
+        "h": 360,
+        "maxHp": 700,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "arm_left",
+        "label": {
+          "de_DE": "Versetzter Pod",
+          "en_US": "Displaced Pod"
+        },
+        "color": "#ff44cc",
+        "x": -1120,
+        "y": -180,
+        "w": 700,
+        "h": 360,
+        "maxHp": 700,
+        "neighbors": [
+          "torso"
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "v4br2r-form-head",
+      "type": "zoneCompression",
+      "atMs": 8000,
+      "zones": [
+        "head"
+      ],
+      "shrinkPercent": 8,
+      "scope": "run",
+      "loopEveryMs": 120000,
+      "warningMs": 2500,
+      "warnOnce": true,
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Ich falte den Raum. Du passt da nicht mehr rein.",
+          "en_US": "I'm folding space. You don't fit in there anymore."
+        },
+        "durationMs": 2000
+      }
+    }
+  ],
+  "lootPool": [
+    {
+      "id": "v4br2r-l-emit",
+      "kind": "emitter",
+      "subSlots": [
+        {
+          "module": {
+            "id": "v4br2r-l-emit-multiShoot",
+            "kind": "multiShoot",
+            "subSlots": []
+          },
+          "spannedBy": null
+        },
+        {
+          "module": {
+            "id": "v4br2r-l-emit-bolt",
+            "kind": "bolt",
+            "subSlots": [
+              {
+                "module": null,
+                "spannedBy": null
+              },
+              {
+                "module": null,
+                "spannedBy": null
+              }
+            ]
+          },
+          "spannedBy": null
+        }
+      ],
+      "name": {
+        "de_DE": "Splitter-Werfer",
+        "en_US": "Splinter Caster"
+      }
+    },
+    {
+      "id": "v4br2r-l-cap",
+      "kind": "capacitor",
+      "subSlots": [
+        {
+          "module": {
+            "id": "v4br2r-l-cap-overclocker",
+            "kind": "overclocker",
+            "subSlots": []
+          },
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ],
+      "name": {
+        "de_DE": "Puffer (übertaktet)",
+        "en_US": "Buffer (overclocked)"
+      }
+    },
+    {
+      "id": "v4br2r-l-gen",
+      "kind": "generator",
+      "subSlots": [
+        {
+          "module": {
+            "id": "v4br2r-l-gen-overclocker",
+            "kind": "overclocker",
+            "subSlots": []
+          },
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ],
+      "name": {
+        "de_DE": "Bruch-Reaktor",
+        "en_US": "Rift Reactor"
+      }
+    }
+  ],
+  "vectorDrains": [
+    {
+      "kind": "weaponSilence",
+      "threshold": 40000,
+      "ratePerSec": 0.7
+    }
+  ],
+  "upgradePool": [
+    {
+      "$upgradePool": "expansion"
+    }
+  ]
+}

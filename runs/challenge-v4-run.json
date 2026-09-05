@@ -1,0 +1,1804 @@
+{
+  "id": "challenge-v4",
+  "allowedChassisIds": [
+    "standard",
+    "sprinter",
+    "tank",
+    "glaskanone",
+    "frost-specialist",
+    "induktor",
+    "reservetank"
+  ],
+  "name": {
+    "de_DE": "Challenge v4: AVAS-Showdown",
+    "en_US": "Challenge v4: AVAS Showdown"
+  },
+  "description": {
+    "de_DE": "Jeder Sektor ein Boss — schlag dich per Tasks ODER per Abriss durch. Am Rundenende wartet AVAS selbst.",
+    "en_US": "A boss in every sector — clear it by tasks OR by tearing it down. At the round's end, AVAS shows up in person."
+  },
+  "startRoundId": "v4-r1-kontakt",
+  "playerZoneMaxHp": 600,
+  "rounds": [
+    {
+      "id": "v4-r1-kontakt",
+      "name": {
+        "de_DE": "Runde 1: Erstkontakt",
+        "en_US": "Round 1: First Contact"
+      },
+      "description": {
+        "de_DE": "Etwas tastet sich durch die Leitungen heran. A.V.A.S. will wissen, was K247 kann.",
+        "en_US": "Something is probing through the lines. A.V.A.S. wants to know what K247 is made of."
+      },
+      "sections": [
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "v4-inv-gen-1",
+              "kind": "generator",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            {
+              "id": "v4-inv-gen-2",
+              "kind": "generator",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            {
+              "id": "v4-inv-engine",
+              "kind": "engine",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            {
+              "id": "v4-inv-sensor",
+              "kind": "sensor",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            {
+              "id": "v4-inv-cap",
+              "kind": "capacitor",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            {
+              "id": "v4-inv-over",
+              "kind": "overclocker",
+              "subSlots": []
+            },
+            {
+              "id": "v4-inv-eff",
+              "kind": "efficiency",
+              "subSlots": []
+            },
+            {
+              "id": "v4-inv-gen-3",
+              "kind": "generator",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            {
+              "id": "v4-inv-gen-4",
+              "kind": "generator",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            }
+          ],
+          "startRandomItems": {
+            "fromRunPool": {
+              "count": 1,
+              "pool": [
+                {
+                  "id": "v4-rnd-infil",
+                  "kind": "infiltrator",
+                  "subSlots": [
+                    {
+                      "module": null,
+                      "spannedBy": null
+                    },
+                    {
+                      "module": null,
+                      "spannedBy": null
+                    }
+                  ]
+                },
+                {
+                  "id": "v4-rnd-sensor",
+                  "kind": "sensor",
+                  "subSlots": [
+                    {
+                      "module": null,
+                      "spannedBy": null
+                    },
+                    {
+                      "module": null,
+                      "spannedBy": null
+                    }
+                  ]
+                },
+                {
+                  "id": "v4-rnd-cooler",
+                  "kind": "cooler",
+                  "subSlots": [
+                    {
+                      "module": null,
+                      "spannedBy": null
+                    },
+                    {
+                      "module": null,
+                      "spannedBy": null
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "dialog": [
+            {
+              "id": "v4-r1s0-avas",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 600
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Subjekt K247. Ein Haufen kalter Schrott. Mal sehen, ob du überhaupt anspringst — oder ob ich dich gleich wieder einmotte.",
+                "en_US": "Subject K247. A pile of cold scrap. Let's see if you even spark up — or if I mothball you right back."
+              }
+            },
+            {
+              "id": "v4-r1s0-k247",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 3200
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Erstmal Saft auf die Leitung. Dann reden wir drüber, wer hier wen einmottet.",
+                "en_US": "Power on the line first. Then we'll talk about who mothballs whom."
+              }
+            }
+          ],
+          "bossRefPool": [
+            "v4o-s0-bollwerk",
+            "v4o-s0-schwarm"
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "weapon-bolt"
+            },
+            {
+              "id": "v4-loot-s0-twin",
+              "kind": "emitter",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "v4-loot-s0-twin-bolt",
+                    "kind": "bolt",
+                    "subSlots": [
+                      {
+                        "module": null,
+                        "spannedBy": null
+                      }
+                    ]
+                  },
+                  "spannedBy": null
+                },
+                {
+                  "module": {
+                    "id": "v4-loot-s0-twin-ms",
+                    "kind": "multiShoot",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ],
+              "label": {
+                "de_DE": "Zwillings-Werfer",
+                "en_US": "Twin Caster"
+              },
+              "lootDescription": {
+                "de_DE": "Bolt-Werfer mit Mehrfachschuss — feuert Salven statt Einzelschüssen.",
+                "en_US": "Bolt caster with multi-shot — fires volleys instead of single shots."
+              },
+              "xp": 550
+            },
+            {
+              "$itemPool": "power-capacitor"
+            },
+            {
+              "$itemPool": "defense-firewall"
+            },
+            {
+              "$itemPool": "infiltration"
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r1s0-energy",
+              "name": {
+                "de_DE": "Strom nach unten",
+                "en_US": "Power to the legs"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Ohne Strom läuft hier nichts — und oben ist schon alles voll. Bring die Versorgung in die Beine. Oder reiß dem Ding einfach die Teile ab.",
+                "en_US": "Nothing runs without power — and the top is already full. Get supply into the legs. Or just rip this thing's parts off."
+              },
+              "hint": {
+                "de_DE": "Energie in den Beinen ≥ 10 E/s",
+                "en_US": "Energy in legs ≥ 10 E/s"
+              },
+              "type": "statThreshold",
+              "stat": "zoneEnergyProduction",
+              "threshold": 10,
+              "zone": "legs"
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r1s0-energy",
+              "holdMs": 4000
+            }
+          }
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "v4-r1s1-aim",
+              "kind": "emitter",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "v4-r1s1-aim-bolt",
+                    "kind": "bolt",
+                    "subSlots": [
+                      {
+                        "module": null,
+                        "spannedBy": null
+                      }
+                    ]
+                  },
+                  "spannedBy": null
+                },
+                {
+                  "module": {
+                    "id": "v4-r1s1-aim-tgt",
+                    "kind": "targetSelector",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            }
+          ],
+          "dialog": [
+            {
+              "id": "v4-r1s1-avas",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 600
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Such dir was aus. Das meiste hier ist Schrott — das Wichtige versteckt sich dazwischen. Viel Spaß beim Draufhalten.",
+                "en_US": "Take your pick. Most of this is junk — the important bits hide in between. Good luck spraying everything."
+              }
+            },
+            {
+              "id": "v4-r1s1-k247",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 3400
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Markier-Aufsatz drauf, das Wichtige zuerst. Den Rest räum ich danach weg.",
+                "en_US": "Marker on the gun, the important stuff first. I'll sweep the rest after."
+              }
+            }
+          ],
+          "bossRefPool": [
+            "v4o-s1-koeder",
+            "v4o-s1-streu"
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "weapon-bolt"
+            },
+            {
+              "$itemPool": "weapon-beam"
+            },
+            {
+              "$itemPool": "weapon-plasma"
+            },
+            {
+              "id": "v4-loot-s1-cool",
+              "kind": "cooler",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ],
+              "label": {
+                "de_DE": "Kühl-Aggregat",
+                "en_US": "Cooling Unit"
+              },
+              "lootDescription": {
+                "de_DE": "Kühlt sein Umfeld und hält benachbarte Systeme unter der Schadensschwelle.",
+                "en_US": "Cools its surroundings and keeps nearby systems below the damage threshold."
+              },
+              "xp": 500
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r1s1-weapon",
+              "name": {
+                "de_DE": "In Schussweite",
+                "en_US": "Into firing range"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Komm an das Ding ran und halt drauf — Reichweite hoch. Oder mach's kurz und zerleg es.",
+                "en_US": "Close in and keep on it — push your range up. Or just make it quick and tear it down."
+              },
+              "hint": {
+                "de_DE": "Range ~18–42",
+                "en_US": "Range ~18–42"
+              },
+              "type": "holdBand",
+              "stat": "effectiveRange",
+              "center": 30,
+              "halfWidth": 12
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r1s1-weapon",
+              "holdMs": 4000
+            }
+          }
+        },
+        {
+          "ambientTemperature": 38,
+          "freeItems": [],
+          "inventory": [
+            {
+              "id": "v4-r1s2-cooler",
+              "kind": "cooler",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "v4-r1s2-cooler-bypass",
+                    "kind": "bypassMod",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            }
+          ],
+          "dialog": [
+            {
+              "id": "v4-r1s2-avas",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 600
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Heiß genug? Deine eigenen Teile kochen dir weg, wenn du nicht aufpasst. Spart mir die Arbeit.",
+                "en_US": "Hot enough? Your own parts cook away if you're not careful. Saves me the trouble."
+              }
+            },
+            {
+              "id": "v4-r1s2-k247",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 3400
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Kühler dran und weiter. Ich glüh kontrolliert, nicht tödlich.",
+                "en_US": "Cooler on and onward. I run hot on purpose, not to death."
+              }
+            }
+          ],
+          "bossRefPool": [
+            "v4o-s2-brandkern",
+            "v4o-s2-gluthort",
+            "v4o-schacht"
+          ],
+          "bossLootPool": [
+            {
+              "id": "v4-loot-s2-shield",
+              "kind": "shield",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "v4-loot-s2-super",
+                    "kind": "superShield",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ],
+              "label": {
+                "de_DE": "Schild-Projektor",
+                "en_US": "Shield Projector"
+              },
+              "lootDescription": {
+                "de_DE": "Schild mit Superschild-Modul — projiziert seine Schale auch auf Nachbarzonen.",
+                "en_US": "Shield with a super-shield module — projects its shell onto neighboring zones as well."
+              },
+              "xp": 600
+            },
+            {
+              "id": "v4-loot-s2-sniper",
+              "kind": "emitter",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "v4-loot-s2-sniper-bolt",
+                    "kind": "bolt",
+                    "subSlots": [
+                      {
+                        "module": null,
+                        "spannedBy": null
+                      }
+                    ]
+                  },
+                  "spannedBy": null
+                },
+                {
+                  "module": {
+                    "id": "v4-loot-s2-sniper-tgt",
+                    "kind": "targetLowHp",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                },
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ],
+              "label": {
+                "de_DE": "Sniper-Werfer",
+                "en_US": "Sniper Caster"
+              },
+              "lootDescription": {
+                "de_DE": "Bolt-Werfer mit Ziel-Automatik: nimmt bevorzugt das angeschlagenste Ziel aufs Korn.",
+                "en_US": "Bolt caster with target logic: prefers the most damaged target."
+              },
+              "xp": 650
+            },
+            {
+              "$itemPool": "weapon-bolt"
+            },
+            {
+              "$itemPool": "weapon-nova"
+            }
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r1s2-heat",
+              "name": {
+                "de_DE": "Weg von der Glut",
+                "en_US": "Away from the embers"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Verdammt heiß hier. Setz deine Versorgung nach außen, wo dir nicht gleich alles durchglüht. Oder mach schnell.",
+                "en_US": "Damn hot in here. Put your supply out on the edge where it won't cook. Or be quick."
+              },
+              "hint": {
+                "de_DE": "Energie im rechten Arm ≥ 10 E/s",
+                "en_US": "Energy in right arm ≥ 10 E/s"
+              },
+              "type": "statThreshold",
+              "stat": "zoneEnergyProduction",
+              "threshold": 10,
+              "zone": "arm_right"
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r1s2-heat",
+              "holdMs": 4000
+            }
+          }
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [],
+          "dialog": [
+            {
+              "id": "v4-r1s3-avas",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 800
+              },
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Soweit hast du's gebracht. Nicht schlecht für Schrott. Jetzt komm ich selbst — und hier rettet dich keine Aufgabe mehr. Reiß mich auseinander, oder bleib für immer Ausschuss.",
+                "en_US": "You made it this far. Not bad for scrap. Now I come in person — and no task saves you here. Tear me apart, or stay scrap forever."
+              }
+            },
+            {
+              "id": "v4-r1s3-k247",
+              "trigger": {
+                "kind": "onGameTime",
+                "atMs": 4000
+              },
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Endlich mal jemand zum Auseinandernehmen.",
+                "en_US": "Finally, something worth taking apart."
+              }
+            }
+          ],
+          "bossRefPool": [
+            "v4-big-r1"
+          ],
+          "bossLootPool": []
+        }
+      ]
+    },
+    {
+      "id": "v4-r2-warm",
+      "name": {
+        "de_DE": "Runde 2: Hitzewand",
+        "en_US": "Round 2: Heat Wall"
+      },
+      "description": {
+        "de_DE": "Hinter der Schleuse flimmert die Luft. Wer hier durch will, sollte Hitze nicht persönlich nehmen.",
+        "en_US": "Beyond the airlock the air shimmers. Whoever passes through had better not take heat personally."
+      },
+      "sections": [
+        {
+          "ambientTemperature": 25,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s0-bollwerk-t2",
+            "v4o-s2-brandkern-t2",
+            "v4o-schacht-t2"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r2w-s0",
+              "name": {
+                "de_DE": "Glut bändigen",
+                "en_US": "Tame the embers"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Heiß hier. Zieh die Versorgung raus aus dem Kern, bevor dir die Teile glühen — oder reiß es ab.",
+                "en_US": "Hot here. Pull your supply out of the core before your parts cook — or just rip it apart."
+              },
+              "hint": {
+                "de_DE": "Energie im linken Arm ≥ 14 E/s",
+                "en_US": "Energy in left arm ≥ 14 E/s"
+              },
+              "type": "statThreshold",
+              "stat": "zoneEnergyProduction",
+              "threshold": 14,
+              "zone": "arm_left"
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r2w-s0",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Du hast also die Hitze gewählt. Fünfundzwanzig Grad, fast gemütlich. Warte, bis die Wand sich aufrichtet.",
+                "en_US": "So you picked the heat. Twenty-five degrees, almost cosy. Wait until the wall stands up."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Dann richte sie ruhig auf. Energie hoch, Kühler bereit — ich fang früh an.",
+                "en_US": "Go ahead and stand it up. Power up, coolers ready — I start early."
+              }
+            }
+          ]
+        },
+        {
+          "ambientTemperature": 35,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s1-koeder-t2",
+            "v4o-s1-streu-t2"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r2w-s1",
+              "name": {
+                "de_DE": "Auf Distanz",
+                "en_US": "Hold the line"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Bleib auf Schussdistanz, halt drauf.",
+                "en_US": "Stay at firing range, keep on it."
+              },
+              "hint": {
+                "de_DE": "Range ~22–46",
+                "en_US": "Range ~22–46"
+              },
+              "type": "holdBand",
+              "stat": "effectiveRange",
+              "center": 34,
+              "halfWidth": 12
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r2w-s1",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Komm ruhig näher. Meine Wächter mögen Ziele, die sich selbst anliefern.",
+                "en_US": "Come closer. My wardens love targets that deliver themselves."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Ich bleib auf Distanz und halt drauf. Angeliefert wird nur Schrott — deiner.",
+                "en_US": "I'll keep my distance and keep firing. The only delivery here is scrap — yours."
+              }
+            }
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "utility-cableport"
+            },
+            {
+              "$itemPool": "cooling-extract"
+            }
+          ]
+        },
+        {
+          "ambientTemperature": 45,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s2-gluthort-t2",
+            "v4o-s0-schwarm-t2"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r2w-s2",
+              "name": {
+                "de_DE": "Durchhalten",
+                "en_US": "Don't melt down"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Brennofen. Unten ist es kühler — bau da deine Reserve auf. Oder mach schnell.",
+                "en_US": "Furnace. It's cooler down low — build your reserve there. Or be quick."
+              },
+              "hint": {
+                "de_DE": "Energie in den Beinen ≥ 14 E/s",
+                "en_US": "Energy in legs ≥ 14 E/s"
+              },
+              "type": "statThreshold",
+              "stat": "zoneEnergyProduction",
+              "threshold": 14,
+              "zone": "legs"
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r2w-s2",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Fünfundvierzig Grad und steigend. Deine Kühler jaulen schon. Musik in meinen Sensoren.",
+                "en_US": "Forty-five degrees and climbing. Your coolers are whining already. Music to my sensors."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Das ist kein Jaulen, das ist Arbeitslärm. Durchhalten kann ich besser als du spotten.",
+                "en_US": "That's not whining, that's the sound of work. I outlast better than you mock."
+              }
+            }
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "power-expander"
+            }
+          ]
+        },
+        {
+          "ambientTemperature": 55,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4-big-r2-warm"
+          ],
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Ende der Hitzewand. Fünfundfünfzig Grad — mein Glutwächter macht aus dir ein Andenken aus geschmolzenem Blech.",
+                "en_US": "End of the heat wall. Fifty-five degrees — my ember warden will turn you into a keepsake of molten tin."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Der Ofen hat mich vorgeheizt. Jetzt zerlege ich dein Andenken — Stück für Stück.",
+                "en_US": "The furnace preheated me. Now I'll dismantle your keepsake — piece by piece."
+              }
+            },
+            {
+              "speaker": "system",
+              "text": {
+                "de_DE": "Warnung: Kerntemperatur des Gegners kritisch. Zielwahl-Empfehlung: heißester Punkt.",
+                "en_US": "Warning: enemy core temperature critical. Targeting recommendation: hottest point."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4-r2-cold",
+      "name": {
+        "de_DE": "Runde 2: Frostgrenze",
+        "en_US": "Round 2: Frost Line"
+      },
+      "description": {
+        "de_DE": "Der Frost kriecht durch die Wände. Manches wird hier draußen langsamer — nicht alles davon ist Metall.",
+        "en_US": "Frost creeps through the walls. Things slow down out here — not all of them made of metal."
+      },
+      "sections": [
+        {
+          "ambientTemperature": -20,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s0-schwarm-t2",
+            "v4o-s2-gluthort-t2"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r2c-s0",
+              "name": {
+                "de_DE": "Kaltstart",
+                "en_US": "Cold start"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Eiskalt. Dein Reaktor muss trotzdem laufen — und zwar da draußen, wo noch nichts steht.",
+                "en_US": "Freezing. Your reactor still has to run — out there, where nothing stands yet."
+              },
+              "hint": {
+                "de_DE": "Energie im rechten Arm ≥ 14 E/s",
+                "en_US": "Energy in right arm ≥ 14 E/s"
+              },
+              "type": "statThreshold",
+              "stat": "zoneEnergyProduction",
+              "threshold": 14,
+              "zone": "arm_right"
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r2c-s0",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Die Frostgrenze. Minus zwanzig — und mit jedem Sektor tiefer. Dein Reaktor ist das Einzige, was dich hier noch wärmt.",
+                "en_US": "The frost line. Minus twenty — and colder with every sector. Your reactor is the only thing still keeping you warm."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Kaltstart ist mein Spezialgebiet — Übertakten hält warm. Ich lasse einfach alles laufen.",
+                "en_US": "Cold starts are my specialty — overclocking keeps me warm. I'll just keep everything running."
+              }
+            }
+          ]
+        },
+        {
+          "ambientTemperature": -30,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s1-streu-t2",
+            "v4o-s1-koeder-t2",
+            "v4o-schacht-t2"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r2c-s1",
+              "name": {
+                "de_DE": "Anvisieren",
+                "en_US": "Take aim"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Ran ans Ziel, Reichweite halten.",
+                "en_US": "Close in, keep your range."
+              },
+              "hint": {
+                "de_DE": "Range ~22–46",
+                "en_US": "Range ~22–46"
+              },
+              "type": "holdBand",
+              "stat": "effectiveRange",
+              "center": 34,
+              "halfWidth": 12
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r2c-s1",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Zielen mit klammen Fingern? Deine Reichweite verweht im Schneetreiben.",
+                "en_US": "Aiming with numb fingers? Your range is drifting away in the snow."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Ich hab keine Finger. Nur Ziele. Reichweite steht — anvisiert.",
+                "en_US": "I don't have fingers. Only targets. Range locked — acquired."
+              }
+            }
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "weapon-steadfast"
+            },
+            {
+              "$itemPool": "cooling-spanner"
+            }
+          ]
+        },
+        {
+          "ambientTemperature": -40,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s2-brandkern-t2",
+            "v4o-s0-bollwerk-t2"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r2c-s2",
+              "name": {
+                "de_DE": "Drossel trotzen",
+                "en_US": "Beat the throttle"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Etwas saugt dir die Energie ab. Bau dir eine zweite Quelle, die nicht am selben Punkt hängt.",
+                "en_US": "Something's draining your power. Build a second source that doesn't hang off the same point."
+              },
+              "hint": {
+                "de_DE": "Energie in den Beinen ≥ 14 E/s",
+                "en_US": "Energy in legs ≥ 14 E/s"
+              },
+              "type": "statThreshold",
+              "stat": "zoneEnergyProduction",
+              "threshold": 14,
+              "zone": "legs"
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r2c-s2",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Merkst du das Ziehen? Ich zapfe deine Leitungen an. Produzier ruhig — es landet bei mir.",
+                "en_US": "Feel that pull? I'm tapping your lines. Keep producing — it all ends up with me."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Dann produzier ich eben mehr, als du klauen kannst. Rechne nach, Blechhirn.",
+                "en_US": "Then I'll produce more than you can steal. Do the math, tin brain."
+              }
+            }
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "power-expander"
+            }
+          ]
+        },
+        {
+          "ambientTemperature": -48,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4-big-r2-cold"
+          ],
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Am Ende der Frostgrenze wartet mein Frostkern. Minus achtundvierzig — und er schießt zurück, was du am wenigsten brauchst.",
+                "en_US": "At the end of the frost line waits my frost core. Minus forty-eight — and it fires back the one thing you need least."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Endgültig ist nur, wie tief ich ihn auseinanderbaue. Plasma an — jetzt ist MIR warm.",
+                "en_US": "The only final thing is how far down I take it apart. Plasma on — now I'M warm."
+              }
+            },
+            {
+              "speaker": "narrator",
+              "text": {
+                "de_DE": "Im Eis glüht ein einzelner Punkt. Er wird größer.",
+                "en_US": "A single point glows in the ice. It is growing."
+              }
+            }
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "weapon-trigger"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4-r2-riss",
+      "name": {
+        "de_DE": "Runde 2: Bruchzone",
+        "en_US": "Round 2: Rift Zone"
+      },
+      "description": {
+        "de_DE": "Hier stimmt der Raum nicht mehr. A.V.A.S. faltet ihn, und was eben noch Platz war, ist es im nächsten Moment nicht.",
+        "en_US": "Space doesn't add up here. A.V.A.S. folds it, and what was room a moment ago isn't anymore."
+      },
+      "ambientEvents": [
+        {
+          "id": "v4-riss-ambient",
+          "type": "zoneCompression",
+          "atMs": 12000,
+          "shrinkPercent": 14,
+          "recoveryMs": 10000,
+          "loopEveryMs": 75000,
+          "warningMs": 3000,
+          "warnOnce": true,
+          "targetMode": "mostItems",
+          "zones": [
+            "torso"
+          ],
+          "dialogWarning": {
+            "speaker": "AVAS",
+            "text": {
+              "de_DE": "Der Raum hier ist nur geliehen.",
+              "en_US": "Space here is on loan."
+            },
+            "durationMs": 2200
+          }
+        }
+      ],
+      "sections": [
+        {
+          "ambientTemperature": 18,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s1-koeder-t2",
+            "v4o-s0-bollwerk-t2"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r2r-s0",
+              "name": {
+                "de_DE": "Ausweichen",
+                "en_US": "Find another way"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Der Riss frisst die Mitte. Bring deine Versorgung woanders hin.",
+                "en_US": "The rift eats the middle. Move your supply somewhere else."
+              },
+              "hint": {
+                "de_DE": "Energie in den Beinen ≥ 10 E/s",
+                "en_US": "Energy in legs ≥ 10 E/s"
+              },
+              "type": "statThreshold",
+              "stat": "zoneEnergyProduction",
+              "zone": "legs",
+              "threshold": 10
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r2r-s0",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Merkst du's? Der Raum wird knapp. Ich hab ihn mir nur kurz ausgeliehen.",
+                "en_US": "Notice it? Space is getting tight. I only borrowed it for a moment."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Dann bau ich eben da, wo du nicht hinlangst.",
+                "en_US": "Then I'll build where you can't reach."
+              }
+            }
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "weapon-bolt"
+            }
+          ]
+        },
+        {
+          "ambientTemperature": 18,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s2-gluthort-t2",
+            "v4o-s2-brandkern-t2"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r2r-s1",
+              "name": {
+                "de_DE": "Durch den Bruch",
+                "en_US": "Through the break"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Halt die Distanz, auch wenn der Boden unter dir kürzer wird.",
+                "en_US": "Hold your distance, even as the ground gets shorter under you."
+              },
+              "hint": {
+                "de_DE": "Range ~22–46",
+                "en_US": "Range ~22–46"
+              },
+              "type": "holdBand",
+              "stat": "effectiveRange",
+              "center": 34,
+              "halfWidth": 12
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r2r-s1",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Zwei Meter weiter ist nicht mehr da, wo du denkst.",
+                "en_US": "Two metres further isn't where you think it is anymore."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Dann ziel ich eben auf das, was noch da ist.",
+                "en_US": "Then I'll aim at whatever's still there."
+              }
+            }
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "power-sensor"
+            }
+          ]
+        },
+        {
+          "ambientTemperature": 18,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s0-schwarm-t2",
+            "v4o-s1-streu-t2",
+            "v4o-schacht-t2"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r2r-s2",
+              "name": {
+                "de_DE": "Außenposten",
+                "en_US": "Outpost"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Vor dem Kern: leg dir eine Versorgung an den Rand, die der Riss nicht erwischt.",
+                "en_US": "Before the core: put a supply out at the edge where the rift can't reach."
+              },
+              "hint": {
+                "de_DE": "Energie im rechten Arm ≥ 12 E/s",
+                "en_US": "Energy in right arm ≥ 12 E/s"
+              },
+              "type": "statThreshold",
+              "stat": "zoneEnergyProduction",
+              "zone": "arm_right",
+              "threshold": 12
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r2r-s2",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Du verteilst dich. Wie ordentlich. Umso mehr Kanten zum Falten.",
+                "en_US": "You're spreading out. How tidy. All the more edges to fold."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Falt du. Ich bau nach.",
+                "en_US": "You fold. I'll rebuild."
+              }
+            }
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "power-capacitor"
+            }
+          ]
+        },
+        {
+          "ambientTemperature": 18,
+          "freeItems": [],
+          "inventory": [],
+          "ambientEvents": [
+            {
+              "id": "v4-riss-ambient-final",
+              "type": "zoneCompression",
+              "atMs": 12000,
+              "shrinkPercent": 18,
+              "recoveryMs": 10000,
+              "loopEveryMs": 50000,
+              "warningMs": 3000,
+              "warnOnce": true,
+              "targetMode": "mostItems",
+              "zones": [
+                "torso"
+              ],
+              "dialogWarning": {
+                "speaker": "AVAS",
+                "text": {
+                  "de_DE": "Jetzt falte ich ernsthaft.",
+                  "en_US": "Now I fold in earnest."
+                },
+                "durationMs": 2200
+              }
+            }
+          ],
+          "bossRefPool": [
+            "v4-big-r2-riss"
+          ],
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Der Kern hält den Riss offen. Nimm ihn dir — wenn du noch Platz dafür hast.",
+                "en_US": "The core holds the rift open. Take it — if you still have room for it."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Platz mach ich mir selbst.",
+                "en_US": "I'll make my own room."
+              }
+            },
+            {
+              "speaker": "narrator",
+              "text": {
+                "de_DE": "Die Kanten der Halle laufen nicht mehr parallel.",
+                "en_US": "The edges of the hall no longer run parallel."
+              }
+            }
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "weapon-multishoot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4-r3-konfront",
+      "name": {
+        "de_DE": "Runde 3: Konfrontation",
+        "en_US": "Round 3: Confrontation"
+      },
+      "description": {
+        "de_DE": "Kein Umweg mehr. A.V.A.S. stellt sich in den Gang, und K247 hat aufgehört zu schleichen.",
+        "en_US": "No more detours. A.V.A.S. blocks the corridor, and K247 is done sneaking."
+      },
+      "sections": [
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s0-bollwerk-t3",
+            "v4o-s1-koeder-t3"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r3k-s0",
+              "name": {
+                "de_DE": "Volltreffer",
+                "en_US": "Dead on"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Jetzt zählt's. Bring deine Reichweite auf den Punkt.",
+                "en_US": "This is it. Put your range right on target."
+              },
+              "hint": {
+                "de_DE": "Range ~28–52",
+                "en_US": "Range ~28–52"
+              },
+              "type": "holdBand",
+              "stat": "effectiveRange",
+              "center": 40,
+              "halfWidth": 12
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r3k-s0",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Frontal? Wirklich? Du marschierst geradewegs in meine Verteidigungslinien.",
+                "en_US": "Head-on? Really? You're marching straight into my defense lines."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Genau. Kein Verstecken mehr. Volltreffer um Volltreffer, bis deine Linien Lücken heißen.",
+                "en_US": "Exactly. No more hiding. Direct hit after direct hit, until your lines are called gaps."
+              }
+            }
+          ]
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s0-schwarm-t3",
+            "v4o-s1-streu-t3",
+            "v4o-schacht-t3"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r3k-s1",
+              "name": {
+                "de_DE": "Dauerfeuer",
+                "en_US": "Sustained fire"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Halt den Druck. Der Arm gibt Waffen Schaden — also gehört da auch Strom hin.",
+                "en_US": "Keep the pressure. The arm boosts weapon damage — so that's where the power belongs."
+              },
+              "hint": {
+                "de_DE": "Energie im linken Arm ≥ 18 E/s",
+                "en_US": "Energy in left arm ≥ 18 E/s"
+              },
+              "type": "statThreshold",
+              "stat": "zoneEnergyProduction",
+              "threshold": 18,
+              "zone": "arm_left"
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r3k-s1",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Dauerfeuer kostet Energie. Deine Reserven sind endlich — meine Geduld ist es nicht.",
+                "en_US": "Sustained fire costs energy. Your reserves are finite — my patience is not."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Meine Reaktoren singen im Takt. Ich kann das hier den ganzen Tag machen.",
+                "en_US": "My reactors are humming in rhythm. I can do this all day."
+              }
+            }
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "utility-cableport"
+            }
+          ]
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s2-brandkern-t3",
+            "v4o-s2-gluthort-t3"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r3k-s2",
+              "name": {
+                "de_DE": "Präzision",
+                "en_US": "Precision"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Letzter Schliff vor AVAS. Reichweite scharf halten.",
+                "en_US": "Last edge before AVAS. Keep your range tight."
+              },
+              "hint": {
+                "de_DE": "Range ~34–54",
+                "en_US": "Range ~34–54"
+              },
+              "type": "holdBand",
+              "stat": "effectiveRange",
+              "center": 44,
+              "halfWidth": 10
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r3k-s2",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Gleich stehst du vor mir. Letzte Gelegenheit, dich unauffällig zu verschrauben.",
+                "en_US": "Soon you'll stand before me. Last chance to quietly bolt yourself away."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Letzter Schliff, letzte Kalibrierung. Für dich hab ich extra scharf gestellt.",
+                "en_US": "Final polish, final calibration. For you, I set everything extra sharp."
+              }
+            }
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "weapon-steadfast"
+            }
+          ]
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4-avas-prime"
+          ],
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Hier stehe ich. Kein Proxy, keine Wächter. Nur du, ich — und dein baldiges Recycling.",
+                "en_US": "Here I stand. No proxy, no wardens. Just you, me — and your imminent recycling."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Darauf hab ich hingebaut. Zeig mir deinen Kern, AVAS. Ich will ihn als Trophäe.",
+                "en_US": "This is what I built toward. Show me your core, AVAS. I want it as a trophy."
+              }
+            },
+            {
+              "speaker": "system",
+              "text": {
+                "de_DE": "Zielsignatur: AVAS-Prime. Empfehlung: alles, was feuert. Sofort.",
+                "en_US": "Target signature: AVAS Prime. Recommendation: everything that fires. Now."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4-r3-infiltration",
+      "name": {
+        "de_DE": "Runde 3: Wagenburg",
+        "en_US": "Round 3: Laager"
+      },
+      "description": {
+        "de_DE": "A.V.A.S. hat sich verschanzt. Von außen kommt man da nicht durch — von innen vielleicht.",
+        "en_US": "A.V.A.S. has dug in. There is no way through from the outside — from the inside, maybe."
+      },
+      "sections": [
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s1-koeder-t3",
+            "v4o-s2-gluthort-t3",
+            "v4o-schacht-t3"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r3i-s0",
+              "name": {
+                "de_DE": "Annähern",
+                "en_US": "Close in"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Die Wagenburg ist dicht. Komm ran — Reichweite oder Infiltration.",
+                "en_US": "The laager is sealed tight. Get close — range or infiltration."
+              },
+              "hint": {
+                "de_DE": "Range ~28–52",
+                "en_US": "Range ~28–52"
+              },
+              "type": "holdBand",
+              "stat": "effectiveRange",
+              "center": 40,
+              "halfWidth": 12
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r3i-s0",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Eine Wagenburg aus Stahl. Jede Naht verschweißt. Und du willst… reinschleichen?",
+                "en_US": "A fortress ring of steel. Every seam welded shut. And you want to… sneak in?"
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Annähern, andocken, aufmachen. Jede Burg hat einen Dienstboteneingang.",
+                "en_US": "Approach, dock, crack it open. Every fortress has a service entrance."
+              }
+            }
+          ]
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s0-bollwerk-t3",
+            "v4o-s2-brandkern-t3"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r3i-s1",
+              "name": {
+                "de_DE": "Lücke finden",
+                "en_US": "Find the gap"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Halt die Reichweite, such die Schwachstelle.",
+                "en_US": "Hold your range, find the weak spot."
+              },
+              "hint": {
+                "de_DE": "Range ~30–54",
+                "en_US": "Range ~30–54"
+              },
+              "type": "holdBand",
+              "stat": "effectiveRange",
+              "center": 42,
+              "halfWidth": 12
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r3i-s1",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Such nur. Die Lücke, die du findest, habe ich dort gelassen. Vielleicht.",
+                "en_US": "Go on, search. The gap you find is one I left there. Maybe."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Dann sag ich danke, wenn ich drin bin. Reichweite halten — da ist die Schwachstelle.",
+                "en_US": "Then I'll say thanks once I'm inside. Hold range — there's the weak spot."
+              }
+            }
+          ],
+          "bossLootPool": [
+            {
+              "$itemPool": "weapon-trigger"
+            },
+            {
+              "$itemPool": "infiltration"
+            }
+          ]
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4o-s1-streu-t3",
+            "v4o-s0-schwarm-t3"
+          ],
+          "taskPool": [
+            {
+              "id": "v4-r3i-s2",
+              "name": {
+                "de_DE": "Durchhalten",
+                "en_US": "Hold out"
+              },
+              "category": "hold",
+              "description": {
+                "de_DE": "Vor dem letzten Wall: eine Versorgung, die nicht mitfällt, wenn der Kern getroffen wird.",
+                "en_US": "Before the last wall: a supply that doesn't fall with the core when it's hit."
+              },
+              "hint": {
+                "de_DE": "Energie im rechten Arm ≥ 18 E/s",
+                "en_US": "Energy in right arm ≥ 18 E/s"
+              },
+              "type": "statThreshold",
+              "stat": "zoneEnergyProduction",
+              "threshold": 18,
+              "zone": "arm_right"
+            }
+          ],
+          "totalSuccessCondition": {
+            "succeeds": {
+              "task": "v4-r3i-s2",
+              "holdMs": 4000
+            }
+          },
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Hinter diesem Wall bin ich. Dein Durchbruch braucht mehr Saft, als du je hattest.",
+                "en_US": "Behind this wall is me. Your breakthrough needs more juice than you ever had."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Deshalb hab ich gespart. Voller Puffer, volle Leitung — gleich knallt's an deiner Tür.",
+                "en_US": "That's why I saved up. Full buffer, full lines — your door is about to bang."
+              }
+            }
+          ]
+        },
+        {
+          "ambientTemperature": 20,
+          "freeItems": [],
+          "inventory": [],
+          "bossRefPool": [
+            "v4-big-r3-infil"
+          ],
+          "dialog": [
+            {
+              "speaker": "AVAS",
+              "text": {
+                "de_DE": "Mein Bunker hat Generationen überdauert. Du bist nur ein weiterer Kratzer im Lack.",
+                "en_US": "My bunker has outlasted generations. You're just another scratch in the paint."
+              }
+            },
+            {
+              "speaker": "K247",
+              "text": {
+                "de_DE": "Kratzer? Ich bin der Dosenöffner. Und du bist die Konserve — Haltbarkeit abgelaufen.",
+                "en_US": "A scratch? I'm the can opener. And you're the can — best-before long expired."
+              }
+            },
+            {
+              "speaker": "narrator",
+              "text": {
+                "de_DE": "Die Wagenburg bebt. Von innen.",
+                "en_US": "The fortress ring trembles. From the inside."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "branches": [
+    {
+      "from": "v4-r1-kontakt",
+      "to": [
+        "v4-r2-warm",
+        "v4-r2-cold",
+        "v4-r2-riss",
+        "v4-r3-konfront"
+      ]
+    },
+    {
+      "from": "v4-r2-warm",
+      "to": [
+        "v4-r3-konfront",
+        "v4-r3-infiltration",
+        "v4-r2-cold"
+      ]
+    },
+    {
+      "from": "v4-r2-cold",
+      "to": [
+        "v4-r3-konfront",
+        "v4-r3-infiltration"
+      ]
+    },
+    {
+      "from": "v4-r2-riss",
+      "to": [
+        "v4-r3-konfront",
+        "v4-r3-infiltration"
+      ]
+    }
+  ]
+}

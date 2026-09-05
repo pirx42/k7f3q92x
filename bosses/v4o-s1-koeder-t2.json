@@ -1,0 +1,379 @@
+{
+  "name": {
+    "de_DE": "Köderfeld II",
+    "en_US": "Decoy Field II"
+  },
+  "bossDefeatGrantsWin": true,
+  "loopTimeMs": 17280,
+  "body": {
+    "zones": [
+      {
+        "zone": "arm_left",
+        "label": {
+          "de_DE": "Köder-West",
+          "en_US": "Decoy West"
+        },
+        "color": "#ff44cc",
+        "x": -1060,
+        "y": -200,
+        "w": 560,
+        "h": 380,
+        "maxHp": 980,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "torso",
+        "label": {
+          "de_DE": "Quellblock",
+          "en_US": "Source Block"
+        },
+        "color": "#00ff88",
+        "x": -280,
+        "y": -200,
+        "w": 560,
+        "h": 380,
+        "maxHp": 1540,
+        "neighbors": [
+          "arm_left",
+          "arm_right",
+          "head",
+          "legs"
+        ]
+      },
+      {
+        "zone": "arm_right",
+        "label": {
+          "de_DE": "Köder-Ost",
+          "en_US": "Decoy East"
+        },
+        "color": "#ff44cc",
+        "x": 500,
+        "y": -200,
+        "w": 560,
+        "h": 380,
+        "maxHp": 980,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "head",
+        "label": {
+          "de_DE": "Feldemitter",
+          "en_US": "Field Emitter"
+        },
+        "color": "#00bfff",
+        "x": -280,
+        "y": -540,
+        "w": 560,
+        "h": 300,
+        "maxHp": 1260,
+        "neighbors": [
+          "torso"
+        ]
+      },
+      {
+        "zone": "legs",
+        "label": {
+          "de_DE": "Köder-Süd",
+          "en_US": "Decoy South"
+        },
+        "color": "#ff6644",
+        "x": -280,
+        "y": 240,
+        "w": 560,
+        "h": 300,
+        "maxHp": 1260,
+        "neighbors": [
+          "torso"
+        ]
+      }
+    ],
+    "freeItems": [
+      {
+        "module": {
+          "id": "v4o-koeder-src-comp-t2",
+          "kind": "generator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-koeder-emitter-t2",
+                "kind": "emitter",
+                "subSlots": [
+                  {
+                    "module": {
+                      "id": "v4o-koeder-bolt-t2",
+                      "kind": "bolt",
+                      "subSlots": [
+                        {
+                          "module": null,
+                          "spannedBy": null
+                        }
+                      ],
+                      "xp": 418.90000000006097
+                    },
+                    "spannedBy": null
+                  },
+                  {
+                    "module": {
+                      "id": "v4o-koeder-eff-t2",
+                      "kind": "efficiency",
+                      "subSlots": [],
+                      "xp": 195.20000000001014
+                    },
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 418.90000000006097
+              },
+              "spannedBy": null
+            },
+            {
+              "module": {
+                "id": "v4o-koeder-cap-t2",
+                "kind": "capacitor",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": {
+                      "id": "v4o-koeder-cap-oc-t2",
+                      "kind": "overclocker",
+                      "subSlots": [],
+                      "xp": 256.90000000002414
+                    },
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 265.6500000000261
+              },
+              "spannedBy": null
+            }
+          ],
+          "xp": 607.4999999999952
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.0857,
+          "normY": 0.6388
+        },
+        "firesAtPlayer": true
+      },
+      {
+        "module": {
+          "id": "v4o-koeder-cloak-t2",
+          "kind": "cloakGenerator",
+          "subSlots": [
+            {
+              "module": {
+                "id": "v4o-koeder-cloak-gen-t2",
+                "kind": "generator",
+                "subSlots": [
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  },
+                  {
+                    "module": null,
+                    "spannedBy": null
+                  }
+                ],
+                "xp": 17.050000000000107
+              },
+              "spannedBy": null
+            },
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ],
+          "xp": 17.050000000000107,
+          "maxHP": 100
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.48,
+          "normY": 0.6316
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-koeder-src-field-t2",
+          "kind": "sensor",
+          "subSlots": [
+            {
+              "module": null,
+              "spannedBy": null
+            }
+          ]
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "head",
+          "normX": 0.5,
+          "normY": 0.5
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-koeder-d0-t2",
+          "kind": "sensor",
+          "subSlots": []
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.3,
+          "normY": 0.3
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-koeder-d1-t2",
+          "kind": "sensor",
+          "subSlots": []
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "torso",
+          "normX": 0.7,
+          "normY": 0.48
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-koeder-l-d0-t2",
+          "kind": "sensor",
+          "subSlots": []
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "legs",
+          "normX": 0.3,
+          "normY": 0.3
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-koeder-l-d1-t2",
+          "kind": "sensor",
+          "subSlots": []
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "legs",
+          "normX": 0.7,
+          "normY": 0.48
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-koeder-al-d0-t2",
+          "kind": "sensor",
+          "subSlots": []
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_left",
+          "normX": 0.3,
+          "normY": 0.3
+        }
+      },
+      {
+        "module": {
+          "id": "v4o-koeder-ar-d0-t2",
+          "kind": "sensor",
+          "subSlots": []
+        },
+        "location": {
+          "kind": "relative",
+          "zone": "arm_right",
+          "normX": 0.3,
+          "normY": 0.3
+        }
+      }
+    ],
+    "cableConnections": []
+  },
+  "events": [
+    {
+      "id": "v4o-koeder-field-t2",
+      "type": "fieldLock",
+      "atMs": 9000,
+      "zone": "head",
+      "count": 1,
+      "fieldW": 130,
+      "fieldH": 130,
+      "durationMs": 6000,
+      "warningMs": 2500,
+      "warnOnce": true,
+      "dialogWarning": {
+        "speaker": "AVAS",
+        "text": {
+          "de_DE": "Kopf-Feld gesperrt — das Quell-Item sitzt im Kopf.",
+          "en_US": "Head field locked — the source sits in the head."
+        },
+        "durationMs": 2000
+      },
+      "targetMode": "randomZone",
+      "loopEveryMs": 45000
+    }
+  ],
+  "lootPool": [
+    {
+      "$itemPool": "stealth-veil"
+    },
+    {
+      "$itemPool": "sense-array"
+    },
+    {
+      "$itemPool": "weapon-targetmostitems"
+    },
+    {
+      "$itemPool": "weapon-targetloudest"
+    },
+    {
+      "$itemPool": "infiltration"
+    },
+    {
+      "$itemPool": "support-endure"
+    },
+    {
+      "$itemPool": "combo-weapon"
+    }
+  ],
+  "eventPoolSize": 3,
+  "eventPool": [
+    {
+      "$eventPool": "standard"
+    },
+    {
+      "$eventPool": "repair"
+    },
+    {
+      "$eventPool": "utility"
+    }
+  ],
+  "upgradePool": [
+    {
+      "$upgradePool": "repair"
+    }
+  ],
+  "vectorDrains": [
+    {
+      "kind": "infiltrationLoad",
+      "threshold": 2,
+      "ratePerSec": 0.7
+    }
+  ]
+}

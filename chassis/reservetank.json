@@ -1,0 +1,388 @@
+{
+  "id": "reservetank",
+  "name": {
+    "de_DE": "Reservetank",
+    "en_US": "Reserve Tank"
+  },
+  "description": {
+    "de_DE": "Startet OHNE Generatoren — nur mit einem vollen Energiespeicher im linken Arm. Du haushaltest mit einer endlichen Reserve, bis dir Loot einen Generator bringt. Beide Arme geben Waffen +50 % Schaden. Freigeschaltet über die Sparflamme-Challenge.",
+    "en_US": "Starts with NO generators — just a full energy reserve in the left arm. You ration a finite charge until loot brings you a generator. Both arms give weapons +50 % damage. Unlocked via the Low Burn challenge."
+  },
+  "chassisTemperature": null,
+  "startChargeFull": true,
+  "excludeInventoryKinds": [
+    "generator"
+  ],
+  "zones": [
+    {
+      "zone": "head",
+      "label": "HEAD",
+      "color": "#00bfff",
+      "x": -350,
+      "y": -710,
+      "w": 700,
+      "h": 420,
+      "maxHp": 2000,
+      "neighbors": [
+        "torso"
+      ],
+      "rangeMultiplier": 1.5
+    },
+    {
+      "zone": "torso",
+      "label": "TORSO",
+      "color": "#00ff88",
+      "x": -350,
+      "y": -210,
+      "w": 700,
+      "h": 420,
+      "maxHp": 2000,
+      "neighbors": [
+        "head",
+        "legs",
+        "arm_left",
+        "arm_right"
+      ],
+      "productionMultiplier": 1.5
+    },
+    {
+      "zone": "legs",
+      "label": "LEGS",
+      "color": "#ff6644",
+      "x": -350,
+      "y": 290,
+      "w": 700,
+      "h": 420,
+      "maxHp": 2000,
+      "neighbors": [
+        "torso"
+      ],
+      "speedMultiplier": 1.5
+    },
+    {
+      "zone": "arm_left",
+      "label": "ARM LEFT",
+      "color": "#ff44cc",
+      "x": -1430,
+      "y": -500,
+      "w": 1000,
+      "h": 1000,
+      "maxHp": 2000,
+      "neighbors": [
+        "torso"
+      ],
+      "damageMultiplier": 1.5
+    },
+    {
+      "zone": "arm_right",
+      "label": "ARM RIGHT",
+      "color": "#ff44cc",
+      "x": 430,
+      "y": -210,
+      "w": 700,
+      "h": 420,
+      "maxHp": 2000,
+      "neighbors": [
+        "torso"
+      ],
+      "damageMultiplier": 1.5
+    }
+  ],
+  "startInventoryPool": [
+    {
+      "id": "ch-rt-rnd-cap",
+      "kind": "capacitor",
+      "subSlots": [
+        {
+          "module": null,
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ]
+    }
+  ],
+  "startFreeItems": [
+    {
+      "module": {
+        "id": "ch-rt-storage",
+        "kind": "capacitor",
+        "modifiable": false,
+        "subSlots": [
+          {
+            "module": {
+              "id": "ch-rt-swapOutputCapacity-3",
+              "kind": "swapOutputCapacity",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "ch-rt-expander-2",
+                    "kind": "expander",
+                    "subSlots": [
+                      {
+                        "module": {
+                          "id": "ch-rt-expander-1",
+                          "kind": "expander",
+                          "subSlots": [
+                            {
+                              "module": {
+                                "id": "ch-rt-expander-0",
+                                "kind": "expander",
+                                "subSlots": []
+                              },
+                              "spannedBy": null
+                            }
+                          ]
+                        },
+                        "spannedBy": null
+                      }
+                    ]
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-rt-swapOutputCapacity-5",
+              "kind": "swapOutputCapacity",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "ch-rt-overclocker-4",
+                    "kind": "overclocker",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-rt-swapOutputCapacity-7",
+              "kind": "swapOutputCapacity",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "ch-rt-overclocker-6",
+                    "kind": "overclocker",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-rt-swapOutputCapacity-9",
+              "kind": "swapOutputCapacity",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "ch-rt-overclocker-8",
+                    "kind": "overclocker",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-rt-swapOutputCapacity-11",
+              "kind": "swapOutputCapacity",
+              "subSlots": [
+                {
+                  "module": {
+                    "id": "ch-rt-overclocker-10",
+                    "kind": "overclocker",
+                    "subSlots": []
+                  },
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-rt-efficiency-12",
+              "kind": "efficiency",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-rt-efficiency-13",
+              "kind": "efficiency",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-rt-efficiency-14",
+              "kind": "efficiency",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-rt-efficiency-15",
+              "kind": "efficiency",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-rt-efficiency-16",
+              "kind": "efficiency",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-rt-efficiency-17",
+              "kind": "efficiency",
+              "subSlots": []
+            },
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "arm_left",
+        "normX": 0.02,
+        "normY": 0.02
+      }
+    },
+    {
+      "module": {
+        "id": "ch-rt-shield",
+        "kind": "shield",
+        "subSlots": [
+          {
+            "module": {
+              "id": "ch-rt-shield-eff",
+              "kind": "efficiency",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "head",
+        "normX": 0.5,
+        "normY": 0.5
+      }
+    },
+    {
+      "module": {
+        "id": "ch-rt-cap-emitter",
+        "kind": "capacitor",
+        "subSlots": [
+          {
+            "module": null,
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "torso",
+        "normX": 0.3514,
+        "normY": 0.5
+      }
+    },
+    {
+      "module": {
+        "id": "ch-rt-emitter",
+        "kind": "emitter",
+        "subSlots": [
+          {
+            "module": {
+              "id": "ch-rt-emitter-bolt",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": {
+              "id": "ch-rt-emitter-eff",
+              "kind": "efficiency",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "torso",
+        "normX": 0.6514,
+        "normY": 0.5
+      }
+    }
+  ],
+  "startCableConnections": [
+    {
+      "endpointA": {
+        "moduleId": "ch-rt-storage"
+      },
+      "endpointB": {
+        "moduleId": "ch-rt-shield"
+      }
+    },
+    {
+      "endpointA": {
+        "moduleId": "ch-rt-storage"
+      },
+      "endpointB": {
+        "moduleId": "ch-rt-cap-emitter"
+      }
+    },
+    {
+      "endpointA": {
+        "moduleId": "ch-rt-cap-emitter"
+      },
+      "endpointB": {
+        "moduleId": "ch-rt-emitter"
+      }
+    }
+  ]
+}

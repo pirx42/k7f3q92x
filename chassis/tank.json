@@ -1,0 +1,129 @@
+{
+  "id": "tank",
+  "name": {
+    "de_DE": "Tank",
+    "en_US": "Tank"
+  },
+  "description": {
+    "de_DE": "Schwerer Defensiv-Rumpf: gigantischer Torso (6000 HP) als Panzer-Kern, hohe Energie-Boni in der Mitte, lange schmale Arme. Beine sind langsam (×0.6) — wer Tank waehlt, bleibt stehen und absorbiert. Die langen Arme geben Waffen +50 % Schaden — der einzige Weg, mit dem Tank Druck zu machen, ohne die Stellung zu verlassen. Ideal fuer Schild-Builds mit zwei Waffenarmen.",
+    "en_US": "Heavy defensive chassis: a massive torso (6000 HP) as the armored core, strong energy bonuses in the centre, long thin arms. Legs are slow (×0.6) — picking Tank means standing your ground and soaking damage. The long arms give weapons +50 % damage — the only way the Tank applies pressure without giving up its ground. Ideal for shield builds with two weapon arms."
+  },
+  "chassisTemperature": null,
+  "zones": [
+    {
+      "zone": "head",
+      "label": "HEAD",
+      "color": "#00bfff",
+      "x": -200,
+      "y": -1080,
+      "w": 400,
+      "h": 350,
+      "maxHp": 2000,
+      "neighbors": [
+        "torso"
+      ],
+      "rangeMultiplier": 1.2
+    },
+    {
+      "zone": "torso",
+      "label": "TORSO",
+      "color": "#00ff88",
+      "x": -600,
+      "y": -680,
+      "w": 1200,
+      "h": 700,
+      "productionMultiplier": 1.95,
+      "maxHp": 6000,
+      "neighbors": [
+        "head",
+        "legs",
+        "arm_left",
+        "arm_right"
+      ]
+    },
+    {
+      "zone": "legs",
+      "label": "LEGS",
+      "color": "#ff6644",
+      "x": -400,
+      "y": 70,
+      "w": 800,
+      "h": 500,
+      "maxHp": 3000,
+      "neighbors": [
+        "torso"
+      ],
+      "speedMultiplier": 0.6
+    },
+    {
+      "zone": "arm_left",
+      "label": "ARM LEFT",
+      "color": "#ff44cc",
+      "x": -1050,
+      "y": -680,
+      "w": 400,
+      "h": 1250,
+      "maxHp": 3000,
+      "neighbors": [
+        "torso"
+      ],
+      "damageMultiplier": 1.5
+    },
+    {
+      "zone": "arm_right",
+      "label": "ARM RIGHT",
+      "color": "#ff44cc",
+      "x": 650,
+      "y": -680,
+      "w": 400,
+      "h": 1250,
+      "maxHp": 3000,
+      "neighbors": [
+        "torso"
+      ],
+      "damageMultiplier": 1.5
+    }
+  ],
+  "startInventory": [
+    {
+      "id": "ch-tank-shield",
+      "kind": "shield",
+      "subSlots": [
+        {
+          "module": null,
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ]
+    }
+  ],
+  "startInventoryPool": [
+    {
+      "id": "ch-tank-rnd-steadfast",
+      "kind": "steadfast",
+      "subSlots": []
+    },
+    {
+      "id": "ch-tank-rnd-fortify",
+      "kind": "fortify",
+      "subSlots": []
+    },
+    {
+      "id": "ch-tank-rnd-shield",
+      "kind": "shield",
+      "subSlots": [
+        {
+          "module": null,
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ]
+    }
+  ]
+}

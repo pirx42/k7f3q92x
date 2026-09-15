@@ -1,0 +1,258 @@
+{
+  "id": "standard",
+  "name": {
+    "de_DE": "Standard",
+    "en_US": "Standard"
+  },
+  "description": {
+    "de_DE": "Der Standard-Rumpf: 5 Zonen (Head/Torso/Legs + zwei Arme) im klassischen Layout. Keine eigene Innentemperatur — die Aussentemperatur wirkt auch intern. Gute Wahl fuer die meisten Runs. Beide Arme geben Waffen +50 % Schaden.",
+    "en_US": "The standard chassis: 5 zones (Head/Torso/Legs + two arms) in the classic layout. No internal temperature of its own — the ambient temperature applies inside as well. A solid pick for most runs. Both arms give weapons +50 % damage."
+  },
+  "chassisTemperature": null,
+  "zones": [
+    {
+      "zone": "head",
+      "label": "HEAD",
+      "color": "#00bfff",
+      "x": -350,
+      "y": -710,
+      "w": 700,
+      "h": 420,
+      "maxHp": 2000,
+      "neighbors": [
+        "torso"
+      ],
+      "rangeMultiplier": 1.5
+    },
+    {
+      "zone": "torso",
+      "label": "TORSO",
+      "color": "#00ff88",
+      "x": -350,
+      "y": -210,
+      "w": 700,
+      "h": 420,
+      "productionMultiplier": 1.5,
+      "maxHp": 2000,
+      "neighbors": [
+        "head",
+        "legs",
+        "arm_left",
+        "arm_right"
+      ]
+    },
+    {
+      "zone": "legs",
+      "label": "LEGS",
+      "color": "#ff6644",
+      "x": -350,
+      "y": 290,
+      "w": 700,
+      "h": 420,
+      "maxHp": 2000,
+      "neighbors": [
+        "torso"
+      ],
+      "speedMultiplier": 1.5
+    },
+    {
+      "zone": "arm_left",
+      "label": "ARM LEFT",
+      "color": "#ff44cc",
+      "x": -1130,
+      "y": -210,
+      "w": 700,
+      "h": 420,
+      "maxHp": 2000,
+      "neighbors": [
+        "torso"
+      ],
+      "damageMultiplier": 1.5
+    },
+    {
+      "zone": "arm_right",
+      "label": "ARM RIGHT",
+      "color": "#ff44cc",
+      "x": 430,
+      "y": -210,
+      "w": 700,
+      "h": 420,
+      "maxHp": 2000,
+      "neighbors": [
+        "torso"
+      ],
+      "damageMultiplier": 1.5
+    }
+  ],
+  "startInventoryPool": [
+    {
+      "id": "ch-std-rnd-cap",
+      "kind": "capacitor",
+      "subSlots": [
+        {
+          "module": null,
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ]
+    }
+  ],
+  "startFreeItems": [
+    {
+      "module": {
+        "id": "ch-std-gen-shield",
+        "kind": "generator",
+        "subSlots": [
+          {
+            "module": {
+              "id": "ch-std-gen-shield-oc",
+              "kind": "overclocker",
+              "subSlots": []
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "head",
+        "normX": 0.35,
+        "normY": 0.5
+      }
+    },
+    {
+      "module": {
+        "id": "ch-std-shield",
+        "kind": "shield",
+        "subSlots": [
+          {
+            "module": null,
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "head",
+        "normX": 0.7,
+        "normY": 0.5
+      }
+    },
+    {
+      "module": {
+        "id": "ch-std-gen-emitter",
+        "kind": "generator",
+        "subSlots": [
+          {
+            "module": null,
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "torso",
+        "normX": 0.0714,
+        "normY": 0.5
+      }
+    },
+    {
+      "module": {
+        "id": "ch-std-cap-emitter",
+        "kind": "capacitor",
+        "subSlots": [
+          {
+            "module": null,
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "torso",
+        "normX": 0.3514,
+        "normY": 0.5
+      }
+    },
+    {
+      "module": {
+        "id": "ch-std-emitter",
+        "kind": "emitter",
+        "subSlots": [
+          {
+            "module": {
+              "id": "ch-std-emitter-bolt",
+              "kind": "bolt",
+              "subSlots": [
+                {
+                  "module": null,
+                  "spannedBy": null
+                }
+              ]
+            },
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          },
+          {
+            "module": null,
+            "spannedBy": null
+          }
+        ]
+      },
+      "location": {
+        "kind": "relative",
+        "zone": "torso",
+        "normX": 0.6514,
+        "normY": 0.5
+      }
+    }
+  ],
+  "startCableConnections": [
+    {
+      "endpointA": {
+        "moduleId": "ch-std-gen-shield"
+      },
+      "endpointB": {
+        "moduleId": "ch-std-shield"
+      }
+    },
+    {
+      "endpointA": {
+        "moduleId": "ch-std-gen-emitter"
+      },
+      "endpointB": {
+        "moduleId": "ch-std-cap-emitter"
+      }
+    },
+    {
+      "endpointA": {
+        "moduleId": "ch-std-cap-emitter"
+      },
+      "endpointB": {
+        "moduleId": "ch-std-emitter"
+      }
+    }
+  ]
+}

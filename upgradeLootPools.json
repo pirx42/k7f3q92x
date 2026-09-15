@@ -1,0 +1,184 @@
+{
+ "pools": {
+  "cooling": [
+   {
+    "id": "pool-cooling-head-ambient",
+    "type": "zoneAmbient",
+    "zone": "head",
+    "ambientTemperature": -15,
+    "name": {
+     "de_DE": "Kühlrippen (Kopf)",
+     "en_US": "Cooling Fins (Head)"
+    },
+    "description": {
+     "de_DE": "Senkt die Außentemperatur der Kopf-Zone dauerhaft auf -15 °C.",
+     "en_US": "Permanently lowers the head zone's ambient temperature to -15 °C."
+    }
+   }
+  ],
+  "expansion": [
+   {
+    "id": "pool-expansion-zone",
+    "type": "zoneResize",
+    "zone": "torso",
+    "scalePercent": 25,
+    "name": {
+     "de_DE": "Zonen-Ausbau",
+     "en_US": "Zone Expansion"
+    },
+    "description": {
+     "de_DE": "Vergrößert die gewählte Zone dauerhaft um 25 %.",
+     "en_US": "Permanently enlarges the chosen zone by 25%."
+    }
+   },
+   {
+    "id": "pool-expansion-port",
+    "type": "cablePortCap",
+    "delta": 1,
+    "name": {
+     "de_DE": "Zusatz-Port",
+     "en_US": "Extra Port"
+    },
+    "description": {
+     "de_DE": "Alle Items erhalten dauerhaft einen zusätzlichen Kabel-Port.",
+     "en_US": "All items permanently gain one extra cable port."
+    }
+   }
+  ],
+  "repair": [
+   {
+    "id": "pool-repair-boost",
+    "type": "zoneRepairBoost",
+    "zone": "torso",
+    "repairMultiplier": 1.5,
+    "name": {
+     "de_DE": "Reparatur-Verstärker",
+     "en_US": "Repair Amplifier"
+    },
+    "description": {
+     "de_DE": "Alle Reparaturen in der Torso-Zone wirken 50 % stärker — Pasten, Reparatur-Pulse, Heil-Strahlen und Zonen-Heilung.",
+     "en_US": "All repairs in the torso zone are 50% stronger — pastes, repair pulses, healing beams and zone healing."
+    }
+   },
+   {
+    "id": "pool-repair-heal-all",
+    "type": "zoneHealAll",
+    "percent": 50,
+    "name": {
+     "de_DE": "Sofort-Instandsetzung",
+     "en_US": "Instant Overhaul"
+    },
+    "description": {
+     "de_DE": "Heilt sofort jede lebende Zone um 50 % ihrer maximalen Struktur.",
+     "en_US": "Instantly heals every living zone by 50% of its maximum structure."
+    }
+   }
+  ],
+  "coupling": [
+   {
+    "id": "pool-coupling-torso",
+    "type": "zoneCoupling",
+    "zone": "torso",
+    "share": 0.5,
+    "scope": "run",
+    "name": {
+     "de_DE": "Übersprechen",
+     "en_US": "Crosstalk"
+    },
+    "description": {
+     "de_DE": "Die Effekte der Torso-Zone wirken zu 50 % auch auf alle direkt benachbarten Zonen — positive wie negative.",
+     "en_US": "The torso zone's effects also apply at 50% to all directly neighboring zones — positive and negative alike."
+    }
+   }
+  ],
+  "zone-tuning": [
+   {
+    "id": "pool-tuning-servo",
+    "type": "zoneBonus",
+    "zone": "legs",
+    "speedMultiplier": 1.25,
+    "name": {
+     "de_DE": "Servo-Kalibrierung",
+     "en_US": "Servo Calibration"
+    },
+    "description": {
+     "de_DE": "Beine-Zone: dauerhaft +25 % Tempo.",
+     "en_US": "Legs zone: permanently +25% speed."
+    }
+   },
+   {
+    "id": "pool-tuning-optik",
+    "type": "zoneBonus",
+    "zone": "head",
+    "rangeMultiplier": 1.25,
+    "name": {
+     "de_DE": "Optik-Kalibrierung",
+     "en_US": "Optics Calibration"
+    },
+    "description": {
+     "de_DE": "Kopf-Zone: dauerhaft +25 % Reichweite.",
+     "en_US": "Head zone: permanently +25% range."
+    }
+   }
+  ],
+  "meta-slots": [
+   {
+    "id": "pool-meta-event-slot",
+    "type": "eventSlotCount",
+    "delta": 1,
+    "name": {
+     "de_DE": "Kartenfach-Erweiterung",
+     "en_US": "Card Slot Expansion"
+    },
+    "description": {
+     "de_DE": "+1 Event-Karten-Slot für den Rest des Runs.",
+     "en_US": "+1 event card slot for the rest of the run."
+    }
+   }
+  ],
+  "climate-shift": [
+   {
+    "id": "pool-climate-warm",
+    "type": "zoneAmbient",
+    "zone": "torso",
+    "ambientTemperature": 30,
+    "name": {
+     "de_DE": "Wärmefeld (Torso)",
+     "en_US": "Heat Field (Torso)"
+    },
+    "description": {
+     "de_DE": "Hebt die Außentemperatur der Torso-Zone dauerhaft auf +30 °C — Schutz gegen Unterkühlung.",
+     "en_US": "Permanently raises the torso zone's ambient temperature to +30 °C — protection against undercooling."
+    }
+   }
+  ],
+  "boost-flat": [
+   {
+    "id": "pool-boost-speed",
+    "type": "globalStat",
+    "speedFlat": 5,
+    "name": {
+     "de_DE": "Startschub",
+     "en_US": "Starting Boost"
+    },
+    "description": {
+     "de_DE": "+5 Tempo flach für den ganzen Run.",
+     "en_US": "+5 flat speed for the whole run."
+    }
+   },
+   {
+    "id": "pool-boost-range",
+    "type": "globalStat",
+    "rangeFlat": 5,
+    "name": {
+     "de_DE": "Weitblick-Schub",
+     "en_US": "Farsight Boost"
+    },
+    "description": {
+     "de_DE": "+5 Reichweite flach für den ganzen Run.",
+     "en_US": "+5 flat range for the whole run."
+    }
+   }
+  ]
+ }
+}

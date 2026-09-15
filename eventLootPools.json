@@ -1,0 +1,343 @@
+{
+ "pools": {
+  "standard": [
+   {
+    "id": "v4-card-output",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Tuning",
+     "en_US": "Tuning"
+    },
+    "description": {
+     "de_DE": "Erhöht den Output des gewählten Items dauerhaft um 50 %.",
+     "en_US": "Permanently raises the selected item's output by 50%."
+    },
+    "event": {
+     "type": "permanentStat",
+     "category": "output",
+     "factor": 1.5
+    }
+   },
+   {
+    "id": "v4-card-add-slot",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Erweiterung",
+     "en_US": "Expansion Port"
+    },
+    "description": {
+     "de_DE": "Fügt dem gewählten Item dauerhaft einen Sub-Slot hinzu.",
+     "en_US": "Permanently adds a sub-slot to the selected item."
+    },
+    "event": {
+     "type": "addSubslot"
+    }
+   },
+   {
+    "id": "v4-card-breakapart",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Aufbrechen",
+     "en_US": "Break Apart"
+    },
+    "description": {
+     "de_DE": "Macht das gewählte Item wieder veränderbar.",
+     "en_US": "Makes the selected item modifiable again."
+    },
+    "event": {
+     "type": "breakapart"
+    }
+   },
+   {
+    "id": "v4-card-invulnerable",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Schutzschild",
+     "en_US": "Aegis"
+    },
+    "description": {
+     "de_DE": "Macht das gewählte Item bis zum Sektor-Ende unzerstörbar.",
+     "en_US": "Makes the selected item indestructible until the end of the sector."
+    },
+    "event": {
+     "type": "invulnerability"
+    }
+   },
+   {
+    "id": "v4-card-recharge",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Vollladung",
+     "en_US": "Full Charge"
+    },
+    "description": {
+     "de_DE": "Alle Kondensatoren und Schilder auf Maximalladung.",
+     "en_US": "All capacitors and shields to maximum charge."
+    },
+    "event": {
+     "type": "inventoryMutator",
+     "id": "v4-card-recharge-eff",
+     "atMs": 0,
+     "warningMs": 0,
+     "operation": "recharge-all"
+    }
+   }
+  ],
+  "cables": [
+   {
+    "id": "v4-card-bruckenschlag",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Brückenschlag",
+     "en_US": "Bridge Tap"
+    },
+    "description": {
+     "de_DE": "In diesem Boss-Sektor darfst du deine Items mit Boss-Items verkabeln – ihr teilt euch dann den Energie-Pool.",
+     "en_US": "In this boss sector you may cable your items to boss items – you then share their energy pool."
+    },
+    "event": {
+     "type": "crossSideCables",
+     "scope": "sector"
+    }
+   }
+  ],
+  "heat": [
+   {
+    "id": "v4-card-ventilator",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Ventilator",
+     "en_US": "Fan"
+    },
+    "description": {
+     "de_DE": "Lüftet die Zone des gewählten Items 20 s nach links — frische Außenluft strömt rein (außen kühler kühlt, heißer heizt).",
+     "en_US": "Ventilates the selected item's zone leftward for 20s — fresh outside air flows in (cooler outside cools, hotter heats)."
+    },
+    "event": {
+     "id": "v4-card-ventilator-e",
+     "type": "heatFan",
+     "atMs": 0,
+     "warningMs": 0,
+     "durationMs": 20000,
+     "strength": 0.1
+    }
+   },
+   {
+    "id": "v4-card-coolfield",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Kühlfeld",
+     "en_US": "Cooling Field"
+    },
+    "description": {
+     "de_DE": "Senkt die Umgebungstemperatur der gewählten Zone um 20 °C — bis zum Sektor-Ende, stapelbar.",
+     "en_US": "Lowers the ambient temperature of the chosen zone by 20 °C — until the end of the sector, stackable."
+    },
+    "event": {
+     "type": "ambientOffset",
+     "delta": -20
+    }
+   },
+   {
+    "id": "v4-card-heatfield",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Heizfeld",
+     "en_US": "Heating Field"
+    },
+    "description": {
+     "de_DE": "Hebt die Umgebungstemperatur der gewählten Zone um 20 °C — bis zum Sektor-Ende, stapelbar.",
+     "en_US": "Raises the ambient temperature of the chosen zone by 20 °C — until the end of the sector, stackable."
+    },
+    "event": {
+     "type": "ambientOffset",
+     "delta": 20
+    }
+   }
+  ],
+  "repair": [
+   {
+    "id": "v4-card-nano-schwarm",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Nano-Schwarm",
+     "en_US": "Nanite Swarm"
+    },
+    "description": {
+     "de_DE": "Zieh die Karte auf eine deiner Zonen: Ein Nano-Schwarm repariert dort bis zum Sektor-Ende beschädigte Module mit insgesamt 3 HP/s.",
+     "en_US": "Drag the card onto one of your zones: a nanite swarm repairs damaged modules there at a combined 3 HP/s until the end of the sector."
+    },
+    "event": {
+     "id": "v4-card-nano-schwarm-e",
+     "type": "zoneRepairField",
+     "atMs": 0,
+     "warningMs": 0,
+     "hpPerSec": 3,
+     "scope": "sector"
+    }
+   }
+  ],
+  "support": [
+   {
+    "id": "v4-card-heal-plus",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Notfall-Reparatur",
+     "en_US": "Emergency Repair"
+    },
+    "description": {
+     "de_DE": "Heilt alle Items 10 Sekunden lang mit 30 HP/s. Global.",
+     "en_US": "Heals all items for 10 seconds at 30 HP/s. Global."
+    },
+    "event": {
+     "id": "v4-card-heal-plus-e",
+     "type": "repairPulse",
+     "atMs": 0,
+     "warningMs": 0,
+     "hpPerSec": 30,
+     "durationMs": 10000
+    }
+   }
+  ],
+  "buff-tempo": [
+   {
+    "id": "v4-card-turbo",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Turbo-Schub",
+     "en_US": "Turbo Surge"
+    },
+    "description": {
+     "de_DE": "Alle Items laufen 20 Sekunden mit doppeltem Tempo. Global.",
+     "en_US": "All items run at double speed for 20 seconds. Global."
+    },
+    "event": {
+     "id": "v4-card-turbo-e",
+     "type": "speedBoost",
+     "atMs": 0,
+     "warningMs": 0,
+     "multiplier": 2,
+     "durationMs": 20000
+    }
+   },
+   {
+    "id": "v4-card-farsight",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Fernblick",
+     "en_US": "Farsight"
+    },
+    "description": {
+     "de_DE": "Erhöht 20 Sekunden lang die Reichweite aller Items um 60 %. Global.",
+     "en_US": "Raises the range of all items by 60% for 20 seconds. Global."
+    },
+    "event": {
+     "id": "v4-card-farsight-e",
+     "type": "rangeBoost",
+     "atMs": 0,
+     "warningMs": 0,
+     "multiplier": 1.6,
+     "durationMs": 20000
+    }
+   }
+  ],
+  "utility": [
+   {
+    "id": "v4-card-clone",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Duplikat",
+     "en_US": "Replicate"
+    },
+    "description": {
+     "de_DE": "Legt eine Kopie des ausgewählten Items (ohne Sub-Module) ins Inventar.",
+     "en_US": "Drops a copy of the selected item (without sub-modules) into the inventory."
+    },
+    "event": {
+     "type": "cloneToInventory"
+    }
+   },
+   {
+    "id": "v4-card-supply",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Nachschub",
+     "en_US": "Resupply"
+    },
+    "description": {
+     "de_DE": "Liefert 2 zufällige Module ins Inventar.",
+     "en_US": "Delivers 2 random modules to the inventory."
+    },
+    "event": {
+     "type": "spawnRandomModules",
+     "count": 2
+    }
+   },
+   {
+    "id": "v4-card-repeat",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Wiederholung",
+     "en_US": "Repeat"
+    },
+    "description": {
+     "de_DE": "Spielt die zuletzt aktivierte Event-Karte noch einmal ab.",
+     "en_US": "Replays the most recently activated event card."
+    },
+    "event": {
+     "type": "repeatLast"
+    }
+   }
+  ],
+  "navigation": [
+   {
+    "id": "v4-card-skip",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Vorspulen",
+     "en_US": "Skip Ahead"
+    },
+    "description": {
+     "de_DE": "Überspringt den aktuellen Sektor — auch Bosse. Kein Loot.",
+     "en_US": "Skips the current sector — bosses too. No loot."
+    },
+    "event": {
+     "type": "skipSectorNoLoot"
+    }
+   },
+   {
+    "id": "v4-card-rewind",
+    "icon": "",
+    "canDefer": true,
+    "name": {
+     "de_DE": "Rückspulen",
+     "en_US": "Rewind"
+    },
+    "description": {
+     "de_DE": "Zurück zum ersten Sektor der aktuellen Runde.",
+     "en_US": "Back to the first sector of the current round."
+    },
+    "event": {
+     "type": "backToRoundStart"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="26" fill="#0b0f18"/>
+  <!-- die fuenf Zonen des Chassis: Kopf, Rumpf, Beine, zwei Arme -->
+  <g fill="none" stroke-width="5" stroke-linejoin="round">
+    <rect x="49" y="16" width="30" height="24" rx="4" stroke="#00bfff"/>
+    <rect x="44" y="46" width="40" height="36" rx="4" stroke="#00ff88"/>
+    <rect x="49" y="88" width="30" height="24" rx="4" stroke="#ff6644"/>
+    <rect x="12" y="50" width="26" height="28" rx="4" stroke="#ff44cc"/>
+    <rect x="90" y="50" width="26" height="28" rx="4" stroke="#ff44cc"/>
+  </g>
+  <!-- Reaktor-Kern -->
+  <circle cx="64" cy="64" r="8" fill="#ffc85a"/>
+  <circle cx="64" cy="64" r="13" fill="none" stroke="#ffc85a" stroke-width="2" opacity="0.6"/>
+</svg>

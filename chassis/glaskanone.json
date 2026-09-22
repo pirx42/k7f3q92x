@@ -1,0 +1,124 @@
+{
+  "id": "glaskanone",
+  "name": {
+    "de_DE": "Glaskanone",
+    "en_US": "Glass Cannon"
+  },
+  "description": {
+    "de_DE": "Hochrisiko-Rumpf: Reichweite, Tempo und Rumpf-Energie stark erhoeht — und in beiden Armen der hoechste Waffenschaden aller Rumpfe (×2.0, doppelt). Dafuer nur 1000 HP pro Zone: ein Treffer zu viel, und der Run ist vorbei. Wer die Waffen in die Arme haengt, gewinnt frueh — oder gar nicht.",
+    "en_US": "High-risk chassis: range, speed and torso energy heavily boosted — and the highest weapon damage of any chassis in both arms (×2.0, double). In exchange, only 1000 HP per zone: one hit too many and the run is over. Hang the weapons in the arms and you win early — or not at all."
+  },
+  "chassisTemperature": null,
+  "zones": [
+    {
+      "zone": "head",
+      "label": "HEAD",
+      "color": "#00bfff",
+      "x": -250,
+      "y": -560,
+      "w": 500,
+      "h": 300,
+      "maxHp": 1000,
+      "neighbors": [
+        "torso"
+      ],
+      "rangeMultiplier": 2.0
+    },
+    {
+      "zone": "torso",
+      "label": "TORSO",
+      "color": "#00ff88",
+      "x": -300,
+      "y": -200,
+      "w": 600,
+      "h": 400,
+      "productionMultiplier": 2.55,
+      "maxHp": 1000,
+      "neighbors": [
+        "head",
+        "legs",
+        "arm_left",
+        "arm_right"
+      ]
+    },
+    {
+      "zone": "legs",
+      "label": "LEGS",
+      "color": "#ff6644",
+      "x": -250,
+      "y": 250,
+      "w": 500,
+      "h": 300,
+      "maxHp": 1000,
+      "neighbors": [
+        "torso"
+      ],
+      "speedMultiplier": 2.0
+    },
+    {
+      "zone": "arm_left",
+      "label": "ARM LEFT",
+      "color": "#ff44cc",
+      "x": -750,
+      "y": -200,
+      "w": 400,
+      "h": 400,
+      "maxHp": 1000,
+      "neighbors": [
+        "torso"
+      ],
+      "damageMultiplier": 2.0
+    },
+    {
+      "zone": "arm_right",
+      "label": "ARM RIGHT",
+      "color": "#ff44cc",
+      "x": 350,
+      "y": -200,
+      "w": 400,
+      "h": 400,
+      "maxHp": 1000,
+      "neighbors": [
+        "torso"
+      ],
+      "damageMultiplier": 2.0
+    }
+  ],
+  "startInventory": [
+    {
+      "id": "ch-glaskanone-cap",
+      "kind": "capacitor",
+      "subSlots": [
+        {
+          "module": null,
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ]
+    }
+  ],
+  "startInventoryPool": [
+    {
+      "id": "ch-glaskanone-rnd-sensor",
+      "kind": "sensor",
+      "subSlots": []
+    },
+    {
+      "id": "ch-glaskanone-rnd-cap",
+      "kind": "capacitor",
+      "subSlots": [
+        {
+          "module": null,
+          "spannedBy": null
+        },
+        {
+          "module": null,
+          "spannedBy": null
+        }
+      ]
+    }
+  ]
+}

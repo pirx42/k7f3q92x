@@ -1,0 +1,61 @@
+{
+  "id": "sprinter",
+  "name": { "de_DE": "Sprinter", "en_US": "Sprinter" },
+  "description": {
+    "de_DE": "Kompakter Speed-Rumpf: kleine, dicht gedraengte Zonen mit hohem Bewegungs-Multiplikator in den Beinen. Wenig HP — ueberlebt nur, wer schnell genug aus der Gefahrenzone ist. Ideal fuer Runs mit harten Speed-Tasks. Die schmalen Arme geben Waffen +30 % Schaden.",
+    "en_US": "Compact speed chassis: small, tightly packed zones with a high movement multiplier in the legs. Low HP — only the quick survive. Ideal for runs with demanding speed tasks. The narrow arms give weapons +30 % damage."
+  },
+  "chassisTemperature": null,
+  "zones": [
+    {
+      "zone": "head", "label": "HEAD", "color": "#00bfff",
+      "x":  -100, "y": -460, "w": 200, "h": 200,
+      "maxHp": 1500,
+      "neighbors": ["torso"],
+      "rangeMultiplier": 1.3
+    },
+    {
+      "zone": "torso", "label": "TORSO", "color": "#00ff88",
+      "x":  -200, "y": -230, "w": 400, "h": 300,
+      "productionMultiplier": 1.5, "maxHp": 1500,
+      "neighbors": ["head", "legs", "arm_left", "arm_right"]
+    },
+    {
+      "zone": "legs", "label": "LEGS", "color": "#ff6644",
+      "x":  -200, "y":  100, "w": 400, "h": 300,
+      "maxHp": 1500,
+      "neighbors": ["torso"],
+      "speedMultiplier": 2.0
+    },
+    {
+      "zone": "arm_left", "label": "ARM LEFT", "color": "#ff44cc",
+      "x":  -450, "y": -230, "w": 200, "h": 400,
+      "maxHp": 1500,
+      "neighbors": ["torso"],
+      "damageMultiplier": 1.3
+    },
+    {
+      "zone": "arm_right", "label": "ARM RIGHT", "color": "#ff44cc",
+      "x":   250, "y": -230, "w": 200, "h": 400,
+      "maxHp": 1500,
+      "neighbors": ["torso"],
+      "damageMultiplier": 1.3
+    }
+  ],
+  "startInventory": [
+    { "id": "ch-sprinter-thermal", "kind": "cooler", "subSlots": [
+      { "module": null, "spannedBy": null },
+      { "module": null, "spannedBy": null }
+    ] }
+  ],
+  "startInventoryPool": [
+    {
+      "id": "ch-sprinter-rnd-cap",
+      "kind": "capacitor",
+      "subSlots": [
+        { "module": null, "spannedBy": null },
+        { "module": null, "spannedBy": null }
+      ]
+    }
+  ]
+}
